@@ -1,9 +1,7 @@
-const stakeholders = require("./data/stackeholders");
-const courses = require("./data/courses");
+const promotional = require("./data/promotional");
 
 module.exports = () => {
   return {
-    stakeholders: stakeholders,
-    courses: courses,
+    promotional: promotional,
   };
 };
