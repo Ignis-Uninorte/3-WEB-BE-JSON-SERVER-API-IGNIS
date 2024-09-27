@@ -6,6 +6,7 @@ const db = require("./db.js")();
 const router = jsonServer.router(db);
 server.use(middlewares);
 server.use(router);
+server.use(jsonServer.defaults({ static: 'public' }));
 server.listen(port, () => {
   console.log(`JSON Server is running on port ${port}`);
 });
