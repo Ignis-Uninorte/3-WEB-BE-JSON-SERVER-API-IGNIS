@@ -6,7 +6,25 @@ const product = [
             {
                 id: 1,
                 name: "Samsung Galaxy Tab S9 FE+ Plus",
-                description: "New tablet Samsung with 128 GB. Display Size of 12.4 Inches",
+                shortDescription: "New tablet Samsung with 128 GB. Display Size of 12.4 Inches",
+                description:[
+                    {
+                        title: "SCREEN FOR ALL YOUR PASSIONS:",
+                        description: 'Be blown away by the large 12.4" screen. There\'s plenty of room to follow your passions, whether you\'re taking an online photography class or unwinding with cat videos. Dual speakers make everything sound amazing.'
+                    },
+                    {
+                        title: "READY FOR ALMOST ANYTHING:",
+                        description: " An IP68 rating makes Galaxy Tab S9 FE+ one of the only water- and dust-resistant tablets on the market. It's built to last wherever you use it, making it a great choice for first-time tablet buyers."
+                    },
+                    {
+                        title: "A BATTERY THAT KEEPS YOU IN CHARGE:",
+                        description: "With a tablet this powerful, portable and fun, you'll never want to put it down. Go up to 20 hours with a long-lasting battery and get a full charge in less than 90 minutes with Super Fast Charging."
+                    },
+                    {
+                        title: "A CAMERA THAT CAPTURES EVERY MOMENT:",
+                        description: "Capture every moment with the 8MP front camera and 13MP rear camera. The wide 5MP front camera lens lets you fit more in the frame, and the 13MP rear camera lens captures stunning photos and videos."
+                    }
+                ],
                 price: 599.99,
                 discount: 20,
                 image: "https://www.alkosto.com/medias/8806095160689-001-750Wx750H?context=bWFzdGVyfGltYWdlc3w4OTUyfGltYWdlL3dlYnB8YUdGaEwyZzRaUzh4TkRZMU1qWXpNelkzTnpnMU5DODRPREEyTURrMU1UWXdOamc1WHpBd01WODNOVEJYZURjMU1FZ3xhZTY1MDQxYTkwZjNkZjIyMDU5NzZhMjhhMWFhZDFmYjdjYzIzZmFhYWNmMWZmNjhmMWJkOGM4Zjk3Y2Y0Mjky",
@@ -17,12 +35,34 @@ const product = [
                     memoryStorage: "128 GB",
                     displaySize: "12'4 Inches",
                     color: "Mint",
+                    processor: "Samsung Exynos 1380",
+                    operatingSystem: "Android 13",
+                    battery: "10,090 mAh",
+                    camera: "13MP rear camera, 8MP front camera"
                 }
             },
             {
                 id: 2,
                 name: "SAMSUNG Galaxy Tab A9+ Plus",
-                description: "Renew tablet Samsung with 64 GB. Display Size of 11 Inches",
+                shortDescription: "Renew tablet Samsung with 64 GB. Display Size of 11 Inches",
+                description: [
+                    {
+                        title: "SCREEN FOR ALL YOUR PASSIONS:",
+                        description: 'Be blown away by the large 11" screen. There\'s plenty of room to follow your passions, whether you\'re taking an online photography class or unwinding with cat videos. Dual speakers make everything sound amazing.'
+                    },
+                    {
+                        title: "READY FOR ALMOST ANYTHING:",
+                        description: "It's built to last wherever you use it, making it a great choice for first-time tablet buyers."
+                    },
+                    {
+                        title: "A BATTERY THAT KEEPS YOU IN CHARGE:",
+                        description: "With a tablet this powerful, portable and fun, you'll never want to put it down. Go up to 15 hours with a long-lasting battery."
+                    },
+                    {
+                        title: "A CAMERA THAT CAPTURES EVERY MOMENT:",
+                        description: "Capture every moment with the 8MP front camera and 13MP rear camera. The wide 5MP front camera lens lets you fit more in the frame, and the 13MP rear camera lens captures stunning photos and videos."
+                    }
+                ],
                 price: 150.99,
                 discount: 20,
                 image: "https://www.alkosto.com/medias/8806095574967-002-750Wx750H?context=bWFzdGVyfGltYWdlc3wyOTIzOHxpbWFnZS93ZWJwfGFHUmhMMmd3WXk4eE5EUXhNRGN6T0RRMk5qZzBOaTg0T0RBMk1EazFOVGMwT1RZM1h6QXdNbDgzTlRCWGVEYzFNRWd8NzQ1NDRiZTAzZDcwYjFmMmM5YTliZWVjODU5NzgwNzg5ZDBjYjEzZThkNTZiNWM3MDM0ZDY4OTJkN2UzNmNiZA",
@@ -33,12 +73,30 @@ const product = [
                     memoryStorage: "64 GB",
                     displaySize: "11 Inches",
                     color: "Black",
+                    processor: "Samsung Exynos 1380",
+                    operatingSystem: "Android 12",
+                    battery: "8,090 mAh",
+                    camera: "13MP rear camera, 8MP front camera"
                 }
-            },
+            }, 
             {
                 id: 3,
                 name: "Android Tablet",
-                description: "Used Android tablet with 16GB. Display Size of 11 Inches",
+                shortDescription: "Used Android tablet with 16GB. Display Size of 11 Inches",
+                description: [
+                    {
+                        title: "SCREEN FOR ALL YOUR PASSIONS:",
+                        description: "This tablet is perfect for watching movies, playing games, and reading books. It has a large 11-inch screen and a powerful processor that can handle all your favorite apps."
+                    },
+                    {
+                        title: "SLEEK AND STYLISH DESIGN:",
+                        description: "The tablet has a sleek and stylish design that looks great in any room. It's lightweight and easy to carry around, so you can take it with you wherever you go."
+                    },
+                    {
+                        title: "ALL-DAY BATTERY LIFE:",
+                        description: "The tablet has a long-lasting battery that can keep up with your busy lifestyle. You can use it all day without having to worry about running out of power."
+                    }
+                ],
                 price: 89.99,
                 discount: 10,
                 image: "https://www.alkosto.com/medias/4894461992846-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wzNDk1MnxpbWFnZS93ZWJwfGFEQTRMMmhoTXk4eE5EUTVPRGc1TXpneU5EQXpNQzgwT0RrME5EWXhPVGt5T0RRMlh6QXdNVjgzTlRCWGVEYzFNRWd8ZWMyYzc5OWQ2ZDA5MDgyYTVmZDRiZmFhNjA1N2NkYjg0YzliMjEzYmYwYzFkNTBkZGZmMjk1Mzg3OWM1MTY5Nw",
@@ -49,12 +107,30 @@ const product = [
                     memoryStorage: "16 GB",
                     displaySize: "11 Inches",
                     color: "Gray",
+                    processor: "Generic",
+                    operatingSystem: "Android 10",
+                    battery: "5,000 mAh",
+                    camera: "5MP rear camera, 2MP front camera"
                 }
             },
             {
                 id: 4,
                 name: "Lenovo Fire HD 10 tablet",
-                description: "Used Android tablet with 8GB. Display Size of 10 Inches",
+                shortDescription: "Used Android tablet with 8GB. Display Size of 10 Inches",
+                description:[
+                    {
+                        title: "SCREEN FOR ALL YOUR PASSIONS:",
+                        description: "This tablet is perfect for watching movies, playing games, and reading books. It has a large 10-inch screen and a powerful processor that can handle all your favorite apps."
+                    },
+                    {
+                        title: "SLEEK AND STYLISH DESIGN:",
+                        description: "The tablet has a sleek and stylish design that looks great in any room. It's lightweight and easy to carry around, so you can take it with you wherever you go."
+                    },
+                    {
+                        title: "ALL-DAY BATTERY LIFE:",
+                        description: "The tablet has a long-lasting battery that can keep up with your busy lifestyle. You can use it all day without having to worry about running out of power."
+                    }
+                ],
                 price: 289.99,
                 discount: 35,
                 image: "https://img01.huaweifile.com/sg/ms/co/pms/uomcdn/CO_HW_B2C/pms/202310/gbom/6942103103476/800_800_A601DE9795C7D47430A8E35A0C53F93Dmp.png",
@@ -65,12 +141,34 @@ const product = [
                     memoryStorage: "8 GB",
                     displaySize: "10 Inches",
                     color: "Gray",
+                    processor: "Lenovo",
+                    operatingSystem: "Android 9",
+                    battery: "6,000 mAh",
+                    camera: "8MP rear camera, 5MP front camera"
                 }
             },
             {
                 id: 5,
                 name: "Lenovo Tab M9",
-                description: "New Lenovo tab M9 with 64GB. Display Size of 9 Inches",
+                shortDescription: "New Lenovo tab M9 with 64GB. Display Size of 9 Inches",
+                description: [
+                    {
+                        title: "SCREEN FOR ALL YOUR PASSIONS:",
+                        description: "This tablet is perfect for watching movies, playing games, and reading books. It has a large 9-inch screen and a powerful processor that can handle all your favorite apps."
+                    },
+                    {
+                        title: "SLEEK AND STYLISH DESIGN:",
+                        description: "The tablet has a sleek and stylish design that looks great in any room. It's lightweight and easy to carry around, so you can take it with you wherever you go."
+                    },
+                    {
+                        title: "ALL-DAY BATTERY LIFE:",
+                        description: "The tablet has a long-lasting battery that can keep up with your busy lifestyle. You can use it all day without having to worry about running out of power."
+                    },
+                    {
+                        title:"A CAMERA THAT CAPTURES EVERY MOMENT:",
+                        description: "Capture every moment with the 8MP rear camera and 5MP front camera. The wide 5MP front camera lens lets you fit more in the frame, and the 8MP rear camera lens captures stunning photos and videos."
+                    }
+                ],
                 price: 189.99,
                 discount: 58,
                 image: "https://www.alkosto.com/medias/197530283857-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wyMjI2MnxpbWFnZS93ZWJwfGFEVTFMMmd6WVM4eE5EVTJNekkzTmpBNU5UVXhPQzh4T1RjMU16QXlPRE00TlRkZk1EQXhYemMxTUZkNE56VXdTQXw1OGE2N2ZjMzBjOTMzZWVkMzNkNzNiNTY4NGY5NzU2NjZlMGE3ODc4ODcwNzQ4M2YxMmJiYWU3YmFhYmFmN2I5",
@@ -81,6 +179,9 @@ const product = [
                     memoryStorage: "64 GB",
                     displaySize: "9 Inches",
                     color: "Gray",
+                    operatingSystem: "Android 11",
+                    battery: "7,000 mAh",
+                    camera: "8MP rear camera, 5MP front camera"
                 }
             }
         ]
@@ -730,7 +831,7 @@ const product = [
     },
     {
         id: 10,
-        category: "Washers/Dryers",
+        category: "Washers-Dryers",
         items: [
             {
                 id: 1,
