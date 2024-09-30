@@ -1,8 +1,7 @@
-const product = [
+const productsList = [
     {
-        id: 1,
         category: "Tablets",
-        items: [
+        products: [
             {
                 id: 1,
                 name: "Samsung Galaxy Tab S9 FE+ Plus",
@@ -187,9 +186,8 @@ const product = [
         ]
     },
     {
-        id: 2,
         category: "Computers",
-        items: [
+        products: [
             {
                 id: 1,
                 name: "ASUS TUF Gaming",
@@ -273,9 +271,8 @@ const product = [
         ]
     },
     {
-        id: 3,
         category: "Phones",
-        items: [
+        products: [
             {
                 id: 1,
                 name: "SAMSUNG Galaxy Z Flip6",
@@ -359,9 +356,8 @@ const product = [
         ]
     },
     {
-        id: 4,
         category: "Air Conditioning",
-        items: [
+        products: [
             {
                 id: 1,
                 name: "BLACK+DECKER",
@@ -440,9 +436,8 @@ const product = [
         ]
     },
     {
-        id: 5,
         category: "Televisions",
-        items: [
+        products: [
             {
                 id: 1,
                 name: "TV LG NanoCell",
@@ -511,9 +506,8 @@ const product = [
         ]
     },
     {
-        id: 6,
         category: "Audio",
-        items: [
+        products: [
             {
                 id: 1,
                 name: "IPX5 Waterproof Speaker with HD Sound",
@@ -592,9 +586,8 @@ const product = [
         ]
     },
     {
-        id: 7,
         category: "Printing",
-        items: [
+        products: [
             {
                 id: 1,
                 name: "HP OfficeJet Pro 8025",
@@ -673,9 +666,8 @@ const product = [
         ]
     },
     {
-        id: 8,
         category: "Smartwatches",
-        items: [
+        products: [
             {
                 id: 1,
                 name: "Apple Watch Series 7",
@@ -749,9 +741,8 @@ const product = [
         ]
     },
     {
-        id: 9,
         category: "Refrigerators",
-        items: [
+        products: [
             {
                 id: 1,
                 name: "Kenmore",
@@ -830,9 +821,8 @@ const product = [
         ]
     },
     {
-        id: 10,
         category: "Washers-Dryers",
-        items: [
+        products: [
             {
                 id: 1,
                 name: "LG WM4000HWA",
@@ -911,9 +901,8 @@ const product = [
         ]
     },
     {
-        id:11,
         category: "Cameras",
-        items: [
+        products: [
             {
                 id:1,
                 name: "Canon EOS R5",
@@ -992,9 +981,8 @@ const product = [
         ]
     },
     {
-        id: 12,
         category: "Living Room",
-        items: [
+        products: [
             {
                 id: 1,
                 name: "Amazon Basics Swivel Foam Lounge Chair",
@@ -1073,9 +1061,8 @@ const product = [
         ]
     },
     {
-        id: 13,
         category: "Dining Room",
-        items:[
+        products:[
             {
                 id: 1,
                 name: "Dining Table Set",
@@ -1154,9 +1141,8 @@ const product = [
         ]
     },
     {
-        id:14,
         category: "Bathroom",
-        items:[
+        products:[
             {
                 id: 1,
                 name: "Bathroom Rugs",
@@ -1235,9 +1221,8 @@ const product = [
         ]
     },
     {
-        id: 15,
         category: "Kitchen",
-        items:[
+        products:[
             {
                 id: 1,
                 name: "RAXCO Utensil Set",
@@ -1316,9 +1301,8 @@ const product = [
         ]
     },
     {
-        id: 16,
         category: "Video",
-        items: [
+        products: [
             {
                 id: 1,
                 name: "YABER Projector",
@@ -1398,4 +1382,4 @@ const product = [
     }
 ];
 
-module.exports = product;
+module.exports = productsList;
