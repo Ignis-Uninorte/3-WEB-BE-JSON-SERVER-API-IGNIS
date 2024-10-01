@@ -1,5 +1,6 @@
 const productsList = [
     {
+        id: 1,
         category: "Tablets",
         products: [
             {
@@ -186,6 +187,7 @@ const productsList = [
         ]
     },
     {
+        id: 2,
         category: "Computers",
         products: [
             {
@@ -271,6 +273,7 @@ const productsList = [
         ]
     },
     {
+        id: 3,
         category: "Phones",
         products: [
             {
@@ -356,6 +359,7 @@ const productsList = [
         ]
     },
     {
+        id: 4,
         category: "Air Conditioning",
         products: [
             {
@@ -436,6 +440,7 @@ const productsList = [
         ]
     },
     {
+        id: 5,
         category: "Televisions",
         products: [
             {
@@ -506,6 +511,7 @@ const productsList = [
         ]
     },
     {
+        id: 6,
         category: "Audio",
         products: [
             {
@@ -586,6 +592,7 @@ const productsList = [
         ]
     },
     {
+        id: 7,
         category: "Printing",
         products: [
             {
@@ -666,6 +673,7 @@ const productsList = [
         ]
     },
     {
+        id: 8,
         category: "Smartwatches",
         products: [
             {
@@ -741,6 +749,7 @@ const productsList = [
         ]
     },
     {
+        id: 9,
         category: "Refrigerators",
         products: [
             {
@@ -821,6 +830,7 @@ const productsList = [
         ]
     },
     {
+        id: 10,
         category: "Washers-Dryers",
         products: [
             {
@@ -901,6 +911,7 @@ const productsList = [
         ]
     },
     {
+        id: 11,
         category: "Cameras",
         products: [
             {
@@ -981,6 +992,7 @@ const productsList = [
         ]
     },
     {
+        id: 12,
         category: "Living Room",
         products: [
             {
@@ -1061,6 +1073,7 @@ const productsList = [
         ]
     },
     {
+        id: 13,
         category: "Dining Room",
         products:[
             {
@@ -1141,6 +1154,7 @@ const productsList = [
         ]
     },
     {
+        id: 14,
         category: "Bathroom",
         products:[
             {
@@ -1221,6 +1235,7 @@ const productsList = [
         ]
     },
     {
+        id: 15,
         category: "Kitchen",
         products:[
             {
@@ -1301,6 +1316,7 @@ const productsList = [
         ]
     },
     {
+        id: 16,
         category: "Video",
         products: [
             {
