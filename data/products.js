@@ -365,21 +365,7 @@ const productsList = [
             {
                 id: 1,
                 name: "Samsung WindFree Elite",
-                shortDescription: "Air Conditioner with WindFree technology, 12,000 BTU, energy efficient.",
-                description:[
-                    {
-                        title: "Energy Efficiency",
-                        description: "Provides energy savings with its optimized compressor."
-                    },
-                    {
-                        title: "WindFree Cooling",
-                        description: "Cools the room without direct airflow for better comfort."
-                    },
-                    {
-                        title: "Smart Control",
-                        description: "Control the air conditioner through your smartphone or voice assistants."
-                    }
-                ],
+                description: "Air Conditioner with WindFree technology, 12,000 BTU, energy efficient.",
                 price: 450,
                 discount: 15,
                 image: "https://m.media-amazon.com/images/I/71pAnfLsIyL.SX466.jpg",
@@ -398,21 +384,7 @@ const productsList = [
             {
                 id: 2,
                 name: "LG LW1024RD",
-                shortDescription: "10,000 Window Air Conditioner, 115V, 450 Sq.Ft. (18' x 25' Room Size), Quiet Operation, Electronic Control with Remote, 3 Cooling & Fan Speeds, Auto Restart, 10000 BTU, White",
-                description:[
-                    {
-                        title: "Low Noise Performance",
-                        description: "LG window air conditioners operate at sound levels as low as 52dB (in low mode), eliminating unnecessary noise."
-                    },
-                    {
-                        title: "Multiple Fan Speeds",
-                        description: "3 cooling and fan speeds with Auto Cool allow you to customize your cooling."
-                    },
-                    {
-                        title: "Maximum Usability",
-                        description: "Easy to use electronic controls with remote"
-                    }
-                ],
+                description: "10,000 Window Air Conditioner, 115V, 450 Sq.Ft., Quiet Operation.",
                 price: 350,
                 discount: 10,
                 image: "https://m.media-amazon.com/images/I/71PT8ltaciL.AC_SX679.jpg",
@@ -431,21 +403,7 @@ const productsList = [
             {
                 id: 3,
                 name: "Amazon Basics Window-Mounted Air Conditioner",
-                shortDescription: "Mechanical Control - Cools 150 Square Feet, 5000 BTU, AC Unit, White",
-                description:[
-                    {
-                        title: "Air Filtration",
-                        description: "Keeps air clean and fresh with inbuilt filter, which can be easily removed, washed, and reused"
-                    },
-                    {
-                        title: "Compact Size",
-                        description: "Ideal for small spaces such as dorm rooms and RVs"
-                    },
-                    {
-                        title: "Energy Efficient",
-                        description: "Energy efficient air conditioning unit cools rooms up to 150 square feet with standard 9 foot ceilings"
-                    }
-                ],
+                description: "Cools 150 Square Feet, 5000 BTU, Mechanical Control.",
                 price: 135,
                 discount: 5,
                 image: "https://m.media-amazon.com/images/I/71dabBkD2eL.AC_SX679.jpg",
@@ -464,21 +422,7 @@ const productsList = [
             {
                 id: 4,
                 name: "Frigidaire FHWC103TC1",
-                shortDescription: "PaWindow Air Conditioner, 2024 10,000 BTU Electronic Controls, White",
-                description:[
-                    {
-                        title: "Multi-Speed Fan",
-                        description: "Features three different fan speeds, for more cooling flexibility."
-                    },
-                    {
-                        title: "Eco-Friendly",
-                        description: "Uses environmentally friendly refrigerant."
-                    },
-                    {
-                        title: "Auto Restart",
-                        description: "Automatically restarts after a power outage."
-                    }
-                ],
+                description: "10,000 BTU Window Air Conditioner with Electronic Controls.",
                 price: 330,
                 discount: 12,
                 image: "https://m.media-amazon.com/images/I/61qCcMtk4HL.AC_SX679.jpg",
@@ -497,21 +441,7 @@ const productsList = [
             {
                 id: 5,
                 name: "Keystone Quiet",
-                shortDescription: "AC Unit for Small 6,000 Window Mounted Dehumidifier, 115V, Air Conditioner for Rooms up to 250 Sq.Ft. with Smart Remote Control, 6000 BTU, Bright White",
-                description:[
-                    {
-                        title: "Reliable Window AC Unit",
-                        description: "Our powerful 6,000 BTU window air conditioner is what you need to efficiently cool your apartment, bedroom, garage or any small room up to 250 square feet"
-                    },
-                    {
-                        title: "Maximum Comfort",
-                        description: "Featuring 3 cooling modes, 3 fan speeds, 4-way adjustable air louvers and a programmable timer; 1.5 pints of moisture from the air is removed every hour."
-                    },
-                    {
-                        title: "Smart Remote Control",
-                        description: "The remote control takes the temperature of the room you are in, displays it on the LCD screen and sends a signal to your unit every 3 minutes for accurate cooling"
-                    }
-                ],
+                description: "AC Unit for Small 6,000 Window Mounted Dehumidifier.",
                 price: 270,
                 discount: 7,
                 image: "https://m.media-amazon.com/images/I/616ICMBb0aL.AC_SX679.jpg",
@@ -519,7 +449,7 @@ const productsList = [
                 specifications: {
                     brand: "TCL",
                     condition: "New",
-                    coolingCapacity: "9,000 BTU",
+                    coolingCapacity: "6,000 BTU",
                     energyEfficiency: "A+",
                     smartFeatures: "Yes",
                     color: "White",
@@ -533,171 +463,101 @@ const productsList = [
         id: 5,
         category: "Televisions",
         products: [
-        {
-            id: 1,
-            name: "Amazon Fire TV",
-            shortDescription: "Amazon Fire TV 40\" 2-Series HD smart TV with Fire TV Alexa Voice Remote, stream live TV without cable",
-            description:[
-                {
-                    title: "High definition TV",
-                    description: "Bring movies and shows to life in HD 1080p resolution, with support for HDR 10, HLG, and Dolby Digital Audio."
-                },
-                {
-                    title: "All your entertainment in one place",
-                    description: "Fire TV gives you quick access to live TV, video games, and music, and lets you stream over 1 million movies and TV episodes with subscriptions to Netflix, Prime Video, Disney+, and more."
-                },
-                {
-                    title: "Stream for free",
-                    description: "Watch free movies and TV episodes with apps like YouTube, Freevee, Tubi, Pluto TV, and more."
+            {
+                id: 1,
+                name: "Amazon Fire TV",
+                description: "40\" 2-Series HD smart TV with Alexa Voice Remote.",
+                price: 170,
+                discount: 10,
+                image: "https://m.media-amazon.com/images/I/71Nma1KADeL.AC_SX679.jpg",
+                rating: 4.9,
+                specifications: {
+                    brand: "Amazon",
+                    condition: "New",
+                    screenSize: "40 inches",
+                    resolution: "4K UHD",
+                    smartFeatures: "Yes",
+                    connectivity: "Wi-Fi, HDMI, USB",
+                    refreshRate: "120 Hz",
+                    color: "Black"
                 }
-            ],
-            price: 170,
-            discount: 10,
-            image: "https://m.media-amazon.com/images/I/71Nma1KADeL.AC_SX679.jpg",
-            rating: 4.9,
-            specifications: {
-                brand: "Amazon ",
-                condition: "New",
-                screenSize: "40 inches",
-                resolution: "4K UHD",
-                smartFeatures: "Yes",
-                connectivity: "Wi-Fi, HDMI, USB",
-                refreshRate: "120 Hz",
-                color: "Black"
-            }
-        },
-        {
-            id: 2,
-            name: "VIZIO 40-inch Full HD 1080p Smart TV",
-            shortDescription: "VIZIO 40-inch Full HD 1080p Smart TV with DTS Virtual: X, Alexa Compatibility, Google Cast Built-in, Bluetooth Headphone Capable, (VFD40M-08 New)",
-            description:[
-                {
-                    title: "Captivating clarity",
-                    description: "Full HD delivers a step up in clarity from HD with richer contrast and true-to-life color achieved with Full Array LED Backlight and fine-tuned at a granular level with Active Pixel Tuning."
-                },
-                {
-                    title: "Smart and easy",
-                    description: "Enjoy instant access to the best selection of built-in apps from top tier streaming services and explore new apps as they are automatically added and updated. Stream 275 plus free channels and 15,000 plus movies and shows On Demand with the built-in WatchFree plus app."
-                },
-                {
-                    title: "Bluetooth listening ",
-                    description: "Pair your Bluetooth headphones for uninterrupted listening, whether streaming your favorite show, playing a podcast, or blasting your top tunes."
+            },
+            {
+                id: 2,
+                name: "VIZIO 40-inch Full HD 1080p Smart TV",
+                description: "40-inch Full HD Smart TV with DTS Virtual: X.",
+                price: 148,
+                discount: 13,
+                image: "https://m.media-amazon.com/images/I/81R3dLptKcL.AC_SX466.jpg",
+                rating: 4.0,
+                specifications: {
+                    brand: "VIZIO",
+                    condition: "New",
+                    screenSize: "40 inches",
+                    resolution: "1080p",
+                    smartFeatures: "Yes",
+                    connectivity: "Wi-Fi",
+                    refreshRate: "60 Hz",
+                    color: "Black"
                 }
-            ],
-            price: 148,
-            discount: 13,
-            image: "https://m.media-amazon.com/images/I/81R3dLptKcL.AC_SX466.jpg",
-            rating: 4.0,
-            specifications: {
-                brand: "VIZIO",
-                condition: "New",
-                screenSize: "40 inches",
-                resolution: "1080p",
-                smartFeatures: "Yes",
-                connectivity: "Wi-Fi",
-                refreshRate: "60 Hz",
-                color: "Black"
-            }
-        },
-        {
-            id: 3,
-            name: "SAMSUNG 65-Inch",
-            shortDescription: "SAMSUNG 65-Inch Class Crystal UHD 4K DU7200 Series HDR Smart TV w/Object Tracking Sound Lite, PurColor, Motion Xcelerator, Mega Contrast, Q-Symphony (UN65DU7200, 2024 Model)",
-            description:[
-                {
-                    title: "PURCOLOR",
-                    description: "See a wide spectrum of colors than traditional RGB models with PurColor; From green turf to an amazing sunset, you’ll enjoy true-to-life picture quality with our innovative color technology"
-                },
-                {
-                    title: "4K UPSCALING",
-                    description: "Get a clearer picture for more of your shows and videos; 4K Upscaling transforms each pixel for improved content"
-                },
-                {
-                    title: "MOTION XCELERATOR",
-                    description: "Watch your content smoothly while experiencing less lag and blur; It improves motion between frames so you have a seamless picture"
+            },
+            {
+                id: 3,
+                name: "SAMSUNG 65-Inch",
+                description: "65-Inch Crystal UHD 4K Smart TV with Object Tracking Sound Lite.",
+                price: 640,
+                discount: 8,
+                image: "https://m.media-amazon.com/images/I/71O5nf39wSL.AC_SX466.jpg",
+                rating: 4.1,
+                specifications: {
+                    brand: "SAMSUNG",
+                    condition: "New",
+                    screenSize: "65 inches",
+                    resolution: "4K UHD",
+                    smartFeatures: "Yes",
+                    connectivity: "Bluetooth, Wi-Fi, HDMI",
+                    refreshRate: "60 Hz",
+                    color: "Black"
                 }
-            ],
-            price: 640,
-            discount: 8,
-            image: "https://m.media-amazon.com/images/I/71O5nf39wSL.AC_SX466.jpg",
-            rating: 4.1,
-            specifications: {
-                brand: "SAMSUNG",
-                condition: "New",
-                screenSize: "65 inches",
-                resolution: "4K UHD",
-                smartFeatures: "Yes",
-                connectivity: "Bluetooth, Wi-Fi, HDMI",
-                refreshRate: "60 Hz",
-                color: "Black"
-            }
-        },
-        {
-            id: 4,
-            name: "TCL 50-Inch",
-            shortDescription: "TCL 50-Inch Class S4 4K LED Smart TV with Roku TV (50S450R, 2023 - Model), Dolby Vision, HDR, Dolby Atmos, Works with Alexa, Google Assistant and Apple HomeKit Compatibility, Streaming UHD Television",
-            description:[
-                {
-                    title: "Roku TV",
-                    description: "Access to thousands of streaming channels including Netflix, Hulu, and more."
-                },
-                {
-                    title: "4K UHD Resolution",
-                    description: "Crisp and clear image quality with 4K resolution."
-                },
-                {
-                    title: "HDR PRO (Dolby Vision, HDR10, & HLG)",
-                    description: "Enjoy enhanced contrast, accurate colors and fine details utilizing all the most advanced HDR formats."
+            },
+            {
+                id: 4,
+                name: "TCL 50-Inch",
+                description: "50-Inch Class S4 4K LED Smart TV with Roku TV.",
+                price: 356,
+                discount: 15,
+                image: "https://m.media-amazon.com/images/I/81nC52txN0L.AC_SX466.jpg",
+                rating: 4.6,
+                specifications: {
+                    brand: "TCL",
+                    condition: "New",
+                    screenSize: "50 inches",
+                    resolution: "4K UHD",
+                    smartFeatures: "Yes",
+                    connectivity: "Wi-Fi, HDMI",
+                    refreshRate: "60 Hz",
+                    color: "Black"
                 }
-            ],
-            price: 356,
-            discount: 15,
-            image: "https://m.media-amazon.com/images/I/81nC52txN0L.AC_SX466.jpg",
-            rating: 4.6,
-            specifications: {
-                brand: "TCL",
-                condition: "New",
-                screenSize: "50 inches",
-                resolution: "4K UHD",
-                smartFeatures: "Yes",
-                connectivity: "Wi-Fi, HDMI",
-                refreshRate: "60 Hz",
-                color: "Black"
-            }
-        },
-        {
-            id: 5,
-            name: "LG 65-Inch Class OLED",
-            shortDescription: "LG 65-Inch Class OLED evo C4 Series Smart TV 4K Processor Flat Screen with Magic Remote AI-Powered with Alexa Built-in (OLED65C4PUA, 2024)",
-            description:[
-                {
-                    title: "SELF-LIT PIXELS",
-                    description: "LG's signature OLED technology creates an incredible watching experience and stellar picture quality illuminated with over 8 million self-lit pixels. Take in rich and accurate colors from the brightest to darkest parts of the scene thanks to 100% Color Volume* and with 100% Color Fidelity."
-                },
-                {
-                    title: "BRIGHTNESS BOOSTER",
-                    description: "Our Brightness Boosting technology magnifies each individual pixel for luminous quality that shines with every detail."
-                },
-                {
-                    title: "DOLBY VISION, FILMMAKER AND DOLBY ATMOS",
-                    description: "Experience the magic of the big screen right from your couch. Every LG OLED comes loaded with Dolby Vision for extraordinary color, contrast and brightness, plus Dolby Atmos* for sound you can feel all around you. Land in the center of the action with FILMMAKER MODE, allowing you to see films just as the director intended."
+            },
+            {
+                id: 5,
+                name: "LG 65-Inch Class OLED",
+                description: "65-Inch Class OLED evo C4 Series Smart TV with AI-Powered Remote.",
+                price: 1600,
+                discount: 18,
+                image: "https://m.media-amazon.com/images/I/81e0zZuOzYL._AC_SX300_SY300_QL70_FMwebp.jpg",
+                rating: 4.3,
+                specifications: {
+                    brand: "LG",
+                    condition: "New",
+                    screenSize: "65 inches",
+                    resolution: "4K UHD",
+                    smartFeatures: "Yes",
+                    connectivity: "Bluetooth, Wi-Fi, USB, Ethernet, HDMI",
+                    refreshRate: "60 Hz",
+                    color: "Black"
                 }
-            ],
-            price: 1600,
-            discount: 18,
-            image: "https://m.media-amazon.com/images/I/81e0zZuOzYL._AC_SX300_SY300_QL70_FMwebp.jpg",
-            rating: 4.3,
-            specifications: {
-                brand: "LG",
-                condition: "New",
-                screenSize: "65 inches",
-                resolution: "4K UHD",
-                smartFeatures: "Yes",
-                connectivity: "Bluetooth, Wi-Fi, USB, Ethernet, HDMI",
-                refreshRate: "60 Hz",
-                color: "Black"
             }
-        }
         ]
     },
     {
