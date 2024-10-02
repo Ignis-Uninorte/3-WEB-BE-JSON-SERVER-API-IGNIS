@@ -361,7 +361,7 @@ const productsList = [
     {
         id: 4,
         category: "Air Conditioning",
-        items: [
+        products: [
             {
                 id: 1,
                 name: "Samsung WindFree Elite",
@@ -532,7 +532,7 @@ const productsList = [
     {
         id: 5,
         category: "Televisions",
-        items: [
+        products: [
         {
             id: 1,
             name: "Amazon Fire TV",
