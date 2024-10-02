@@ -361,153 +361,343 @@ const productsList = [
     {
         id: 4,
         category: "Air Conditioning",
-        products: [
+        items: [
             {
                 id: 1,
-                name: "BLACK+DECKER",
-                description: "8,000 BTU Portable Air Conditioner up to 350 Sq.Ft.with Remote Control, White",
-                price: 297,
-                discount: 10,
-                image: "https://m.media-amazon.com/images/I/61gkcrIBgAL.AC_SL1500.jpg",
-                rating: 4.1,
+                name: "Samsung WindFree Elite",
+                shortDescription: "Air Conditioner with WindFree technology, 12,000 BTU, energy efficient.",
+                description:[
+                    {
+                        title: "Energy Efficiency",
+                        description: "Provides energy savings with its optimized compressor."
+                    },
+                    {
+                        title: "WindFree Cooling",
+                        description: "Cools the room without direct airflow for better comfort."
+                    },
+                    {
+                        title: "Smart Control",
+                        description: "Control the air conditioner through your smartphone or voice assistants."
+                    }
+                ],
+                price: 450,
+                discount: 15,
+                image: "https://m.media-amazon.com/images/I/71pAnfLsIyL.SX466.jpg",
+                rating: 4.8,
                 specifications: {
-                    brand: "BLACK+DECKER",
-                    coolingCapacity: "8000 BTU",
-                    noiseLevel: "Moderate",
-                    color: "White"
+                    brand: "Samsung",
+                    condition: "New",
+                    coolingCapacity: "12,000 BTU",
+                    energyEfficiency: "A++",
+                    smartFeatures: "Yes",
+                    color: "White",
+                    noiseLevel: "24 dB",
+                    powerConsumption: "900 W"
                 }
             },
             {
                 id: 2,
-                name: "4-IN-1 Portable Air Conditioners, Evaporative Air Cooler w/4 Modes & 3 Speeds",
-                description: "15H Timer for Smart Auto-off, 2-Gal Tank for 20H Cooling,17FT Remote,No Hose Needed,120°Oscillating Swamp Cooler",
-                price: 150,
-                discount: 14,
-                image: "https://m.media-amazon.com/images/I/61ow4nR3W-L.AC_SL1300.jpg",
-                rating: 4.9,
+                name: "LG LW1024RD",
+                shortDescription: "10,000 Window Air Conditioner, 115V, 450 Sq.Ft. (18' x 25' Room Size), Quiet Operation, Electronic Control with Remote, 3 Cooling & Fan Speeds, Auto Restart, 10000 BTU, White",
+                description:[
+                    {
+                        title: "Low Noise Performance",
+                        description: "LG window air conditioners operate at sound levels as low as 52dB (in low mode), eliminating unnecessary noise."
+                    },
+                    {
+                        title: "Multiple Fan Speeds",
+                        description: "3 cooling and fan speeds with Auto Cool allow you to customize your cooling."
+                    },
+                    {
+                        title: "Maximum Usability",
+                        description: "Easy to use electronic controls with remote"
+                    }
+                ],
+                price: 350,
+                discount: 10,
+                image: "https://m.media-amazon.com/images/I/71PT8ltaciL.AC_SX679.jpg",
+                rating: 4.6,
                 specifications: {
-                    brand: "CENSTECH",
-                    coolingCapacity: "12000 BTU",
-                    noiseLevel: "Ultra-quiet",
-                    color: "white"
+                    brand: "LG",
+                    condition: "New",
+                    coolingCapacity: "10,000 BTU",
+                    energyEfficiency: "A+",
+                    smartFeatures: "Yes",
+                    color: "White",
+                    noiseLevel: "21 dB",
+                    powerConsumption: "800 W"
                 }
             },
             {
                 id: 3,
-                name: "Windowless Portable Air Conditioner",
-                description: '12H Timer & 2-Gal Tank, 3-IN-1 Portable AC Unit with Remote, 75°Oscillation, 3 Modes & 3 Speeds, Ultra-Quiet Ventless Swamp Cooler for Room Home Office.',
-                price: 160,
-                discount: 30,
-                image: "https://m.media-amazon.com/images/I/7133InlfRdL.AC_SL1500.jpg",
-                rating: 5.0,
+                name: "Amazon Basics Window-Mounted Air Conditioner",
+                shortDescription: "Mechanical Control - Cools 150 Square Feet, 5000 BTU, AC Unit, White",
+                description:[
+                    {
+                        title: "Air Filtration",
+                        description: "Keeps air clean and fresh with inbuilt filter, which can be easily removed, washed, and reused"
+                    },
+                    {
+                        title: "Compact Size",
+                        description: "Ideal for small spaces such as dorm rooms and RVs"
+                    },
+                    {
+                        title: "Energy Efficient",
+                        description: "Energy efficient air conditioning unit cools rooms up to 150 square feet with standard 9 foot ceilings"
+                    }
+                ],
+                price: 135,
+                discount: 5,
+                image: "https://m.media-amazon.com/images/I/71dabBkD2eL.AC_SX679.jpg",
+                rating: 4.9,
                 specifications: {
-                    brand: "AIRTHRYL",
-                    coolingCapacity: "11,000 BTU",
-                    noiseLevel: "Ultra-quiet",
-                    color: "White"
+                    brand: "Amazon",
+                    condition: "New",
+                    coolingCapacity: "5,000 BTU",
+                    energyEfficiency: "A+++",
+                    smartFeatures: "Yes",
+                    color: "White",
+                    noiseLevel: "19 dB",
+                    powerConsumption: "1,200 W"
                 }
             },
             {
                 id: 4,
-                name: "Whynter Portable Air Conditioner",
-                description: "14,000 BTU with Dual Hose Dehumidifier & Cooling Fan for 500 Sq Ft Rooms, Includes AC Unit Window Kit, ARC-14S (9,500 BTU SACC)",
-                price: 364,
-                discount: 44,
-                image: "https://m.media-amazon.com/images/I/61a6hAlf3HL.AC_SL1500.jpg",
-                rating: 4.3,
+                name: "Frigidaire FHWC103TC1",
+                shortDescription: "PaWindow Air Conditioner, 2024 10,000 BTU Electronic Controls, White",
+                description:[
+                    {
+                        title: "Multi-Speed Fan",
+                        description: "Features three different fan speeds, for more cooling flexibility."
+                    },
+                    {
+                        title: "Eco-Friendly",
+                        description: "Uses environmentally friendly refrigerant."
+                    },
+                    {
+                        title: "Auto Restart",
+                        description: "Automatically restarts after a power outage."
+                    }
+                ],
+                price: 330,
+                discount: 12,
+                image: "https://m.media-amazon.com/images/I/61qCcMtk4HL.AC_SX679.jpg",
+                rating: 4.7,
                 specifications: {
-                    brand: "Whirlpool",
-                    coolingCapacity: "14,000 BTU ",
-                    noiseLevel: "Moderate",
-                    color: "Black"
+                    brand: "Frigidaire",
+                    condition: "New",
+                    coolingCapacity: "10,000 BTU",
+                    energyEfficiency: "A++",
+                    smartFeatures: "No",
+                    color: "White",
+                    noiseLevel: "23 dB",
+                    powerConsumption: "850 W"
                 }
             },
             {
                 id: 5,
-                name: "Frigidaire FFRA051WAE",
-                description: "Window-Mounted Room Air Conditioner, 5,000 BTU with Temperature Control and Easy-to-Clean Washable Filter, in White",
-                price: 400,
-                discount: 70,
-                image: "https://m.media-amazon.com/images/I/61MoXpPpI7L.AC_SL1000.jpg",
-                rating: 4.4,
+                name: "Keystone Quiet",
+                shortDescription: "AC Unit for Small 6,000 Window Mounted Dehumidifier, 115V, Air Conditioner for Rooms up to 250 Sq.Ft. with Smart Remote Control, 6000 BTU, Bright White",
+                description:[
+                    {
+                        title: "Reliable Window AC Unit",
+                        description: "Our powerful 6,000 BTU window air conditioner is what you need to efficiently cool your apartment, bedroom, garage or any small room up to 250 square feet"
+                    },
+                    {
+                        title: "Maximum Comfort",
+                        description: "Featuring 3 cooling modes, 3 fan speeds, 4-way adjustable air louvers and a programmable timer; 1.5 pints of moisture from the air is removed every hour."
+                    },
+                    {
+                        title: "Smart Remote Control",
+                        description: "The remote control takes the temperature of the room you are in, displays it on the LCD screen and sends a signal to your unit every 3 minutes for accurate cooling"
+                    }
+                ],
+                price: 270,
+                discount: 7,
+                image: "https://m.media-amazon.com/images/I/616ICMBb0aL.AC_SX679.jpg",
+                rating: 4.5,
                 specifications: {
-                    brand: "Frigidaire",
-                    coolingCapacity: "5000 BTU",
-                    noiseLevel: "Low",
-                    color: "White"
+                    brand: "TCL",
+                    condition: "New",
+                    coolingCapacity: "9,000 BTU",
+                    energyEfficiency: "A+",
+                    smartFeatures: "Yes",
+                    color: "White",
+                    noiseLevel: "49 dB",
+                    powerConsumption: "750 W"
                 }
             }
         ]
     },
     {
         id: 5,
-        category: "Televisions",
-        products: [
-            {
-                id: 1,
-                name: "TV LG NanoCell",
-                description: "TV LG 75 inches 189Cm 4K-UHD NanoCell Smart TV",
-                price: 1200,
-                discount: 5,
-                image: "https://www.alkosto.com/medias/8806091858092-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wzOTczNnxpbWFnZS93ZWJwfGFEZ3dMMmhqTVM4eE5EUTVOamsyTmpZd05qZzNPQzg0T0RBMk1Ea3hPRFU0TURreVh6QXdNVjgzTlRCWGVEYzFNRWd8OWZkYjZmNDA5NWY5NDJkOGNjNDU4MmI1N2JkMDAzYzcwOWI0ZGFmMGYzNzRjMGNlMzU5ZDYzY2Y0ZDFhOTRkZQ",
-                rating: 4.1,
-                specifications: {
-                    brand: "LG",
-                    displaySize: "75 inches",
+        category: "Television",
+        items: [
+        {
+            id: 1,
+            name: "Amazon Fire TV",
+            shortDescription: "Amazon Fire TV 40\" 2-Series HD smart TV with Fire TV Alexa Voice Remote, stream live TV without cable",
+            description:[
+                {
+                    title: "High definition TV",
+                    description: "Bring movies and shows to life in HD 1080p resolution, with support for HDR 10, HLG, and Dolby Digital Audio."
+                },
+                {
+                    title: "All your entertainment in one place",
+                    description: "Fire TV gives you quick access to live TV, video games, and music, and lets you stream over 1 million movies and TV episodes with subscriptions to Netflix, Prime Video, Disney+, and more."
+                },
+                {
+                    title: "Stream for free",
+                    description: "Watch free movies and TV episodes with apps like YouTube, Freevee, Tubi, Pluto TV, and more."
                 }
-            },
-            {
-                id: 2,
-                name: "TV LG UHD",
-                description: "TV LG 55 inches 4K-UHD LED Smart TV",
-                price: 1000,
-                discount: 25,
-                image: "https://www.alkosto.com/medias/8806096082249-001-750Wx750H?context=bWFzdGVyfGltYWdlc3w0NjU3NHxpbWFnZS93ZWJwfGFEa3lMMmd5T0M4eE5EVTBOelExTlRJM09URXpOQzg0T0RBMk1EazJNRGd5TWpRNVh6QXdNVjgzTlRCWGVEYzFNRWd8NTFmN2E2NzFlODk1N2M1MzI0ODhkZjNhNDZjYjk1YzRlZTZlMzQ0MGE4N2VlYjhjODEyNzFjMTMxZGJkMzNjYg",
-                rating: 4.8,
-                specifications: {
-                    brand: "LG",
-                    displaySize: "55 inches",
-                }
-            },
-            {
-                id: 3,
-                name: "TV SAMSUNG CRYSTAL UHD",
-                description: "TV SAMSUNG 75 inches DU8000 4K UHD LED Smart TV",
-                price: 1500,
-                discount: 15,
-                image: "https://www.alkosto.com/medias/8806095483252-001-750Wx750H?context=bWFzdGVyfGltYWdlc3w1MDA0MHxpbWFnZS93ZWJwfGFEWTJMMmc1TkM4eE5ETTRPVFl4T0Rnek5UUTROaTg0T0RBMk1EazFORGd6TWpVeVh6QXdNVjgzTlRCWGVEYzFNRWd8ODI3YmU1ZDg2YmU2NTNmNjdjMDFkNjE3NzI5MTA2YzUzMjRhMzlhMjc5OWM1N2Y5MGFhNWVhOGUzYTBhY2Q4NA",
-                rating: 4.9,
-                specifications: {
-                    brand: "Samsung",
-                    displaySize: "75 inches",
-                }
-            },
-            {
-                id: 4,
-                name: "TV KALLEY QLED",
-                description: "TV KALLEY 50 inches 4K-UHD QLED Smart TV Google",
-                price: 800,
-                discount: 15,
-                image: "https://www.alkosto.com/medias/7705946478175-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wxNDU4NnxpbWFnZS93ZWJwfGFERTRMMmcwT0M4eE5EWXlPVEV4TkRReE16QTROaTgzTnpBMU9UUTJORGM0TVRjMVh6QXdNVjgzTlRCWGVEYzFNRWd8YjFmNGExNDJiYzM4ZmFiZjVmMTg0ZTZjYjdiMzI1ZTVlZDczMWZiZmQyYTE0ODRjY2Q3N2Y4ZWM3ZjU3M2I0YQ",
-                rating: 3.8,
-                specifications: {
-                    brand: "Kalley",
-                    displaySize: "75 inches",
-                }
-            },
-            {
-                id: 5,
-                name: "TV SAMSUMG 4K-UHD",
-                description: "TV SAMSUNG 60 inches 4K-UHD LED Smart TV",
-                price: 1100,
-                discount: 40,
-                image: "https://www.alkosto.com/medias/8806095483252-001-750Wx750H?context=bWFzdGVyfGltYWdlc3w1MDA0MHxpbWFnZS93ZWJwfGFEWTJMMmc1TkM4eE5ETTRPVFl4T0Rnek5UUTROaTg0T0RBMk1EazFORGd6TWpVeVh6QXdNVjgzTlRCWGVEYzFNRWd8ODI3YmU1ZDg2YmU2NTNmNjdjMDFkNjE3NzI5MTA2YzUzMjRhMzlhMjc5OWM1N2Y5MGFhNWVhOGUzYTBhY2Q4NA",
-                rating: 4.1,
-                specifications: {
-                    brand: "Samsung",
-                    displaySize: "60 inches",
-                }
+            ],
+            price: 170,
+            discount: 10,
+            image: "https://m.media-amazon.com/images/I/71Nma1KADeL.AC_SX679.jpg",
+            rating: 4.9,
+            specifications: {
+                brand: "Amazon ",
+                condition: "New",
+                screenSize: "40 inches",
+                resolution: "4K UHD",
+                smartFeatures: "Yes",
+                connectivity: "Wi-Fi, HDMI, USB",
+                refreshRate: "120 Hz",
+                color: "Black"
             }
+        },
+        {
+            id: 2,
+            name: "VIZIO 40-inch Full HD 1080p Smart TV",
+            shortDescription: "VIZIO 40-inch Full HD 1080p Smart TV with DTS Virtual: X, Alexa Compatibility, Google Cast Built-in, Bluetooth Headphone Capable, (VFD40M-08 New)",
+            description:[
+                {
+                    title: "Captivating clarity",
+                    description: "Full HD delivers a step up in clarity from HD with richer contrast and true-to-life color achieved with Full Array LED Backlight and fine-tuned at a granular level with Active Pixel Tuning."
+                },
+                {
+                    title: "Smart and easy",
+                    description: "Enjoy instant access to the best selection of built-in apps from top tier streaming services and explore new apps as they are automatically added and updated. Stream 275 plus free channels and 15,000 plus movies and shows On Demand with the built-in WatchFree plus app."
+                },
+                {
+                    title: "Bluetooth listening ",
+                    description: "Pair your Bluetooth headphones for uninterrupted listening, whether streaming your favorite show, playing a podcast, or blasting your top tunes."
+                }
+            ],
+            price: 148,
+            discount: 13,
+            image: "https://m.media-amazon.com/images/I/81R3dLptKcL.AC_SX466.jpg",
+            rating: 4.0,
+            specifications: {
+                brand: "VIZIO",
+                condition: "New",
+                screenSize: "40 inches",
+                resolution: "1080p",
+                smartFeatures: "Yes",
+                connectivity: "Wi-Fi",
+                refreshRate: "60 Hz",
+                color: "Black"
+            }
+        },
+        {
+            id: 3,
+            name: "SAMSUNG 65-Inch",
+            shortDescription: "SAMSUNG 65-Inch Class Crystal UHD 4K DU7200 Series HDR Smart TV w/Object Tracking Sound Lite, PurColor, Motion Xcelerator, Mega Contrast, Q-Symphony (UN65DU7200, 2024 Model)",
+            description:[
+                {
+                    title: "PURCOLOR",
+                    description: "See a wide spectrum of colors than traditional RGB models with PurColor; From green turf to an amazing sunset, you’ll enjoy true-to-life picture quality with our innovative color technology"
+                },
+                {
+                    title: "4K UPSCALING",
+                    description: "Get a clearer picture for more of your shows and videos; 4K Upscaling transforms each pixel for improved content"
+                },
+                {
+                    title: "MOTION XCELERATOR",
+                    description: "Watch your content smoothly while experiencing less lag and blur; It improves motion between frames so you have a seamless picture"
+                }
+            ],
+            price: 640,
+            discount: 8,
+            image: "https://m.media-amazon.com/images/I/71O5nf39wSL.AC_SX466.jpg",
+            rating: 4.1,
+            specifications: {
+                brand: "SAMSUNG",
+                condition: "New",
+                screenSize: "65 inches",
+                resolution: "4K UHD",
+                smartFeatures: "Yes",
+                connectivity: "Bluetooth, Wi-Fi, HDMI",
+                refreshRate: "60 Hz",
+                color: "Black"
+            }
+        },
+        {
+            id: 4,
+            name: "TCL 50-Inch",
+            shortDescription: "TCL 50-Inch Class S4 4K LED Smart TV with Roku TV (50S450R, 2023 - Model), Dolby Vision, HDR, Dolby Atmos, Works with Alexa, Google Assistant and Apple HomeKit Compatibility, Streaming UHD Television",
+            description:[
+                {
+                    title: "Roku TV",
+                    description: "Access to thousands of streaming channels including Netflix, Hulu, and more."
+                },
+                {
+                    title: "4K UHD Resolution",
+                    description: "Crisp and clear image quality with 4K resolution."
+                },
+                {
+                    title: "HDR PRO (Dolby Vision, HDR10, & HLG)",
+                    description: "Enjoy enhanced contrast, accurate colors and fine details utilizing all the most advanced HDR formats."
+                }
+            ],
+            price: 356,
+            discount: 15,
+            image: "https://m.media-amazon.com/images/I/81nC52txN0L.AC_SX466.jpg",
+            rating: 4.6,
+            specifications: {
+                brand: "TCL",
+                condition: "New",
+                screenSize: "50 inches",
+                resolution: "4K UHD",
+                smartFeatures: "Yes",
+                connectivity: "Wi-Fi, HDMI",
+                refreshRate: "60 Hz",
+                color: "Black"
+            }
+        },
+        {
+            id: 5,
+            name: "LG 65-Inch Class OLED",
+            shortDescription: "LG 65-Inch Class OLED evo C4 Series Smart TV 4K Processor Flat Screen with Magic Remote AI-Powered with Alexa Built-in (OLED65C4PUA, 2024)",
+            description:[
+                {
+                    title: "SELF-LIT PIXELS",
+                    description: "LG's signature OLED technology creates an incredible watching experience and stellar picture quality illuminated with over 8 million self-lit pixels. Take in rich and accurate colors from the brightest to darkest parts of the scene thanks to 100% Color Volume* and with 100% Color Fidelity."
+                },
+                {
+                    title: "BRIGHTNESS BOOSTER",
+                    description: "Our Brightness Boosting technology magnifies each individual pixel for luminous quality that shines with every detail."
+                },
+                {
+                    title: "DOLBY VISION, FILMMAKER AND DOLBY ATMOS",
+                    description: "Experience the magic of the big screen right from your couch. Every LG OLED comes loaded with Dolby Vision for extraordinary color, contrast and brightness, plus Dolby Atmos* for sound you can feel all around you. Land in the center of the action with FILMMAKER MODE, allowing you to see films just as the director intended."
+                }
+            ],
+            price: 1600,
+            discount: 18,
+            image: "https://m.media-amazon.com/images/I/81e0zZuOzYL._AC_SX300_SY300_QL70_FMwebp.jpg",
+            rating: 4.3,
+            specifications: {
+                brand: "LG",
+                condition: "New",
+                screenSize: "65 inches",
+                resolution: "4K UHD",
+                smartFeatures: "Yes",
+                connectivity: "Bluetooth, Wi-Fi, USB, Ethernet, HDMI",
+                refreshRate: "60 Hz",
+                color: "Black"
+            }
+        }
         ]
     },
     {
@@ -679,71 +869,171 @@ const productsList = [
             {
                 id: 1,
                 name: "Apple Watch Series 7",
-                description: "Apple Watch Series 7 GPS, 41mm Midnight Aluminum Case with Midnight Sport Band - Regular",
+                shortDescription: "Apple Watch Series 7 GPS, 41mm Midnight Aluminum Case with Midnight Sport Band",
+                description: [
+                    {
+                        title: "DESIGN THAT IMPRESSES:",
+                        description: "The sleek 41mm case and Midnight Sport Band are perfect for anyone looking for a stylish yet functional smartwatch. The always-on Retina display ensures you can see your stats at a glance."
+                    },
+                    {
+                        title: "ULTIMATE FITNESS COMPANION:",
+                        description: "Track your workouts with precision using GPS, heart rate sensors, and built-in fitness tracking. Apple Watch Series 7 makes achieving your fitness goals easier."
+                    },
+                    {
+                        title: "LONG-LASTING BATTERY:",
+                        description: "Enjoy all-day battery life, keeping up with your active lifestyle. Charge quickly and get back to what you love without long waiting times."
+                    },
+                    {
+                        title: "STAY CONNECTED ON THE GO:",
+                        description: "Stay connected with calls, texts, and notifications right on your wrist. Whether you're in the gym or at a meeting, stay up to date without pulling out your phone."
+                    }
+                ],
                 price: 399.99,
                 discount: 30,
-                image: "https://m.media-amazon.com/images/I/71W+RrSPINL._AC_SL1500_.jpg",
+                image: "https://m.media-amazon.com/images/I/71W+RrSPINL.AC_SL1500.jpg",
                 rating: 4.1,
                 specifications: {
                     brand: "Apple",
-                    gps: "true",
-                    color: "Midnight"
+                    color: "Midnight",
+                    gps: "True",
+                    waterResistance: "50 meters",
+                    batteryLife: "Up to 18 hours"
                 }
             },
             {
                 id: 2,
                 name: "Samsung Galaxy Watch 4",
-                description: "Samsung Galaxy Watch 4 40mm Smartwatch with ECG Monitor Tracker for Health Fitness Running Sleep Cycles GPS Fall Detection Bluetooth US Version, Black",
+                shortDescription: "Samsung Galaxy Watch 4 40mm Smartwatch with ECG Monitor and Health Features",
+                description: [
+                    {
+                        title: "ADVANCED HEALTH TRACKING:",
+                        description: "Keep track of your heart rate, ECG, and sleep cycles. The Samsung Galaxy Watch 4 provides essential insights into your overall health."
+                    },
+                    {
+                        title: "GPS FOR ACCURATE ROUTE TRACKING:",
+                        description: "Track your runs, bike rides, and hikes with GPS accuracy, making sure you never miss a step."
+                    },
+                    {
+                        title: "MODERN AND LIGHTWEIGHT DESIGN:",
+                        description: "With a 40mm sleek black design, this watch offers both form and function, being comfortable for all-day wear."
+                    },
+                    {
+                        title: "ALL-DAY BATTERY:",
+                        description: "Designed to last all day with a long-lasting battery that supports you through workouts and daily tasks."
+                    }
+                ],
                 price: 249.99,
                 discount: 20,
-                image: "https://m.media-amazon.com/images/I/61IZmXci7qS._AC_SL1500_.jpg",
+                image: "https://m.media-amazon.com/images/I/61IZmXci7qS.AC_SL1500.jpg",
                 rating: 4.5,
                 specifications: {
                     brand: "Samsung",
-                    gps: "true",
-                    color: "Black"
+                    color: "Black",
+                    gps: "True",
+                    waterResistance: "50 meters",
+                    batteryLife: "Up to 40 hours"
                 }
             },
             {
                 id: 3,
                 name: "Garmin Venu 2",
-                description: "Garmin Venu 2, GPS Smartwatch with Advanced Health Monitoring and Fitness Features, Slate Bezel with Graphite Case and Silicone Band",
+                shortDescription: "Garmin Venu 2 with Advanced Health Monitoring and Fitness Features",
+                description: [
+                    {
+                        title: "TRACK EVERYTHING WITH PRECISION:",
+                        description: "Monitor your heart rate, stress, sleep, and more with Garmin's advanced health tracking technology, ensuring you stay on top of your health goals."
+                    },
+                    {
+                        title: "STYLISH DESIGN WITH DURABILITY:",
+                        description: "The Slate Bezel and Graphite Case give this watch a premium look while maintaining the durability Garmin is known for."
+                    },
+                    {
+                        title: "MULTI-DAY BATTERY:",
+                        description: "Enjoy a battery that lasts several days, perfect for long hikes or busy schedules without constant charging."
+                    },
+                    {
+                        title: "FITNESS TRACKING REDEFINED:",
+                        description: "From yoga to running, the Garmin Venu 2 offers a wide range of activity modes to help you track and improve your fitness."
+                    }
+                ],
                 price: 399.99,
                 discount: 10,
-                image: "https://m.media-amazon.com/images/I/61d8niGcVrL._AC_SL1500_.jpg",
+                image: "https://m.media-amazon.com/images/I/61d8niGcVrL.AC_SL1500.jpg",
                 rating: 4.9,
                 specifications: {
                     brand: "Garmin",
-                    gps: "true",
-                    color: "Cool Mint"
+                    color: "Cool Mint",
+                    gps: "True",
+                    waterResistance: "50 meters",
+                    batteryLife: "Up to 11 days"
                 }
             },
             {
                 id: 4,
                 name: "Fitbit Versa 3",
-                description: "Fitbit Versa 3 Health & Fitness Smartwatch, 24/7 Heart Rate, Alexa Built-in, 6+ Days Battery, Midnight Blue/Gold, One Size (S & L Bands Included)",
+                shortDescription: "Fitbit Versa 3 with Heart Rate Monitoring and Alexa Built-in",
+                description: [
+                    {
+                        title: "HEALTH TRACKING MADE EASY:",
+                        description: "Track your heart rate 24/7, monitor sleep, and receive health insights with the Fitbit Versa 3, making it easy to stay on top of your wellness."
+                    },
+                    {
+                        title: "ALEXA INTEGRATED:",
+                        description: "Use built-in Alexa to control smart devices, set reminders, and more directly from your wrist."
+                    },
+                    {
+                        title: "VERSATILE FITNESS TRACKER:",
+                        description: "Monitor your steps, calories burned, and distance traveled with the Versa 3's built-in GPS, perfect for fitness enthusiasts."
+                    },
+                    {
+                        title: "LONG BATTERY LIFE:",
+                        description: "Go up to 6 days without needing a recharge, ideal for those with busy lifestyles who want to avoid frequent charging."
+                    }
+                ],
                 price: 229.99,
                 discount: 20,
-                image: "https://m.media-amazon.com/images/I/51JNsCR32BL._AC_SL1500_.jpg",
+                image: "https://m.media-amazon.com/images/I/51JNsCR32BL.AC_SL1500.jpg",
                 rating: 4.5,
                 specifications: {
                     brand: "Fitbit",
-                    gps: "false",
-                    color: "White"
+                    color: "White",
+                    gps: "False",
+                    waterResistance: "50 meters",
+                    batteryLife: "Up to 6 days"
                 }
             },
             {
                 id: 5,
                 name: "Huawei Watch GT 3",
-                description: "Huawei Watch GT 3 Pro Smartwatch with 1.43 Inch AMOLED Display, 14-Day Battery Life, GPS, SpO2, 100+ Workout Modes, Heart Rate Monitoring, Wireless Charging, Black",
+                shortDescription: "Huawei Watch GT 3 Pro with AMOLED Display and 100+ Workout Modes",
+                description: [
+                    {
+                        title: "STAY ACTIVE WITH 100+ WORKOUT MODES:",
+                        description: "Choose from over 100 workout modes to fit your exercise style, making it easy to stay motivated and active."
+                    },
+                    {
+                        title: "STUNNING AMOLED DISPLAY:",
+                        description: "The 1.43-inch AMOLED display brings your watch to life with vibrant colors, perfect for viewing your stats at a glance."
+                    },
+                    {
+                        title: "14-DAY BATTERY LIFE:",
+                        description: "With an impressive 14-day battery life, the Huawei Watch GT 3 can keep up with even the busiest schedules."
+                    },
+                    {
+                        title: "WIRELESS CHARGING:",
+                        description: "Convenient wireless charging ensures your watch is ready to go when you need it most."
+                    }
+                ],
                 price: 399.99,
                 discount: 15,
-                image: "https://m.media-amazon.com/images/I/71sm4gFjpaL._AC_SL1000_.jpg",
+                image: "https://m.media-amazon.com/images/I/71sm4gFjpaL.AC_SL1000.jpg",
                 rating: 4.5,
                 specifications: {
                     brand: "Huawei",
-                    gps: "true",
-                    color: "Light Gold"
+                    color: "Light Gold",
+                    gps: "True",
+                    waterResistance: "50 meters",
+                    batteryLife: "Up to 14 days"
                 }
             }
         ]
@@ -755,76 +1045,176 @@ const productsList = [
             {
                 id: 1,
                 name: "Kenmore",
-                description: "30 in. 18.2 cu. ft. Capacity Refrigerator/Freezer with Adjustable Glass Shelving, Humidity Control Crispers, Gallon Door Bins, ENERGY STAR Certified",
+                shortDescription: "30 in. 18.2 cu. ft. Capacity Refrigerator/Freezer with Adjustable Glass Shelving",
+                description: [
+                    {
+                        title: "SPACIOUS CAPACITY:",
+                        description: "With 18.2 cubic feet of storage, this refrigerator offers plenty of space to store all your groceries and keep them fresh for longer."
+                    },
+                    {
+                        title: "ADJUSTABLE GLASS SHELVES:",
+                        description: "Customize your refrigerator layout with adjustable glass shelves that make it easy to organize your food."
+                    },
+                    {
+                        title: "ENERGY STAR CERTIFIED:",
+                        description: "This refrigerator is ENERGY STAR certified, making it a more energy-efficient option to help save on your electricity bill."
+                    },
+                    {
+                        title: "HUMIDITY CONTROL CRISPERS:",
+                        description: "Keep your fruits and vegetables fresh for longer with humidity control crispers that provide the perfect environment."
+                    }
+                ],
                 price: 1199,
                 discount: 10,
-                image: "https://m.media-amazon.com/images/I/315kdHEUNNL._AC_SL1000_.jpg",
+                image: "https://m.media-amazon.com/images/I/315kdHEUNNL.AC_SL1000.jpg",
                 rating: 4.1,
                 specifications: {
                     brand: "Kenmore",
                     capacity: "18.2 Cubic Feet",
                     color: "White",
-                    energyStar: "1"
+                    energyStar: "Yes",
+                    freezerType: "Top Freezer",
+                    doorStyle: "Reversible"
                 }
             },
             {
                 id: 2,
                 name: "EUHOMY Beverage Refrigerator",
-                description: "Beverage Refrigerator and Cooler, 126 Can Mini fridge with Glass Door, Small Refrigerator with Adjustable Shelves for Soda Beer or Wine, Perfect for Home/Bar/Office, Silver",
+                shortDescription: "126 Can Mini Fridge with Adjustable Shelves and Glass Door",
+                description: [
+                    {
+                        title: "PERFECT FOR SMALL SPACES:",
+                        description: "This compact beverage refrigerator can hold up to 126 cans, making it ideal for small spaces such as home bars, offices, or dorms."
+                    },
+                    {
+                        title: "ADJUSTABLE SHELVES:",
+                        description: "Easily organize your drinks with adjustable shelves that let you customize the layout based on your needs."
+                    },
+                    {
+                        title: "STYLISH DESIGN:",
+                        description: "With a sleek stainless steel finish and a clear glass door, this mini fridge adds a modern touch to any space."
+                    },
+                    {
+                        title: "QUICK COOLING SYSTEM:",
+                        description: "The powerful cooling system keeps your beverages chilled and ready to enjoy at all times."
+                    }
+                ],
                 price: 1799,
                 discount: 20,
-                image: "https://m.media-amazon.com/images/I/810Puf9WtoL._AC_SL1500_.jpg",
+                image: "https://m.media-amazon.com/images/I/810Puf9WtoL.AC_SL1500.jpg",
                 rating: 4.5,
                 specifications: {
                     brand: "EUHOMY",
                     capacity: "3.2 Cubic Feet",
                     color: "Stainless Steel",
-                    energyStar: "none"
+                    energyStar: "No",
+                    coolingType: "Compressor",
+                    doorStyle: "Glass Door"
                 }
             },
             {
                 id: 3,
                 name: "SAMSUNG RF30A9071SR",
-                description: "30 cu. ft. Mega Capacity 4-Door French Door Refrigerator with Four Types of Ice",
+                shortDescription: "30 cu. ft. Mega Capacity 4-Door French Door Refrigerator",
+                description: [
+                    {
+                        title: "LARGE STORAGE CAPACITY:",
+                        description: "With 30 cubic feet of storage, this Samsung refrigerator provides more than enough space for all your groceries."
+                    },
+                    {
+                        title: "FOUR TYPES OF ICE:",
+                        description: "Enjoy four different ice options, from cubed to crushed, to meet all your beverage needs."
+                    },
+                    {
+                        title: "FRENCH DOOR DESIGN:",
+                        description: "The French door design provides easy access to your food while giving your kitchen a modern and elegant look."
+                    },
+                    {
+                        title: "SMART HOME COMPATIBILITY:",
+                        description: "Connect this refrigerator to your smart home devices to control settings, monitor performance, and more."
+                    }
+                ],
                 price: 1799,
                 discount: 20,
-                image: "https://m.media-amazon.com/images/I/517Tow-1+AL._AC_SL1000_.jpg",
+                image: "https://m.media-amazon.com/images/I/517Tow-1+AL.AC_SL1000.jpg",
                 rating: 4.5,
                 specifications: {
                     brand: "SAMSUNG",
                     capacity: "30 Cubic Feet",
                     color: "Stainless Steel",
-                    energyStar: "1"
+                    energyStar: "Yes",
+                    iceType: "Four Types of Ice",
+                    doorStyle: "French Door"
                 }
             },
             {
                 id: 4,
                 name: "Igloo FR320I",
-                description: "3.2 Cu.Ft. Single Door Compact Refrigerator with Freezer - Slide Out Glass Shelf",
+                shortDescription: "3.2 Cu.Ft. Single Door Compact Refrigerator with Freezer",
+                description: [
+                    {
+                        title: "COMPACT AND PORTABLE:",
+                        description: "Perfect for dorm rooms or offices, this 3.2 cubic foot refrigerator is compact enough to fit in small spaces while still providing plenty of storage."
+                    },
+                    {
+                        title: "BUILT-IN FREEZER:",
+                        description: "The built-in freezer provides extra storage for frozen goods, making it versatile for all your needs."
+                    },
+                    {
+                        title: "SLIDE-OUT GLASS SHELF:",
+                        description: "The slide-out glass shelf makes it easy to organize and access your items."
+                    },
+                    {
+                        title: "ENERGY EFFICIENT:",
+                        description: "ENERGY STAR certified, this refrigerator helps you save on energy while keeping your food cool."
+                    }
+                ],
                 price: 1799,
                 discount: 20,
-                image: "https://m.media-amazon.com/images/I/717EM8nul0L._AC_SL1500_.jpg",
+                image: "https://m.media-amazon.com/images/I/717EM8nul0L.AC_SL1500.jpg",
                 rating: 3.5,
                 specifications: {
                     brand: "Igloo",
                     capacity: "3.2 Cubic Feet",
                     color: "Stainless Steel",
-                    energyStar: "1"
+                    energyStar: "Yes",
+                    freezerType: "Top Freezer",
+                    doorStyle: "Single Door"
                 }
             },
             {
                 id: 5,
                 name: "RCA RFR321",
-                description: "Single Mini Refrigerator-Freezer Compartment-Adjustable Thermostat Control-Reversible Doors-Ideal for Dorm",
+                shortDescription: "3.2 cu. ft. Mini Refrigerator with Freezer Compartment",
+                description: [
+                    {
+                        title: "VERSATILE MINI FRIDGE:",
+                        description: "This 3.2 cubic foot mini refrigerator is perfect for small spaces and features a freezer compartment for additional storage."
+                    },
+                    {
+                        title: "REVERSIBLE DOOR:",
+                        description: "The reversible door allows you to set up the fridge in any space with ease."
+                    },
+                    {
+                        title: "ADJUSTABLE THERMOSTAT:",
+                        description: "Control the temperature with an adjustable thermostat to keep your food at the optimal temperature."
+                    },
+                    {
+                        title: "ENERGY EFFICIENT:",
+                        description: "Rated with 3 ENERGY STARs, this mini fridge is highly energy efficient, helping you save on energy costs."
+                    }
+                ],
                 price: 1799,
                 discount: 20,
-                image: "https://m.media-amazon.com/images/I/61fOC5XLlpL._AC_SL1500_.jpg",
+                image: "https://m.media-amazon.com/images/I/61fOC5XLlpL.AC_SL1500.jpg",
                 rating: 4,
                 specifications: {
                     brand: "Frigidaire",
                     capacity: "3.2 Cubic Feet",
                     color: "Blue",
-                    energyStar: "3"
+                    energyStar: "Yes",
+                    freezerType: "Compartment",
+                    doorStyle: "Reversible"
                 }
             }
         ]
