@@ -1,11 +1,11 @@
 const promotional = require("./data/promotional");
 const featured = require("./data/featured");
-const product = require("./data/product");
+const productsList = require("./data/products");
 
 module.exports = () => {
   return {
     promotional: promotional,
     featured: featured,
-    product: product,
+    productsList: productsList,
   };
 };
