@@ -296,7 +296,7 @@ const featured = [
   },
   {
     id: 9,
-    category: "Air Conditioning",
+    category: "Air-Conditioning",
     idProduct: 4,
     name: "Frigidaire FHWC103TC1",
     shortDescription: "PaWindow Air Conditioner, 2024 10,000 BTU Electronic Controls, White",
@@ -331,7 +331,7 @@ const featured = [
   },
   {
     id: 10,
-    category: "Air Conditioning",
+    category: "Air-Conditioning",
     idProduct: 5,
     name: "Keystone Quiet",
     shortDescription: "AC Unit for Small 6,000 Window Mounted Dehumidifier, 115V, Air Conditioner for Rooms up to 250 Sq.Ft. with Smart Remote Control, 6000 BTU, Bright White",
@@ -366,7 +366,7 @@ const featured = [
   },
   {
     id: 11,
-    catrgory: "Smartwatches",
+    category: "Smartwatches",
     idProduct: 3,
     name: "Garmin Venu 2",
     shortDescription: "Garmin Venu 2 with Advanced Health Monitoring and Fitness Features",
