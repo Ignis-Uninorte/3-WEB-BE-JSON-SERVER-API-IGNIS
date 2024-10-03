@@ -721,7 +721,7 @@ const productsList = [
     },
     {
         id: 5,
-        category: "Television",
+        category: "Televisions",
         products: [
             {
                 id: 1,
