@@ -193,8 +193,25 @@ const productsList = [
             {
                 id: 1,
                 name: "ASUS TUF Gaming",
-                description: "High-performance desktop featuring a 16-core processor, top-tier graphics, and liquid cooling. Ideal for gaming and creative tasks.",
-                price: 2599.99,
+                shortDescription: "High-performance desktop with a 16-core processor and liquid cooling.",
+                description: [
+                    {
+                        title: "Powerful Performance:",
+                        description: "Equipped with a 16-core processor for seamless multitasking."
+                    },
+                    {
+                        title: "Exceptional Graphics:",
+                        description: "Top-tier graphics for an immersive gaming experience."
+                    },
+                    {
+                        title: "Liquid Cooling System:",
+                        description: "Enhanced cooling to maintain optimal performance during long gaming sessions."
+                    },
+                    {
+                        title: "Ideal for Gamers and Creators:",
+                        description: "Perfect for gaming and creative tasks such as video editing and 3D rendering."
+                    }
+                ],
                 discount: 15,
                 image: "https://www.alkosto.com/medias/4711387567043-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wzNDI5NnxpbWFnZS93ZWJwfGFHUXlMMmd4WkM4eE5EUTRORFEwTlRFMk56WTBOaTgwTnpFeE16ZzNOVFkzTURRelh6QXdNVjgzTlRCWGVEYzFNRWd8Y2Q3N2JhY2MxYzAxYTY4Mjc3NTZkODExMzhhZWFiNjEwNmNlNDM1YWI1ZDEwZjY1ZWY4NDAwMDQ0NDliYjNkMQ",
                 rating: 5,
@@ -203,13 +220,34 @@ const productsList = [
                     condition: "New",
                     memoryStorage: "2TB SSD",
                     displaySize: "15.6 inches",
-                    color: "Black"
+                    color: "Black",
+                    processor: "16-core",
+                    graphics: "NVIDIA GeForce RTX 3080",
+                    weight: "10.5 lbs"
                 }
             },
             {
                 id: 2,
                 name: "HP Victus",
-                description: "Designed for artists and video editors with a 4K color-accurate display, workstation-class graphics, and ultra-fast NVMe storage.",
+                shortDescription: "4K workstation for artists and video editors with NVMe storage.",
+                description: [
+                    {
+                        title: "Stunning Display:",
+                        description: "Features a 4K color-accurate display for precise visuals."
+                    },
+                    {
+                        title: "Workstation-Class Graphics:",
+                        description: "Ideal for graphics-intensive tasks and video editing."
+                    },
+                    {
+                        title: "Ultra-Fast Storage:",
+                        description: "1TB NVMe storage for quick access to files and applications."
+                    },
+                    {
+                        title: "Large Screen Size:",
+                        description: "17 inches of display for immersive viewing."
+                    }
+                ],
                 price: 2999.99,
                 discount: 20,
                 image: "https://www.alkosto.com/medias/198122718313-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wzMzY4NHxpbWFnZS93ZWJwfGFEWmtMMmhsWWk4eE5EWXpORFExTlRjNU16WTVOQzh4T1RneE1qSTNNVGd6TVROZk1EQXhYemMxTUZkNE56VXdTQXwzZDE3YmM0NTdlODgwYzIxMDc3MzdhNjdiNjg4Y2FjNGMyZmM2OGY2ZDRkNzExYTEzZDBlOTIxZjdiMDJjNGE5",
@@ -219,13 +257,34 @@ const productsList = [
                     condition: "New",
                     memoryStorage: "1TB NVMe",
                     displaySize: "17 inches",
-                    color: "Silver"
+                    color: "Silver",
+                    processor: "Intel Core i9",
+                    graphics: "NVIDIA GeForce RTX 3060",
+                    weight: "7.5 lbs"
                 }
             },
             {
                 id: 3,
                 name: "OMEN HP",
-                description: "Compact with energy-efficient processors and integrated graphics, perfect for home or office use.",
+                shortDescription: "Compact desktop with energy-efficient processors for home and office use.",
+                description: [
+                    {
+                        title: "Energy-Efficient Design:",
+                        description: "Uses energy-efficient processors for lower power consumption."
+                    },
+                    {
+                        title: "Compact Size:",
+                        description: "Perfect for small spaces or minimalistic setups."
+                    },
+                    {
+                        title: "Integrated Graphics:",
+                        description: "Sufficient for everyday tasks and light gaming."
+                    },
+                    {
+                        title: "Affordable Option:",
+                        description: "Great for users on a budget seeking reliable performance."
+                    }
+                ],
                 price: 899.99,
                 discount: 10,
                 image: "https://www.alkosto.com/medias/196068436667-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wxMDc5MTV8aW1hZ2UvanBlZ3xhVzFoWjJWekwyZ3lZaTlvTVRRdk1URTFNRGMyT1RVek1qRXhNVGd1YW5CbnxhNGMyMjI2ZjAwOTUyNWY5MDU0NWE0NmYzZTVjODJkNjY5N2NlYTBlZDIzYjgwZTk1M2EwNDkzMDg0MDQxNWEx",
@@ -235,13 +294,34 @@ const productsList = [
                     condition: "Renew",
                     memoryStorage: "512GB SSD",
                     displaySize: "14 inches",
-                    color: "White"
+                    color: "White",
+                    processor: "Intel Core i5",
+                    graphics: "Integrated",
+                    weight: "6 lbs"
                 }
             },
             {
                 id: 4,
                 name: "LENOVO LOQ",
-                description: "Gaming powerhouse with top-tier GPU and memory, customizable RGB lighting, and efficient airflow for cooling.",
+                shortDescription: "Gaming laptop with top-tier GPU and customizable RGB lighting.",
+                description: [
+                    {
+                        title: "Gaming Powerhouse:",
+                        description: "Equipped with high-performance GPU for the latest games."
+                    },
+                    {
+                        title: "Customizable RGB Lighting:",
+                        description: "Personalize your setup with customizable RGB lighting."
+                    },
+                    {
+                        title: "Efficient Airflow:",
+                        description: "Designed for optimal cooling during intense gaming sessions."
+                    },
+                    {
+                        title: "Stylish Design:",
+                        description: "Sleek design that fits any gaming environment."
+                    }
+                ],
                 price: 1999.99,
                 discount: 25,
                 image: "https://www.alkosto.com/medias/198153728671-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wyMjk4NHxpbWFnZS93ZWJwfGFEWTBMMmc1Tmk4eE5EVXpNVGszTWpNd01EZ3pNQzh4T1RneE5UTTNNamcyTnpGZk1EQXhYemMxTUZkNE56VXdTQXxjMDlkODY2ZDYwMzRiYzBkMzJjZDRkMmRkNWE1OWE0NmMzZjYyYjA5ODRhYjhhN2Y1MmM3MDgxOGExZTc2ZmQ1",
@@ -251,13 +331,34 @@ const productsList = [
                     condition: "Renew",
                     memoryStorage: "1TB SSD",
                     displaySize: "16 inches",
-                    color: "Black with RGB"
+                    color: "Black with RGB",
+                    processor: "AMD Ryzen 7",
+                    graphics: "NVIDIA GeForce RTX 3070",
+                    weight: "5.5 lbs"
                 }
             },
             {
                 id: 5,
                 name: "HP Victus AI",
-                description: "Heavy-duty  designed for AI research and data science with dual CPUs and multiple GPUs for parallel processing.",
+                shortDescription: "Heavy-duty laptop designed for AI research and data science.",
+                description: [
+                    {
+                        title: "Dual CPUs:",
+                        description: "Equipped with dual CPUs for high-performance computing."
+                    },
+                    {
+                        title: "Multiple GPUs:",
+                        description: "Supports multiple GPUs for parallel processing in data science tasks."
+                    },
+                    {
+                        title: "Large Storage Capacity:",
+                        description: "4TB SSD for storing large datasets and applications."
+                    },
+                    {
+                        title: "18-inch Display:",
+                        description: "Big screen for better visualization of complex data."
+                    }
+                ],
                 price: 4999.99,
                 discount: 5,
                 image: "https://www.alkosto.com/medias/198122718313-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wzMzY4NHxpbWFnZS93ZWJwfGFEWmtMMmhsWWk4eE5EWXpORFExTlRjNU16WTVOQzh4T1RneE1qSTNNVGd6TVROZk1EQXhYemMxTUZkNE56VXdTQXwzZDE3YmM0NTdlODgwYzIxMDc3MzdhNjdiNjg4Y2FjNGMyZmM2OGY2ZDRkNzExYTEzZDBlOTIxZjdiMDJjNGE5",
@@ -267,7 +368,10 @@ const productsList = [
                     condition: "New",
                     memoryStorage: "4TB SSD",
                     displaySize: "18 inches",
-                    color: "Gray"
+                    color: "Gray",
+                    processor: "AMD Ryzen 7",
+                    graphics: "NVIDIA GeForce RTX 3070",
+                    weight: "6.5 lbs"
                 }
             }
         ]
@@ -279,7 +383,21 @@ const productsList = [
             {
                 id: 1,
                 name: "SAMSUNG Galaxy Z Flip6",
-                description: "The Samsung Galaxy Z Flip6 is a high-end smartphone, with a top-notch design and its amazing display, it is perfect for you.",
+                shortDescription: "The Samsung Galaxy Z Flip6 is a high-end smartphone, with a top-notch design and its amazing display, it is perfect for you.",
+                description: [
+                    {
+                        title: "Design",
+                        description: "The Galaxy Z Flip6 features a stunning folding design that is both compact and stylish."
+                    },
+                    {
+                        title: "Display",
+                        description: "Equipped with a vibrant 6.2-inch AMOLED display for an immersive viewing experience."
+                    },
+                    {
+                        title: "Camera",
+                        description: "Includes dual 12MP cameras for stunning photography and videography."
+                    }
+                ],
                 price: 2999.99,
                 discount: 30,
                 image: "https://www.alkosto.com/medias/8806095850801-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wxMDU3NnxpbWFnZS93ZWJwfGFEQmhMMmhpT0M4eE5EWTFNREUyTkRrd016azJOaTg0T0RBMk1EazFPRFV3T0RBeFh6QXdNVjgzTlRCWGVEYzFNRWd8ZWYzZjdjMTZkNjMxMzNjZjkwNzkwNzQyNmI4NTk0YjFmY2RiYzk1ZTQzZTlkZDk2ZTYyODhmMDI1MTFiMGQ2MQ",
@@ -289,13 +407,31 @@ const productsList = [
                     condition: "New",
                     memoryStorage: "128GB",
                     displaySize: "6.2 inches",
-                    color: "Phantom Gray"
+                    color: "Phantom Gray",
+                    battery: "3700mAh",
+                    camera: "12MP + 12MP",
+                    processor: "Snapdragon 8 Gen 2",
+                    weight: "187g"
                 }    
             },
             {
                 id: 2,
                 name: "iPhone 16 Pro",
-                description: "The iPhone 16 Pro is a high-end smartphone with a 6.2-inch display, a 64MP camera, and a 4000mAh battery.",
+                shortDescription: "The iPhone 16 Pro is a high-end smartphone with a 6.2-inch display, a 64MP camera, and a 4000mAh battery.",
+                description: [
+                    {
+                        title: "Performance",
+                        description: "Powered by the latest A17 Bionic chip, ensuring smooth performance."
+                    },
+                    {
+                        title: "Camera System",
+                        description: "Features a 64MP main camera for high-quality photos and videos."
+                    },
+                    {
+                        title: "Battery Life",
+                        description: "Long-lasting 4000mAh battery for all-day usage."
+                    }
+                ],
                 price: 1999.99,
                 discount: 10,
                 image: "https://www.alkosto.com/medias/195949771040-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wxMDUwMnxpbWFnZS93ZWJwfGFEQTVMMmhrWkM4eE5EY3dOekEzTWpneU56UXlNaTh4T1RVNU5EazNOekV3TkRCZk1EQXhYemMxTUZkNE56VXdTQXwzYWE5MGY4MTZhYTNkYmQ3NDkzZGJkZWEzYWQ2NzU5MDg4Y2M1YzIwNzc4OTJhYTlhZDBjNjRiNDI0NDJkMjBi",
@@ -305,13 +441,31 @@ const productsList = [
                     condition: "New",
                     memoryStorage: "128GB",
                     displaySize: "6.2 inches",
-                    color: "Gray"
+                    color: "Gray",
+                    battery: "4000mAh",
+                    camera: "64MP",
+                    processor: "A17 Bionic",
+                    weight: "206g"
                 }    
             },
             {
                 id: 3,
                 name: "SAMSUNG A35",
-                description: "The Samsung A35 is a medium smartphone with a high-end display",
+                shortDescription: "The Samsung A35 is a medium smartphone with a high-end display",
+                description: [
+                    {
+                        title: "Display Quality",
+                        description: "Features a vibrant display for a visually appealing experience."
+                    },
+                    {
+                        title: "Storage",
+                        description: "Offers 128GB of internal storage for all your apps and media."
+                    },
+                    {
+                        title: "Affordability",
+                        description: "Provides excellent value for those looking for a budget-friendly device."
+                    }
+                ],
                 price: 499.99,
                 discount: 50,
                 image: "https://www.alkosto.com/medias/8806095647609-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wxMTcxNnxpbWFnZS93ZWJwfGFEQTRMMmhtTVM4eE5ETTRNRFk1TmpjNU56SXhOQzg0T0RBMk1EazFOalEzTmpBNVh6QXdNVjgzTlRCWGVEYzFNRWd8OTk5MTNhNDE4MGY1ODkxYjlkZmY1MTNlNWUyNzI3ZDNiNWRlMTE1YmM3NmE1MGVkMTQ0NTRhOWE4YWNlYTU5MQ",
@@ -321,37 +475,73 @@ const productsList = [
                     condition: "Renew",
                     memoryStorage: "128GB",
                     displaySize: "6.2 inches",
-                    color: "Blue"
+                    color: "Blue",
+                    battery: "5000mAh",
+                    camera: "48MP + 12MP",
+                    processor: "Exynos 1280",
+                    weight: "202g"
                 }    
             },
             {
                 id: 4,
                 name: "OPPO Reno 12",
-                description: "With 64MP camera, 512gb of storage and 8GB of RAM, this smartphone is perfect.",
+                shortDescription: "With 64MP camera, 512gb of storage and 8GB of RAM, this smartphone is perfect.",
+                description: [
+                    {
+                        title: "Camera",
+                        description: "Equipped with a powerful 64MP camera for stunning photography."
+                    },
+                    {
+                        title: "Storage & RAM",
+                        description: "Offers 512GB storage and 8GB RAM for seamless multitasking."
+                    },
+                    {
+                        title: "Design",
+                        description: "Stylish design that stands out while providing a comfortable grip."
+                    }
+                ],
                 price: 999.99,
                 discount: 15,
                 image: "https://www.alkosto.com/medias/7708334730138-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wyNTE4OHxpbWFnZS93ZWJwfGFHWXhMMmd4Wmk4eE5EWTJNakE0TkRZeU5EUXhOQzgzTnpBNE16TTBOek13TVRNNFh6QXdNVjgzTlRCWGVEYzFNRWd8ZjZlMTVkM2JjYzlkZmU3NTE4ZmYyN2I5NjdiMjljZTU4MGQ1OTZmYmU5NTVhYTg0NGY0NmYyODRlYzgzNzBkOA",
                 rating: 4.1,
                 specifications: {
-                    brand: "Samsung",
+                    brand: "OPPO",
                     condition: "New",
                     memoryStorage: "128GB",
                     displaySize: "6.2 inches",
-                    color: "White"
+                    color: "White",
+                    battery: "4300mAh",
+                    camera: "64MP + 8MP + 2MP",
+                    processor: "Snapdragon 765G",
+                    weight: "175g"
                 }    
             },
             {
                 id: 5,
                 name: "MOTOROLA G54",
-                description: "",
+                shortDescription: "An affordable smartphone with great features.",
+                description: [
+                    {
+                        title: "Budget-Friendly",
+                        description: "An excellent choice for those looking for an affordable smartphone."
+                    },
+                    {
+                        title: "Storage",
+                        description: "Comes with 256GB of internal storage for all your needs."
+                    },
+                    {
+                        title: "Durability",
+                        description: "Designed to withstand daily wear and tear."
+                    }
+                ],
                 price: 279.99,
                 discount: 30,
                 image: "https://www.alkosto.com/medias/840023259425-001-750Wx750H?context=bWFzdGVyfGltYWdlc3w0MDQ5MnxpbWFnZS93ZWJwfGFEUTBMMmhqTmk4eE5ETTJOVEF6TXpneU5ESTROaTg0TkRBd01qTXlOVGswTWpWZk1EQXhYemMxTUZkNE56VXdTQXw5MjEzMzMyYzJjYjk2Mzc3Yzg5NTIxZmEwZmEzYTUwY2EwMGIzYjliMmE4NmNjZjdhNWY2NjgwMmQzMTIyNDcx",
                 rating: 4.0,
                 specifications: {
-                    brand: "Samsung",
-                    condition: "New",
-                    memoryStorage: "128GB",
+                    brand: "MOTOROLA",
+                    condition: "Renew",
+                    memoryStorage: "256GB",
                     displaySize: "6.2 inches",
                     color: "Green lime"
                 }    
@@ -360,12 +550,26 @@ const productsList = [
     },
     {
         id: 4,
-        category: "Air Conditioning",
+        category: "Air-Conditioning",
         products: [
             {
                 id: 1,
                 name: "Samsung WindFree Elite",
-                description: "Air Conditioner with WindFree technology, 12,000 BTU, energy efficient.",
+                shortDescription: "Air Conditioner with WindFree technology, 12,000 BTU, energy efficient.",
+                description:[
+                    {
+                        title: "Energy Efficiency",
+                        description: "Provides energy savings with its optimized compressor."
+                    },
+                    {
+                        title: "WindFree Cooling",
+                        description: "Cools the room without direct airflow for better comfort."
+                    },
+                    {
+                        title: "Smart Control",
+                        description: "Control the air conditioner through your smartphone or voice assistants."
+                    }
+                ],
                 price: 450,
                 discount: 15,
                 image: "https://m.media-amazon.com/images/I/71pAnfLsIyL.SX466.jpg",
@@ -384,7 +588,21 @@ const productsList = [
             {
                 id: 2,
                 name: "LG LW1024RD",
-                description: "10,000 Window Air Conditioner, 115V, 450 Sq.Ft., Quiet Operation.",
+                shortDescription: "10,000 Window Air Conditioner, 115V, 450 Sq.Ft. (18' x 25' Room Size), Quiet Operation, Electronic Control with Remote, 3 Cooling & Fan Speeds, Auto Restart, 10000 BTU, White",
+                description:[
+                    {
+                        title: "Low Noise Performance",
+                        description: "LG window air conditioners operate at sound levels as low as 52dB (in low mode), eliminating unnecessary noise."
+                    },
+                    {
+                        title: "Multiple Fan Speeds",
+                        description: "3 cooling and fan speeds with Auto Cool allow you to customize your cooling."
+                    },
+                    {
+                        title: "Maximum Usability",
+                        description: "Easy to use electronic controls with remote"
+                    }
+                ],
                 price: 350,
                 discount: 10,
                 image: "https://m.media-amazon.com/images/I/71PT8ltaciL.AC_SX679.jpg",
@@ -403,7 +621,21 @@ const productsList = [
             {
                 id: 3,
                 name: "Amazon Basics Window-Mounted Air Conditioner",
-                description: "Cools 150 Square Feet, 5000 BTU, Mechanical Control.",
+                shortDescription: "Mechanical Control - Cools 150 Square Feet, 5000 BTU, AC Unit, White",
+                description:[
+                    {
+                        title: "Air Filtration",
+                        description: "Keeps air clean and fresh with inbuilt filter, which can be easily removed, washed, and reused"
+                    },
+                    {
+                        title: "Compact Size",
+                        description: "Ideal for small spaces such as dorm rooms and RVs"
+                    },
+                    {
+                        title: "Energy Efficient",
+                        description: "Energy efficient air conditioning unit cools rooms up to 150 square feet with standard 9 foot ceilings"
+                    }
+                ],
                 price: 135,
                 discount: 5,
                 image: "https://m.media-amazon.com/images/I/71dabBkD2eL.AC_SX679.jpg",
@@ -422,7 +654,21 @@ const productsList = [
             {
                 id: 4,
                 name: "Frigidaire FHWC103TC1",
-                description: "10,000 BTU Window Air Conditioner with Electronic Controls.",
+                shortDescription: "PaWindow Air Conditioner, 2024 10,000 BTU Electronic Controls, White",
+                description:[
+                    {
+                        title: "Multi-Speed Fan",
+                        description: "Features three different fan speeds, for more cooling flexibility."
+                    },
+                    {
+                        title: "Eco-Friendly",
+                        description: "Uses environmentally friendly refrigerant."
+                    },
+                    {
+                        title: "Auto Restart",
+                        description: "Automatically restarts after a power outage."
+                    }
+                ],
                 price: 330,
                 discount: 12,
                 image: "https://m.media-amazon.com/images/I/61qCcMtk4HL.AC_SX679.jpg",
@@ -441,7 +687,21 @@ const productsList = [
             {
                 id: 5,
                 name: "Keystone Quiet",
-                description: "AC Unit for Small 6,000 Window Mounted Dehumidifier.",
+                shortDescription: "AC Unit for Small 6,000 Window Mounted Dehumidifier, 115V, Air Conditioner for Rooms up to 250 Sq.Ft. with Smart Remote Control, 6000 BTU, Bright White",
+                description:[
+                    {
+                        title: "Reliable Window AC Unit",
+                        description: "Our powerful 6,000 BTU window air conditioner is what you need to efficiently cool your apartment, bedroom, garage or any small room up to 250 square feet"
+                    },
+                    {
+                        title: "Maximum Comfort",
+                        description: "Featuring 3 cooling modes, 3 fan speeds, 4-way adjustable air louvers and a programmable timer; 1.5 pints of moisture from the air is removed every hour."
+                    },
+                    {
+                        title: "Smart Remote Control",
+                        description: "The remote control takes the temperature of the room you are in, displays it on the LCD screen and sends a signal to your unit every 3 minutes for accurate cooling"
+                    }
+                ],
                 price: 270,
                 discount: 7,
                 image: "https://m.media-amazon.com/images/I/616ICMBb0aL.AC_SX679.jpg",
@@ -449,7 +709,7 @@ const productsList = [
                 specifications: {
                     brand: "TCL",
                     condition: "New",
-                    coolingCapacity: "6,000 BTU",
+                    coolingCapacity: "9,000 BTU",
                     energyEfficiency: "A+",
                     smartFeatures: "Yes",
                     color: "White",
@@ -461,12 +721,26 @@ const productsList = [
     },
     {
         id: 5,
-        category: "Televisions",
+        category: "Television",
         products: [
             {
                 id: 1,
                 name: "Amazon Fire TV",
-                description: "40\" 2-Series HD smart TV with Alexa Voice Remote.",
+                shortDescription: "Amazon Fire TV 40\" 2-Series HD smart TV with Fire TV Alexa Voice Remote, stream live TV without cable",
+                description:[
+                    {
+                        title: "High definition TV",
+                        description: "Bring movies and shows to life in HD 1080p resolution, with support for HDR 10, HLG, and Dolby Digital Audio."
+                    },
+                    {
+                        title: "All your entertainment in one place",
+                        description: "Fire TV gives you quick access to live TV, video games, and music, and lets you stream over 1 million movies and TV episodes with subscriptions to Netflix, Prime Video, Disney+, and more."
+                    },
+                    {
+                        title: "Stream for free",
+                        description: "Watch free movies and TV episodes with apps like YouTube, Freevee, Tubi, Pluto TV, and more."
+                    }
+                ],
                 price: 170,
                 discount: 10,
                 image: "https://m.media-amazon.com/images/I/71Nma1KADeL.AC_SX679.jpg",
@@ -485,7 +759,21 @@ const productsList = [
             {
                 id: 2,
                 name: "VIZIO 40-inch Full HD 1080p Smart TV",
-                description: "40-inch Full HD Smart TV with DTS Virtual: X.",
+                shortDescription: "VIZIO 40-inch Full HD 1080p Smart TV with DTS Virtual: X, Alexa Compatibility, Google Cast Built-in, Bluetooth Headphone Capable, (VFD40M-08 New)",
+                description:[
+                    {
+                        title: "Captivating clarity",
+                        description: "Full HD delivers a step up in clarity from HD with richer contrast and true-to-life color achieved with Full Array LED Backlight and fine-tuned at a granular level with Active Pixel Tuning."
+                    },
+                    {
+                        title: "Smart and easy",
+                        description: "Enjoy instant access to the best selection of built-in apps from top tier streaming services and explore new apps as they are automatically added and updated. Stream 275 plus free channels and 15,000 plus movies and shows On Demand with the built-in WatchFree plus app."
+                    },
+                    {
+                        title: "Bluetooth listening ",
+                        description: "Pair your Bluetooth headphones for uninterrupted listening, whether streaming your favorite show, playing a podcast, or blasting your top tunes."
+                    }
+                ],
                 price: 148,
                 discount: 13,
                 image: "https://m.media-amazon.com/images/I/81R3dLptKcL.AC_SX466.jpg",
@@ -504,7 +792,21 @@ const productsList = [
             {
                 id: 3,
                 name: "SAMSUNG 65-Inch",
-                description: "65-Inch Crystal UHD 4K Smart TV with Object Tracking Sound Lite.",
+                shortDescription: "SAMSUNG 65-Inch Class Crystal UHD 4K DU7200 Series HDR Smart TV w/Object Tracking Sound Lite, PurColor, Motion Xcelerator, Mega Contrast, Q-Symphony (UN65DU7200, 2024 Model)",
+                description:[
+                    {
+                        title: "PURCOLOR",
+                        description: "See a wide spectrum of colors than traditional RGB models with PurColor; From green turf to an amazing sunset, you'll enjoy true-to-life picture quality with our innovative color technology"
+                    },
+                    {
+                        title: "4K UPSCALING",
+                        description: "Get a clearer picture for more of your shows and videos; 4K Upscaling transforms each pixel for improved content"
+                    },
+                    {
+                        title: "MOTION XCELERATOR",
+                        description: "Watch your content smoothly while experiencing less lag and blur; It improves motion between frames so you have a seamless picture"
+                    }
+                ],
                 price: 640,
                 discount: 8,
                 image: "https://m.media-amazon.com/images/I/71O5nf39wSL.AC_SX466.jpg",
@@ -523,7 +825,21 @@ const productsList = [
             {
                 id: 4,
                 name: "TCL 50-Inch",
-                description: "50-Inch Class S4 4K LED Smart TV with Roku TV.",
+                shortDescription: "TCL 50-Inch Class S4 4K LED Smart TV with Roku TV (50S450R, 2023 - Model), Dolby Vision, HDR, Dolby Atmos, Works with Alexa, Google Assistant and Apple HomeKit Compatibility, Streaming UHD Television",
+                description:[
+                    {
+                        title: "Roku TV",
+                        description: "Access to thousands of streaming channels including Netflix, Hulu, and more."
+                    },
+                    {
+                        title: "4K UHD Resolution",
+                        description: "Crisp and clear image quality with 4K resolution."
+                    },
+                    {
+                        title: "HDR PRO (Dolby Vision, HDR10, & HLG)",
+                        description: "Enjoy enhanced contrast, accurate colors and fine details utilizing all the most advanced HDR formats."
+                    }
+                ],
                 price: 356,
                 discount: 15,
                 image: "https://m.media-amazon.com/images/I/81nC52txN0L.AC_SX466.jpg",
@@ -542,7 +858,21 @@ const productsList = [
             {
                 id: 5,
                 name: "LG 65-Inch Class OLED",
-                description: "65-Inch Class OLED evo C4 Series Smart TV with AI-Powered Remote.",
+                shortDescription: "LG 65-Inch Class OLED evo C4 Series Smart TV 4K Processor Flat Screen with Magic Remote AI-Powered with Alexa Built-in (OLED65C4PUA, 2024)",
+                description:[
+                    {
+                        title: "SELF-LIT PIXELS",
+                        description: "LG's signature OLED technology creates an incredible watching experience and stellar picture quality illuminated with over 8 million self-lit pixels. Take in rich and accurate colors from the brightest to darkest parts of the scene thanks to 100% Color Volume* and with 100% Color Fidelity."
+                    },
+                    {
+                        title: "BRIGHTNESS BOOSTER",
+                        description: "Our Brightness Boosting technology magnifies each individual pixel for luminous quality that shines with every detail."
+                    },
+                    {
+                        title: "DOLBY VISION, FILMMAKER AND DOLBY ATMOS",
+                        description: "Experience the magic of the big screen right from your couch. Every LG OLED comes loaded with Dolby Vision for extraordinary color, contrast and brightness, plus Dolby Atmos* for sound you can feel all around you. Land in the center of the action with FILMMAKER MODE, allowing you to see films just as the director intended."
+                    }
+                ],
                 price: 1600,
                 discount: 18,
                 image: "https://m.media-amazon.com/images/I/81e0zZuOzYL._AC_SX300_SY300_QL70_FMwebp.jpg",
@@ -566,77 +896,152 @@ const productsList = [
         products: [
             {
                 id: 1,
-                name: "IPX5 Waterproof Speaker with HD Sound",
-                description: "Bluetooth Speaker, IPX5 Waterproof Speaker with HD Sound, Up to 24H Playtime, TWS Pairing, BT5.3, Portable Wireless Speakers ",
-                price: 89.99,
-                discount: 40,
-                image: "https://m.media-amazon.com/images/I/81JqFR0d5qL._AC_SL1500_.jpg",
-                rating: 4.1,
+                name: "Bluetooth Speaker with HD Sound, Portable Wireless",
+                shortDescription: "Bluetooth Speaker with HD Sound, Portable Wireless, IPX5 Waterproof, Up to 20H Playtime, TWS Pairing, BT5.3, for Home/Party/Outdoor/Beach",
+                description:[
+                    {
+                        title: "Immersive Sound Experience & Dual Connectivity",
+                        description: "Experience unparalleled sound quality with this wireless Bluetooth speaker's 2 drivers and advanced technology that delivers powerful, well-balanced sound with minimal distortion."
+                    },
+                    {
+                        title: "Tough & Weather-Resistant",
+                        description: "Engineered to handle rough use and adverse weather conditions, this speaker features a durable design and an IPX5 rating for protection against water splashes and spills. "
+                    },
+                    {
+                        title: "Long-lasting Playtime & Extended Bluetooth Connectivity",
+                        description: "Experience extended playtime with up to 20 hours(50% Vol and light off) per charge and extended wireless range with Bluetooth 5.3, reaching up to 33 feet from your device. "
+                    }
+                ],
+                price: 26,
+                discount: 55,
+                image: "https://m.media-amazon.com/images/I/81djh1gfUwL.AC_SL1500.jpg",
+                rating: 4.5,
                 specifications: {
                     brand: "BolaButty",
-                    type: "Speaker",
-                    connectivity: "Bluetooth",
-                    color: "Red"
+                    speakerMaximumOutputPower: "10 Watts",
+                    connectivityTechnology: "Bluetooth, Auxiliary",
+                    audioOutputMode: "Stereo",
+                    mountingType: "Tabletop Mount"
                 }
             },
             {
                 id: 2,
-                name: "Focusrite Scarlett Solo 3rd Gen",
-                description: "Focusrite Scarlett Solo 3rd Gen USB Audio Interface",
-                price: 139,
-                discount: 20,
-                image: "https://m.media-amazon.com/images/I/613veRuWtmL._AC_SL1500_.jpg",
-                rating: 4,
+                name: "Ortizan Portable Bluetooth Speaker",
+                shortDescription: "Ortizan Portable Bluetooth Speaker,IPX7 Waterproof Wireless Speakers with 24W Loud Stereo Sound,Deep Bass,Bluetooth 5.3,RGB Lights,Dual Pairing,30H Playtime",
+                description:[
+                    {
+                        title: "360° Hi-Fi Stereo Sound and Rich Bass",
+                        description: "This mini Bluetooth speakers deliver excellent 3D HD stereo sound with 24W total output power, which allows for unique enhanced bass. It handles crisp treble and mid frequencies excellently without noticeable crackle at max volume."
+                    },
+                    {
+                        title: "RGB colorful Light Show",
+                        description: "The wireless LED Bluetooth speakers not only a speaker but also as a unique night theme light, it provide different color-changing themes. Using Ortizan bluetooth speakers, a totally reimagined rainbow light show that pulses, phases, and shines to the beat of your music."
+                    },
+                    {
+                        title: "IPX7 100% Waterproof",
+                        description: "IPX7 waterproof protection safeguards against rain, dust, snow, and spills, even the outdoor speaker can be fully immersed up to 3ft for about 30 minutes underwater."
+                    }
+                ],
+                price: 29,
+                discount: 40,
+                image: "https://m.media-amazon.com/images/I/81-YRA6tQqL.AC_SL1500.jpg",
+                rating: 4.5,
                 specifications: {
-                    brand: "Focusrite",
-                    type: "Audio Interface",
-                    connectivity: "USB",
-                    color: "Red"
+                    brand: "Ortizan",
+                    speakerMaximumOutputPower: "24 Watts",
+                    frequencyResponse: "20 KHz",
+                    connectivityTechnology: "Wireless, Bluetooth, Auxiliary, TF Card",
+                    audioOutputMode: "Stereo"
                 }
             },
             {
                 id: 3,
-                name: "JBL Tune 510BT",
-                description: "Wireless On-Ear Headphones with Purebass Sound ",
-                price: 35,
-                discount: 5,
-                image: "https://m.media-amazon.com/images/I/61oGAG5r7cL._AC_SL1500_.jpg",
-                rating: 2.9,
+                name: "Focusrite Scarlett Solo",
+                shortDescription: "Focusrite Scarlett Solo 3rd Gen USB Audio Interface for Guitarists, Vocalists, Podcasters or Producers to record and playback studio quality sound",
+                description:[
+                    {
+                        title: "Pro performance with great pre-amps",
+                        description: "Achieve a brighter recording thanks to the high performing mic pre-amps of the Scarlett 3rd Gen. A switchable Air mode will add extra clarity to your acoustic instruments when recording with your Solo 3rd Gen."
+                    },
+                    {
+                        title: "Studio quality recording for your music & podcasts",
+                        description: "Achieve pro sounding recordings with Scarlett 3rd Gen’s high-performance converters enabling you to record and mix at up to 24-bit/192kHz."
+                    },
+                    {
+                        title: "Enjoy three years of warranty ",
+                        description: "Wherever you happen to be in the world, you can rely on a three-year warranty if any Focusrite hardware needs repairing or replacing due to a manufacturing fault."
+                    }
+                ],
+                price: 99,
+                discount: 23,
+                image: "https://m.media-amazon.com/images/I/613veRuWtmL.AC_SL1500.jpg",
+                rating: 4.7,
                 specifications: {
-                    brand: "JBL",
-                    type: "Headphones",
-                    connectivity: "Bluetooth",
-                    color: "Black"
+                    brand: "Focusrite",
+                    compatibleDevices: "Microphone, Instrument, Personal Computer, Headphones, Studio Monitors",
+                    supportedSoftware: "All audio recording software",
+                    connectivityTechnology	: "USB",
+                    numberofChannels: "2"
                 }
             },
             {
                 id: 4,
                 name: "JBL Vibe Beam",
-                description: "True Wireless JBL Deep Bass Sound Earbuds, Bluetooth 5.2, Water & Dust Resistant, Hands-free call with VoiceAware, Up to 32 hours of battery life",
-                price: 49.95,
-                discount: 15,
-                image: "https://m.media-amazon.com/images/I/41+1Csr1pSL._AC_SL1000_.jpg",
-                rating: 3.8,
+                shortDescription: "JBL Vibe Beam - True Wireless JBL Deep Bass Sound Earbuds, Bluetooth 5.2, Water & Dust Resistant, Hands-free call with VoiceAware, Up to 32 hours of battery life (Black)",
+                description:[
+                    {
+                        title: "JBL Deep Bass Sound",
+                        description: "Get the most from your mixes with high-quality audio from secure, reliable earbuds with 8mm drivers featuring JBL Deep Bass Sound"
+                    },
+                    {
+                        title: "Comfortable fit",
+                        description: "The ergonomic, stick-closed design of the JBL Vibe Beam fits so comfortably you may forget you're wearing them. The closed design excludes external sounds, enhancing the bass performance"
+                    },
+                    {
+                        title: "Water and dust resistant",
+                        description: "From the beach to the bike trail, the IP54-certified earbuds and IPX2 charging case are water and dust resistant for all-day experiences"
+                    }
+                ],
+                price: 49,
+                discount: 0,
+                image: "https://m.media-amazon.com/images/I/41+1Csr1pSL.AC_SL1000.jpg",
+                rating: 4.3,
                 specifications: {
                     brand: "JBL",
-                    type: "Headphones",
-                    connectivity: "Bluetooth",
-                    color: "Black"
+                    color: "Black",
+                    earPlacement: "In Ear",
+                    formFactor: "In Ear",
+                    Impedance: "16 Ohm"
                 }
             },
             {
                 id: 5,
-                name: "Ortizan Portable Spekaer",
-                description: " Bluetooth Speaker,IPX7 Waterproof Wireless Speakers with 24W Loud Stereo Sound,Deep Bass",
-                price: 1100,
-                discount: 40,
-                image: "https://m.media-amazon.com/images/I/81-YRA6tQqL._AC_SL1500_.jpg",
-                rating: 4.1,
+                name: "JBL Tune 510BT",
+                shortDescription: "JBL Tune 510BT: Wireless On-Ear Headphones with Purebass Sound - Black",
+                description:[
+                    {
+                        title: "Wireless Bluetooth 5.0 Streaming",
+                        description: "You can stream wirelessly from your device and even switch between two devices so that you don't miss a call. Dynamic frequencyresponse range (Hz) 20 Hz – 20 kHz"
+                    },
+                    {
+                        title: "Siri or Hey Google is just a button away",
+                        description: "Activate the voice assistant of your device by pushing the multi-function button."
+                    },
+                    {
+                        title: "JBL pure Bass sound",
+                        description: "These wireless headphones feature the renowned JBL Pure Bass sound, which can be found in the most famous venues all around the world. Wirelessly stream this high-quality sound from your smartphone without messy cords"
+                    }
+                ],
+                price: 24,
+                discount: 0,
+                image: "https://m.media-amazon.com/images/I/61oGAG5r7cL.AC_SL1500.jpg",
+                rating: 4.6,
                 specifications: {
-                    brand: "Ortizan",
-                    type: "Speaker",
-                    connectivity: "Bluetooth",
-                    color: "Blue"
+                    brand: "JBL",
+                    color: "Black",
+                    earPlacement: "On Ear",
+                    formFactor: "On Ear",
+                    Impedance: "32 Ohm"
                 }
             }
         ]
@@ -647,77 +1052,175 @@ const productsList = [
         products: [
             {
                 id: 1,
-                name: "HP OfficeJet Pro 8025",
-                description: "HP OfficeJet Pro 8025 All-in-One Wireless Printer, Smart Home Office Productivity, HP Instant Ink, Works with Alexa (1KR57A)",
-                price: 169.89,
-                discount: 10,
-                image: "https://m.media-amazon.com/images/I/61E7mqYjlEL._AC_SL1500_.jpg",
-                rating: 4.1,
+                name: "Epson EcoTank ET-2720",
+                shortDescription: "Epson EcoTank ET-2720 Wireless color All-in-One Supertank Printer with Scanner and Copier - White",
+                description:[
+                    {
+                        title: "Innovative Cartridge-Free Printing",
+                        description: "High-capacity ink tanks mean no more tiny, expensive ink cartridges; Epson's exclusive EcoFit ink bottles make filling easy and worry-free"
+                    },
+                    {
+                        title: "Dramatic Savings on Replacement Ink",
+                        description: "Save up to 90% with replacement ink bottles vs. ink cartridges that's enough to print up to 4,500 pages black/7,500 color (2), equivalent to about 90 individual ink cartridges (3)"
+                    },
+                    {
+                        title: "Impressive Print Quality",
+                        description: "Unique Micro Piezo Heat-Free Technology produces sharp text plus impressive color photos and graphics  on virtually any paper type"
+                    }
+                ],
+                price: 254,
+                discount: 0,
+                image: "https://m.media-amazon.com/images/I/71nZ3MAbFjS.AC_SL1500.jpg",
+                rating: 4.4,
                 specifications: {
-                    brand: "HP",
-                    connectivity: "Wi-Fi",
-                    printTechnology: "Inkjet",
-                    color: "Basalt"
+                    brand: "Epson",
+                    connectivityTechnology: "Wi-Fi",
+                    printingTechnology: "Inkjet",
+                    specialFeature: "Display Screen, Voice-activated printing, Compact, Borderless Printing",
+                    color: "White",
+                    modelName: "ET-2720",
+                    printerOutput: "color",
+                    maximumPrintSpeed: "5ppm",
+                    maxPrintspeedMonochrome: "10ppm",
+                    itemWeight: "5.53 Kilograms" 
                 }
             },
             {
                 id: 2,
-                name: "Canon PIXMA TR4520",
-                description: "Canon PIXMA TR4520 Wireless All in One Photo Printer with Mobile Printing, Black, Works with Alexa",
-                price: 99.99,
-                discount: 20,
-                image: "https://m.media-amazon.com/images/I/71K7Q4FpguL._AC_SL1500_.jpg",
-                rating: 4.5,
+                name: "Canon PIXMA TR4720",
+                shortDescription: "Canon PIXMA TR4720 All-in-One Wireless Printer for Home use, with Auto Document Feeder, Mobile Printing and Built-in Fax, Black",
+                description:[
+                    {
+                        title: "Wireless 4-in-1 (print | copy | scan | fax)..Power Consumption: 7W (0.8W Standby / 0.3W Off)",
+                        description: ""
+                    },
+                    {
+                        title: "Auto 2-sided printing and auto document feeder.",
+                        description: ""
+                    },
+                    {
+                        title: "Designed for easy ink cartridge installation and replacement.",
+                        description: ""
+                    }
+                ],
+                price: 59,
+                discount: 0,
+                image: "https://m.media-amazon.com/images/I/71vYeYqdvUL.AC_SL1500.jpg",
+                rating: 4.0,
                 specifications: {
                     brand: "Canon",
-                    connectivity: "Wireless",
-                    printTechnology: "Inkjet",
-                    color: "Black"
+                    connectivityTechnology: "Wi-Fi, USB",
+                    printingTechnology: "Inkjet",
+                    specialFeature: "Borderless Printing, High Print Quality, Compact, Double Sided Scanning, Auto Document Feeder, Auto-Duplex",
+                    color: "Black",
+                    modelName: "PIXMA",
+                    printerOutput: "color",
+                    maximumPrintSpeed: "4.4 ppm",
+                    maxPrintspeedMonochrome: "8.8 ppm",
+                    itemWeight: "12.7 Pounds"
                 }
             },
             {
                 id: 3,
-                name: "Epson EcoTank ET-2720",
-                description: "Epson EcoTank ET-2720 Wireless Color All-in-One Supertank Printer with Scanner and Copier - Black",
-                price: 255.99,
-                discount: 10,
-                image: "https://m.media-amazon.com/images/I/71nZ3MAbFjS._AC_SL1500_.jpg",
-                rating: 4.9,
+                name: "Canon imageCLASS MF262",
+                shortDescription: "Canon imageCLASS MF262dw II - Wireless Monochrome Laser Printer with Print, Copy and Scan, Black",
+                description:[
+                    {
+                        title: "Wireless 3-in-1: Print | Scan | Copy",
+                        description: ""
+                    },
+                    {
+                        title: "First Print Out of Time of Approximately 6 Seconds (Letter)",
+                        description: ""
+                    },
+                    {
+                        title: "250-sheet Standard Cassette, 1-sheet Multipurpose Tray",
+                        description: ""
+                    }
+                ],
+                price: 174,
+                discount: 13,
+                image: "https://m.media-amazon.com/images/I/51H-khkzxbL.AC_SL1500.jpg",
+                rating: 4.1,
                 specifications: {
-                    brand: "Epson",
-                    connectivity: "Wi-Fi",
-                    printTechnology: "Inkjet",
-                    color: "White"
+                    brand: "Canon",
+                    connectivityTechnology: "USB",
+                    printingTechnology: "Laser",
+                    specialFeature: "Auto-Duplex, Network-Ready, Epeat Qualified, Energy Star, Display Screen",
+                    color: "Black",
+                    modelName: "imageCLASS MF262dw II",
+                    printerOutput: "Monochrome",
+                    maximumPrintSpeed: "30 ppm",
+                    itemWeight: "23.8 Pounds"
                 }
             },
             {
                 id: 4,
-                name: "Canon CLASS MF262",
-                description: "Canon CLASS MF262 Wireless Monochrome Laser Printer with Print, Copy and Scan",
-                price: 99.99,
-                discount: 20,
-                image: "https://m.media-amazon.com/images/I/51H-khkzxbL._AC_SL1500_.jpg",
-                rating: 4.5,
+                name: "Brother HL-L2300D",
+                shortDescription: "Brother HL-L2300 Monochrome Laser Printer with Duplex Printing for Business Office Home - up to 2400 x 600 Resolution - 27 ppm Print Speed, Hi-Speed USB 2.0, 250-sheet Capacity, BROAGE Printer Cable",
+                description:[
+                    {
+                        title: "250 Sheet Capacity Paper Tray",
+                        description: "A4 2-sided print speed-13. A4 standard print speed-26. Automatic 2 sided print. Recommended monthly volume-250 to 2,000 pages."
+                    },
+                    {
+                        title: "Windows 10 Compatibility",
+                        description: "If you upgrade from Windows 7 or Windows 8.1 to Windows 10, some features of the installed drivers and software may not work correctly. Please uninstall all drivers and software in Windows 7 or Windows 8.1 before upgrading to Windows 10."
+                    },
+                    {
+                        title: "This machine uses a USB connection ensuring your office runs smoothly with no complications",
+                        description: "High Speed USB 2.0 Interface. Does not come with USB cable. Maximum Monthly Duty Cycle: 10,000 pages. Output Paper Capacity (sheets): 100"
+                    }
+                ],
+                price: 219,
+                discount: 0,
+                image: "https://m.media-amazon.com/images/I/71gMB5gAhwL.AC_SL1500.jpg",
+                rating: 4.7,
                 specifications: {
-                    brand: "Canon",
-                    connectivity: "USB",
-                    printTechnology: "Laser",
-                    color: "Black"
+                    brand: "Brother",
+                    connectivityTechnology: "USB",
+                    printingTechnology: "Laser",
+                    specialFeature: "Monochrome",
+                    color: "Black",
+                    modelName: "HL",
+                    printerOutput: "Monochrome",
+                    controllerType: "Android",
+                    printerMediaSizeMaximum: "8.5 x 14 inch"
                 }
             },
             {
                 id: 5,
-                name: "Brother HL-L2300D",
-                description: "Brother HL-L2300D Monochrome Laser Printer with Duplex Printing",
-                price: 99.99,
-                discount: 30,
-                image: "https://m.media-amazon.com/images/I/61GAGGFAt-L._AC_SL1500_.jpg",
-                rating: 4.5,
+                name: "HP OfficeJet Pro 8025",
+                shortDescription: "HP OfficeJet Pro 8025 All-in-One Wireless color Printer, Smart Home Office Productivity, HP Instant Ink, Works with Alexa (1KR57A)",
+                description:[
+                    {
+                        title: "BEST FOR SMALL BUSINESSES AND HOME OFFICES",
+                        description: "Print professional-quality color documents like forms, reports, brochures and presentations"
+                    },
+                    {
+                        title: "KEY FEATURES",
+                        description: "Fast color print, copy, scan and fax, plus 2-sided printing, mobile and wireless printing, and an auto document feeder"
+                    },
+                    {
+                        title: "FAST PRINT SPEEDS",
+                        description: "Print up to 20 pages per minute in black and 10 pages per minute in color"
+                    }
+                ],
+                price: 269,
+                discount: 10,
+                image: "https://m.media-amazon.com/images/I/61E7mqYjlEL.AC_SL1500.jpg",
+                rating: 4.3,
                 specifications: {
-                    brand: "Brother",
-                    connectivity: "USB",
-                    printTechnology: "Laser",
-                    color: "Black"
+                    brand: "HP",
+                    connectivityTechnology: "Wi-Fi",
+                    printingTechnology: "Inkjet",
+                    specialFeature: "Touchscreen, Energy Star Certified, Auto Document Feeder, Scan, Fax",
+                    color: "Basalt",
+                    modelName: "HPOJP8025OB",
+                    printerOutput: "color",
+                    maximumPrintSpeed: "10 ppm",
+                    maxPrintspeedMonochrome: "20 ppm",
+                    itemWeight: "18 Pounds"
                 }
             }
         ]
@@ -1086,7 +1589,21 @@ const productsList = [
             {
                 id: 1,
                 name: "LG WM4000HWA",
-                description: "4.5 cu. ft. Ultra Large Capacity Smart wi-fi Enabled Front Load Washer with TurboWash™ 360° and Built-In Intelligence",
+                shortDescription: "4.5 cu. ft. Ultra Large Capacity Smart wi-fi Enabled Front Load Washer",
+                description: [
+                    {
+                        title: "TURBOWASH™ 360°:",
+                        description: "Cleans your clothes in under 30 minutes using five powerful jets that spray clothes from multiple angles."
+                    },
+                    {
+                        title: "BUILT-IN INTELLIGENCE:",
+                        description: "Automatically selects optimal washing patterns based on fabric type and load size, saving energy and water."
+                    },
+                    {
+                        title: "ULTRA LARGE CAPACITY:",
+                        description: "With 4.5 cu. ft., this washer fits more laundry in each load, reducing the number of cycles needed."
+                    }
+                ],
                 price: 1200,
                 discount: 10,
                 image: "https://m.media-amazon.com/images/I/51NAdayu4pS._AC_SL1000_.jpg",
@@ -1095,13 +1612,32 @@ const productsList = [
                     brand: "LG",
                     capacity: "4.5 Cubic Feet",
                     type: "Washer",
-                    color: "Black"
+                    color: "Black",
+                    energyConsumption: "120 kWh/year",
+                    dimensions: "27 x 30 x 39 inches",
+                    weight: "202 lbs",
+                    voltage: "120V",
+                    spinSpeed: "1300 RPM",
                 }
             },
             {
                 id: 2,
                 name: "Euhomy  65132",
-                description: "110V Portable Clothes Dryer 850W Compact Laundry Dryers 1.5 cu.ft Front Load Stainless Steel Electric Dryers Machine with Stainless Steel Tub",
+                shortDescription: "110V Portable Clothes Dryer 1.5 cu.ft Compact Laundry Dryer",
+                description: [
+                    {
+                        title: "PORTABLE DESIGN:",
+                        description: "Ideal for small spaces, this dryer can be easily moved and stored, making it perfect for apartments or dorms."
+                    },
+                    {
+                        title: "STAINLESS STEEL DRUM:",
+                        description: "Durable drum ensures longevity, and helps clothes dry efficiently and evenly."
+                    },
+                    {
+                        title: "LOW ENERGY CONSUMPTION:",
+                        description: "Uses less energy without compromising on drying power, helping you save on electricity bills."
+                    }
+                ],
                 price: 1799,
                 discount: 20,
                 image: "https://m.media-amazon.com/images/I/71JWKUm4SQL._AC_SL1500_.jpg",
@@ -1110,13 +1646,32 @@ const productsList = [
                     brand: "Euhomy",
                     capacity: "1.5 Cubic Feet",
                     type: "Dryer",
-                    color: "White"
+                    color: "White",
+                    energyConsumption: "150 kWh/year",
+                    dimensions: "19 x 19 x 27 inches",
+                    weight: "37 lbs",
+                    voltage: "110V",
+                    power: "850W",
                 }
             },
             {
                 id: 3,
                 name: "SAMSUNG WF45T6000AW",
-                description: "4.5 cu. ft. Front Load Washer with Vibration Reduction Technology+ in White",
+                shortDescription: "4.5 cu. ft. Front Load Washer with Vibration Reduction Technology+",
+                description: [
+                    {
+                        title: "VIBRATION REDUCTION TECHNOLOGY+:",
+                        description: "Reduces noise and vibration, even during high-speed spins, for a quiet and smooth laundry experience."
+                    },
+                    {
+                        title: "SELF CLEAN+:",
+                        description: "Keeps your washer fresh and odor-free by cleaning the drum and gasket automatically."
+                    },
+                    {
+                        title: "ENERGY STAR CERTIFIED:",
+                        description: "Meets the strict energy efficiency standards, saving you money while protecting the environment."
+                    }
+                ],
                 price: 1799,
                 discount: 20,
                 image: "https://m.media-amazon.com/images/I/51rPFkF2tzL._AC_SL1000_.jpg",
@@ -1125,13 +1680,32 @@ const productsList = [
                     brand: "SAMSUNG",
                     capacity: "4.5 Cubic Feet",
                     type: "Washer",
-                    color: "White"
+                    color: "White",
+                    energyConsumption: "130 kWh/year",
+                    dimensions: "27 x 31 x 38 inches",
+                    weight: "200 lbs",
+                    voltage: "120V",
+                    spinSpeed: "1200 RPM",
                 }
             },
             {
                 id: 4,
                 name: "Pyle Compact Home Washer & Dryer",
-                description: "2 in 1 Portable Mini Washing Machine, Twin Tubs, 11lbs. Capacity, 110V, Spin Cycle w/Hose, Translucent Tub Container Window, Ideal for Smaller Laundry Loads",
+                shortDescription: "2 in 1 Portable Mini Washing Machine with Spin Cycle",
+                description: [
+                    {
+                        title: "TWIN TUB DESIGN:",
+                        description: "The washer and dryer are separated, allowing you to wash and spin dry clothes at the same time."
+                    },
+                    {
+                        title: "PORTABLE AND LIGHTWEIGHT:",
+                        description: "Perfect for small spaces or frequent movers, it's easy to set up and transport."
+                    },
+                    {
+                        title: "IDEAL FOR SMALL LOADS:",
+                        description: "Great for washing small loads of laundry like baby clothes, underwear, or towels."
+                    }
+                ],
                 price: 1799,
                 discount: 20,
                 image: "https://m.media-amazon.com/images/I/71x0YGhcS9L._AC_SL1500_.jpg",
@@ -1140,13 +1714,32 @@ const productsList = [
                     brand: "Pyle",
                     capacity: "11 ltrs",
                     type: "Washer",
-                    color: "Gray"
+                    color: "Gray",
+                    energyConsumption: "100 kWh/year",
+                    dimensions: "24 x 14 x 28 inches",
+                    weight: "28 lbs",
+                    voltage: "110V",
+                    spinSpeed: "1400 RPM",
                 }
             },
             {
                 id: 5,
                 name: "YLTIMER Mini Portable Washer",
-                description: "Machine, Mini Portable Washer and Spin Dryer, Collapsible Washer Deep Cleans",
+                shortDescription: "Mini Portable Washer and Spin Dryer, Collapsible Washer",
+                description: [
+                    {
+                        title: "COLLAPSIBLE DESIGN:",
+                        description: "This washer can collapse down for easy storage, making it perfect for those with limited space."
+                    },
+                    {
+                        title: "EFFICIENT SPIN DRYER:",
+                        description: "Includes a powerful spin dryer that removes excess water from clothes, reducing drying time."
+                    },
+                    {
+                        title: "PORTABLE AND EASY TO USE:",
+                        description: "Just plug it in, add water, and start washing in minutes."
+                    }
+                ],
                 price: 69.99,
                 discount: 20,
                 image: "https://m.media-amazon.com/images/I/71yXjkMOkxL._AC_SL1500_.jpg",
@@ -1155,7 +1748,12 @@ const productsList = [
                     brand: "YLTIMER",
                     capacity: "12 ltrs",
                     type: "Washer",
-                    color: "Gray"
+                    color: "Gray",
+                    energyConsumption: "50 kWh/year",
+                    dimensions: "15 x 15 x 25 inches",
+                    weight: "13 lbs",
+                    voltage: "110V",
+                    spinSpeed: "1200 RPM",
                 }
             }
         ]
@@ -1167,7 +1765,21 @@ const productsList = [
             {
                 id:1,
                 name: "Canon EOS R5",
-                description: "Canon EOS R5 Full-Frame Mirrorless Camera with 8K Video, 45 Megapixel Full-Frame CMOS Sensor, DIGIC X Image Processor, Dual Memory Card Slots, and Up to 12 fps Mechnical Shutter",
+                shortDescription: "Full-Frame Mirrorless Camera with 8K Video and 45MP CMOS Sensor",
+                description: [
+                    {
+                        title: "8K Video Capability:",
+                        description: "Record high-resolution videos with up to 8K resolution for unparalleled detail."
+                    },
+                    {
+                        title: "45MP Full-Frame Sensor:",
+                        description: "Capture breathtaking images with a 45-megapixel full-frame CMOS sensor."
+                    },
+                    {
+                        title: "DIGIC X Processor:",
+                        description: "Powerful image processing engine that enhances speed and image quality."
+                    }
+                ],
                 price: 3899.99,
                 discount: 10,
                 image: "https://m.media-amazon.com/images/I/71hpUUcC5uL._AC_SL1500_.jpg",
@@ -1176,13 +1788,36 @@ const productsList = [
                     brand: "Canon",
                     resolution: "45MP",
                     color: "Black",
-                    maximumAperture: "12f"
+                    maximumAperture: "12f",
+                    sensorType: "Full-Frame CMOS",
+                    videoResolution: "8K",
+                    imageProcessor: "DIGIC X",
+                    frameRate: "12 fps (mechanical)",
+                    memorySlots: "Dual card slots"
                 }
             },
             {
                 id:2,
                 name: "Sony Alpha 7C",
-                description: "Sony Alpha 7C Full-Frame Mirrorless Camera - Silver (ILCE7C/S)",
+                shortDescription: "Compact Full-Frame Mirrorless Camera with 24MP Resolution and 4K Video",
+                description: [
+                    {
+                        title: "Compact Full-Frame Design:",
+                        description: "Small and lightweight for everyday portability without compromising quality."
+                    },
+                    {
+                        title: "24MP Full-Frame Sensor:",
+                        description: "High-resolution sensor that delivers sharp, detailed images."
+                    },
+                    {
+                        title: "4K Video Recording:",
+                        description: "Capture professional-grade video with 4K resolution and enhanced clarity."
+                    },
+                    {
+                        title: "BIONZ X Processor:",
+                        description: "Processes images quickly and maintains superior image quality."
+                    }
+                ],
                 price: 1799.99,
                 discount: 20,
                 image: "https://m.media-amazon.com/images/I/71tFzElLlCL._AC_SL1500_.jpg",
@@ -1191,13 +1826,36 @@ const productsList = [
                     brand: "Sony",
                     resolution: "24MP",
                     color: "Silver",
-                    maximumAperture: "4f"
+                    maximumAperture: "4f",
+                    sensorType: "Full-Frame",
+                    videoResolution: "4K",
+                    imageProcessor: "BIONZ X",
+                    frameRate: "10 fps",
+                    connectivity: "Wi-Fi, Bluetooth"
                 }
             },
             {
                 id:3,
                 name: "Nikon Z6 II",
-                description: "Nikon Z6 II FX-Format Mirrorless Camera Body Black",
+                shortDescription: "Mirrorless Camera with 24MP Full-Frame Sensor and 4K Video",
+                description: [
+                    {
+                        title: "24MP Full-Frame Sensor:",
+                        description: "Delivers high-resolution photos with stunning clarity."
+                    },
+                    {
+                        title: "Dual EXPEED 6 Processors:",
+                        description: "Improves speed, handling, and overall image quality."
+                    },
+                    {
+                        title: "4K Video Recording:",
+                        description: "Shoot ultra-high-definition videos with exceptional detail."
+                    },
+                    {
+                        title: "273-Point Hybrid Autofocus:",
+                        description: "Fast and accurate focus across the frame, even in low light."
+                    }
+                ],
                 price: 1999.99,
                 discount: 20,
                 image: "https://m.media-amazon.com/images/I/61kajF4fH5L._AC_SL1000_.jpg",
@@ -1206,13 +1864,36 @@ const productsList = [
                     brand: "Nikon",
                     resolution: "24MP",
                     color: "Black",
-                    maximumAperture: "4f"
+                    maximumAperture: "4f",
+                    sensorType: "Full-Frame",
+                    videoResolution: "4K",
+                    imageProcessor: "EXPEED 6",
+                    frameRate: "14 fps",
+                    focusSystem: "273-point Hybrid AF"
                 }
             },
             {
                 id:4,
                 name: "Panasonic Lumix GH5",
-                description: "Panasonic Lumix GH5 4K Digital Camera, 20.3 Megapixel Mirrorless Camera with Digital Live MOS Sensor, 5-Axis Dual I.S. 2.0, 4K 4:2:2 10-Bit Video, Full-Size HDMI Out, 3.2-Inch LCD, DC-GH5 (Black)",
+                shortDescription: "Panasonic Lumix GH5 4K Digital Camera, 20.3 Megapixel Mirrorless Camera with Digital Live MOS Sensor, 5-Axis Dual I.S. 2.0, 4K 4:2:2 10-Bit Video, Full-Size HDMI Out, 3.2-Inch LCD, DC-GH5 (Black)",
+                description:[
+                    {
+                        title: "14 fps Continuous Shooting:",
+                        description: "Capture fast-moving action with ease."
+                    },
+                    {
+                        title: "Dual Card Slots:",
+                        description: "Allows for flexible storage options and easy backup."
+                    },
+                    {
+                        title: "In-Body Image Stabilization:",
+                        description: "Reduces camera shake for sharper images and smoother video."
+                    },
+                    {
+                        title: "Durable Construction:",
+                        description: "Weather-sealed and built for rugged conditions."
+                    }
+                ],
                 price: 1399.99,
                 discount: 20,
                 image: "https://m.media-amazon.com/images/I/81IyUXiUUpL._AC_SL1500_.jpg",
@@ -1221,13 +1902,32 @@ const productsList = [
                     brand: "Panasonic",
                     resolution: "20.3MP",
                     color: "Black",
-                    maximumAperture: "4f"
+                    maximumAperture: "4f",
+                    sensorType: "Digital Live MOS",
+                    videoResolution: "4K 10-bit",
+                    imageStabilization: "5-Axis Dual I.S. 2.0",
+                    display: "3.2-Inch LCD",
+                    output: "Full-Size HDMI"
                 }
             },
             {
                 id:5,
                 name: "Fujifilm X-T4",
-                description: "Fujifilm X-T4 Mirrorless Camera Body",
+                shortDescription: "Fujifilm X-T4 Mirrorless Camera Body",
+                description: [
+                    {
+                        title: "Compact Full-Frame Design:",
+                        description: "Small and lightweight for everyday portability without compromising quality."
+                    },
+                    {
+                        title: "26.1MP Full-Frame Sensor:",
+                        description: "High-resolution sensor that delivers sharp, detailed images."
+                    },
+                    {
+                        title: "4K Video Recording:",
+                        description: "Capture professional-grade video with 4K resolution and enhanced clarity."
+                    }
+                ],
                 price: 1699.99,
                 discount: 20,
                 image: "https://m.media-amazon.com/images/I/71BsdiTzEoL._AC_SL1500_.jpg",
@@ -1236,7 +1936,12 @@ const productsList = [
                     brand: "Fujifilm",
                     resolution: "26.1MP",
                     color: "Black",
-                    maximumAperture: "4f"
+                    maximumAperture: "4f",
+                    sensorType: "APS-C",
+                    videoResolution: "4K",
+                    imageStabilization: "5-Axis In-Body",
+                    frameRate: "15 fps",
+                    batteryLife: "600 shots"
                 }
             }
         ]
@@ -1248,7 +1953,25 @@ const productsList = [
             {
                 id: 1,
                 name: "Amazon Basics Swivel Foam Lounge Chair",
-                description: "Chair - with Headrest, Adjustable",
+                shortDescription: "Adjustable Foam Lounge Chair with Swivel Feature and Headrest",
+                description: [
+                    {
+                        title: "Swivel Design:",
+                        description: "Enjoy 360-degree rotation with this comfortable foam lounge chair."
+                    },
+                    {
+                        title: "Adjustable Headrest:",
+                        description: "Provides customized comfort for your neck and head support."
+                    },
+                    {
+                        title: "Durable Foam Construction:",
+                        description: "Made with high-density foam for long-lasting comfort."
+                    },
+                    {
+                        title: "Ideal for Relaxation:",
+                        description: "Perfect for lounging in living rooms, reading nooks, or game rooms."
+                    }
+                ],
                 price: 599.99,
                 discount: 40,
                 image: "https://m.media-amazon.com/images/I/91nh+Sd6MKL._AC_SL1500_.jpg",
@@ -1257,13 +1980,35 @@ const productsList = [
                     brand: "Amazon Basics",
                     color: "Blue",
                     type: "Chair",
-                    dimensions: "26.3D x 23.5W x 13.7H in"
+                    dimensions: "26.3D x 23.5W x 13.7H in",
+                    material: "High-density foam",
+                    swivel: "360-degree rotation",
+                    weightCapacity: "300 lbs",
+                    adjustable: "Yes, headrest"
                 } 
             },
             {
                 id: 2,
                 name: "ROTTOGOON Floor Lamp",
-                description: "Lamp for Living Room with 3 Color Temperatures LED Bulb, Standing Lamp Tall Industrial Floor Lamp Reading",
+                shortDescription: "Industrial Standing Lamp with Adjustable Color Temperatures for Reading",
+                description: [
+                    {
+                        title: "3 Color Temperature Settings:",
+                        description: "Adjust between warm, neutral, and cool lighting to suit your needs."
+                    },
+                    {
+                        title: "Tall and Sleek Design:",
+                        description: "Adds a stylish touch to any living room with its modern industrial look."
+                    },
+                    {
+                        title: "Energy-Efficient LED Bulb:",
+                        description: "Includes a long-lasting LED bulb that saves on energy costs."
+                    },
+                    {
+                        title: "Easy Assembly:",
+                        description: "Simple to set up with detailed instructions and minimal tools required."
+                    }
+                ],
                 price: 99.99,
                 discount: 43,
                 image: "https://m.media-amazon.com/images/I/61pJwYkeP9L._AC_SL1001_.jpg",
@@ -1272,13 +2017,35 @@ const productsList = [
                     brand: "ROTTOGOON",
                     color: "Beige & Black",
                     type: "Lamp",
-                    dimensions: '11.02"D x 11.02"W x 61.22"H'
+                    dimensions: '11.02"D x 11.02"W x 61.22"H',
+                    lightBulbType: "LED",
+                    colorTemperature: "3 adjustable settings",
+                    material: "Metal and fabric",
+                    energyEfficient: "Yes"
                 } 
             },
             {
                 id: 3,
                 name: "Key Holder for Wall",
-                description: "Decorative Key and Mail Holder with Shelf Has Large Hooks for Bags, Coats, Umbrella – Paulownia Wood Key Hanger with Mounting Hardware",
+                shortDescription: "Decorative Key and Mail Holder with Large Hooks and Shelf",
+                description: [
+                    {
+                        title: "Multi-Functional Design:",
+                        description: "Includes large hooks for keys, bags, and umbrellas, with a shelf for mail."
+                    },
+                    {
+                        title: "Sturdy Wood Construction:",
+                        description: "Made of durable Paulownia wood for a rustic, natural look."
+                    },
+                    {
+                        title: "Space-Saving Solution:",
+                        description: "Helps keep your entryway organized while saving space."
+                    },
+                    {
+                        title: "Easy to Mount:",
+                        description: "Includes mounting hardware for quick and easy installation."
+                    }
+                ],
                 price: 99.99,
                 discount: 10,
                 image: "https://m.media-amazon.com/images/I/61sHXVsbXAL._AC_SL1500_.jpg",
@@ -1287,13 +2054,35 @@ const productsList = [
                     brand: "Generic",
                     color: "Wood",
                     type: "Key Holder",
-                    dimensions: "9.8”W x 6.7”H x 4.2”D"
+                    dimensions: "9.8”W x 6.7”H x 4.2”D",
+                    material: "Paulownia wood",
+                    numberOfHooks: "4 large hooks",
+                    installation: "Wall-mounted",
+                    additionalFeatures: "Includes mail shelf"
                 } 
             },
             {
                 id: 4,
                 name: "Yoobure Tree Bookshelf",
-                description: "6 Shelf Retro Floor Standing Bookcase, Tall Wood Book Storage Rack for CDs/Movies/Books, Utility Book Organizer Shelves",
+                shortDescription: "Tall 6-Shelf Book Storage Rack for Books, CDs, and Movies",
+                description: [
+                    {
+                        title: "Unique Tree Design:",
+                        description: "Stylish and functional, this bookshelf adds a retro touch to your living space."
+                    },
+                    {
+                        title: "6 Tier Shelving:",
+                        description: "Provides ample storage for books, CDs, and movies in a compact space."
+                    },
+                    {
+                        title: "Durable and Stable:",
+                        description: "Made from strong wood materials to support heavy loads."
+                    },
+                    {
+                        title: "Space-Saving Solution:",
+                        description: "The vertical design maximizes storage without taking up much floor space."
+                    }
+                ],
                 price: 99.99,
                 discount: 17,
                 image: "https://m.media-amazon.com/images/I/61pfi70XekL._AC_SL1500_.jpg",
@@ -1302,13 +2091,35 @@ const productsList = [
                     brand: "Yoobure",
                     color: "Rustic Brown",
                     type: "Bookshelf",
-                    dimensions: '7.8"D x 15"W x 45"H'
+                    dimensions: '7.8"D x 15"W x 45"H',
+                    material: "Wood",
+                    numberOfShelves: "6",
+                    weightCapacity: "50 lbs per shelf",
+                    assemblyRequired: "Yes"
                 } 
             },
             {
                 id: 5,
                 name: "Modern Ceiling Fan",
-                description: "Fan with Lights and Remote,5 Wood Blade,Reversible DC Motor,6 Speed",
+                shortDescription: "5-Blade Ceiling Fan with Lights, Remote, and Reversible Motor",
+                description: [
+                    {
+                        title: "Reversible DC Motor:",
+                        description: "Allows for energy-efficient airflow in both summer and winter."
+                    },
+                    {
+                        title: "5 Wooden Blades:",
+                        description: "Natural wood finish adds a stylish element to your living room."
+                    },
+                    {
+                        title: "Integrated Light Fixture:",
+                        description: "Provides ambient lighting with an included LED bulb."
+                    },
+                    {
+                        title: "Remote Control Included:",
+                        description: "Easily adjust fan speed and light settings with a convenient remote."
+                    }
+                ],
                 price: 199.99,
                 discount: 10,
                 image: "https://m.media-amazon.com/images/I/61G3kHeHZ5L._AC_SL1500_.jpg",
@@ -1317,7 +2128,11 @@ const productsList = [
                     brand: "Morkefan",
                     color: "Black",
                     type: "Fan",
-                    dimensions: '52 x 52 x 15.6 inches'
+                    dimensions: '52 x 52 x 15.6 inches',
+                    numberOfBlades: "5",
+                    motorType: "Reversible DC motor",
+                    lightIncluded: "Yes, LED",
+                    controlMethod: "Remote control"
                 } 
             }
         ]
@@ -1329,7 +2144,25 @@ const productsList = [
             {
                 id: 1,
                 name: "Dining Table Set",
-                description: "5 Piece Dining Set with 4 Chairs for Home Kitchen Room Small Space, Wood Table and Metal Chair with Cushion",
+                shortDescription: "5 Piece Dining Set with 4 Metal Chairs and Cushioned Seats",
+                description: [
+                    {
+                        title: "Space-Saving Design:",
+                        description: "Perfect for small spaces, this compact dining set fits comfortably in kitchens and dining rooms."
+                    },
+                    {
+                        title: "Durable Materials:",
+                        description: "Features a wood-finished tabletop and sturdy metal chairs for long-lasting use."
+                    },
+                    {
+                        title: "Comfortable Seating:",
+                        description: "Chairs include soft cushions for enhanced comfort during meals."
+                    },
+                    {
+                        title: "Easy to Assemble:",
+                        description: "Quick setup with all tools and instructions included."
+                    }
+                ],
                 price: 209.99,
                 discount: 10,
                 image: "https://m.media-amazon.com/images/I/81ZRluRoZIL._AC_SL1500_.jpg",
@@ -1338,13 +2171,36 @@ const productsList = [
                     brand: "Generic",
                     color: "Brown",
                     type: "Dining Table Set",
-                    dimensions: "47.25”(L) x 29.5”(W) x 30”(H)"
+                    dimensions: "47.25”(L) x 29.5”(W) x 30”(H)",
+                    material: "Wood and metal",
+                    seatingCapacity: "4 people",
+                    chairCushions: "Yes, padded",
+                    assemblyRequired: "Yes",
+                    weightCapacity: "220 lbs per chair"
                 } 
             },
             {
                 id: 2,
                 name: "Saint Mossi 6 Light Chandelier Modern",
-                description: "Modern Crystal Chandelier Lighting Ceiling Pendant Light Fixture for Dining Room Living Room",
+                shortDescription: "Modern Crystal Chandelier with 6 Lights for Elegant Dining Rooms",
+                description: [
+                    {
+                        title: "Elegant Crystal Design:",
+                        description: "Features high-quality K9 crystals for a luxurious and sparkling effect."
+                    },
+                    {
+                        title: "Perfect for Dining Rooms:",
+                        description: "Ideal lighting fixture to enhance the ambiance of any formal dining area."
+                    },
+                    {
+                        title: "Durable Metal Frame:",
+                        description: "Sturdy silver metal frame provides stability and longevity."
+                    },
+                    {
+                        title: "Dimmable Lighting:",
+                        description: "Supports dimmable bulbs for adjustable lighting based on mood and occasion."
+                    }
+                ],
                 price: 199.99,
                 discount: 5,
                 image: "https://m.media-amazon.com/images/I/71GVXGwGDwL._AC_SL1500_.jpg",
@@ -1353,13 +2209,36 @@ const productsList = [
                     brand: "Saint Mossi",
                     color: "Silver",
                     type: "Chandelier",
-                    dimensions: "15.7 x 15.7 x 15.7 inches"
+                    dimensions: "15.7 x 15.7 x 15.7 inches",
+                    material: "Metal and crystal",
+                    numberOfLights: "6",
+                    bulbType: "LED or incandescent",
+                    dimmable: "Yes",
+                    installation: "Hardwired"
                 } 
             },
             {
                 id: 3,
                 name: "Hombazaar Dining Room Sideboard",
-                description: "Buffet Table with Storage Cabinet and Bottom Shelf, Console Table with Drawers for Living Room, Dining Room, Hallway, Kitchen, Rustic Brown",
+                shortDescription: "Rustic Buffet Table with Storage and Bottom Shelf for Dining Room",
+                description: [
+                    {
+                        title: "Ample Storage Space:",
+                        description: "Includes two drawers and a lower shelf for extra storage and organization."
+                    },
+                    {
+                        title: "Rustic Design:",
+                        description: "Rustic brown finish adds a cozy touch to your dining room decor."
+                    },
+                    {
+                        title: "Durable Construction:",
+                        description: "Made of high-quality wood and metal for enhanced durability."
+                    },
+                    {
+                        title: "Versatile Use:",
+                        description: "Can be used as a buffet table, sideboard, or console table in various rooms."
+                    }
+                ],
                 price: 215,
                 discount: 10,
                 image: "https://m.media-amazon.com/images/I/710dIQSON8L._AC_SL1200_.jpg",
@@ -1368,13 +2247,36 @@ const productsList = [
                     brand: "Hombazaar",
                     color: "Rustic Brown",
                     type: "Sideboard",
-                    dimensions: "39.4”(L) x 15.7”(W) x 31.5”(H)"
+                    dimensions: "39.4”(L) x 15.7”(W) x 31.5”(H)",
+                    material: "Wood and metal",
+                    storage: "2 drawers and 1 bottom shelf",
+                    weightCapacity: "120 lbs",
+                    assemblyRequired: "Yes",
+                    versatility: "Buffet or console table"
                 } 
             },
             {
                 id: 4,
                 name: "Artistic Weavers Dining Rug",
-                description: "Boho Area Rug for Bedroom, 2' x 7' Modern Geometric Patterned Home Decorative Carpet for Living Room, Indoor Rugs",
+                shortDescription: "Boho Style Area Rug with Modern Geometric Pattern for Dining Room",
+                description: [
+                    {
+                        title: "Modern Boho Design:",
+                        description: "Features a stylish geometric pattern that adds texture and color to your dining room."
+                    },
+                    {
+                        title: "Soft and Durable:",
+                        description: "Made from high-quality fibers for both softness underfoot and durability."
+                    },
+                    {
+                        title: "Versatile Usage:",
+                        description: "Ideal for dining rooms but also suitable for bedrooms, living rooms, and hallways."
+                    },
+                    {
+                        title: "Easy to Clean:",
+                        description: "Stain-resistant material allows for easy maintenance and cleaning."
+                    }
+                ],
                 price: 199.99,
                 discount: 10,
                 image: "https://m.media-amazon.com/images/I/81agkufeDnL._AC_SL1440_.jpg",
@@ -1383,13 +2285,36 @@ const productsList = [
                     brand: "Artistic Weavers",
                     color: "Multicolor",
                     type: "Rug",
-                    dimensions: "2' x 7'"
+                    dimensions: "2' x 7'",
+                    material: "Polypropylene",
+                    style: "Boho/Geometric",
+                    stainResistant: "Yes",
+                    indoorUse: "Yes",
+                    pileHeight: "Medium"
                 }
             },
             {
                 id: 5,
                 name: "Haus and Hues Wall Art",
-                description: "Set of 6 Dining Room Wall Decor, Kitchen Wall Art Posters, Dining Room Decorations, Dining Room Wall Decor for Dining Room, Kitchen Wall Decor, Dining Room Wall Art",
+                shortDescription: "Set of 6 Modern Wall Art Posters for Dining Room Decoration",
+                description: [
+                    {
+                        title: "Stylish Set of 6 Posters:",
+                        description: "This set includes 6 modern art prints that are perfect for dining room walls."
+                    },
+                    {
+                        title: "Versatile Decor:",
+                        description: "Ideal for decorating not just dining rooms, but also kitchens, hallways, and more."
+                    },
+                    {
+                        title: "High-Quality Printing:",
+                        description: "Printed on premium paper to ensure vibrant colors and long-lasting quality."
+                    },
+                    {
+                        title: "Ready for Framing:",
+                        description: "Sized perfectly to fit standard frames for easy hanging and display."
+                    }
+                ],
                 price: 199.99,
                 discount: 10,
                 image: "https://m.media-amazon.com/images/I/81TVCpEIeYL._AC_SL1500_.jpg",
@@ -1398,7 +2323,12 @@ const productsList = [
                     brand: "Haus and Hues",
                     color: "Mulricolor",
                     type: "Wall Art",
-                    dimensions: "8 x 10 inches"
+                    dimensions: "8 x 10 inches",
+                    material: "Premium paper",
+                    setContents: "6 posters",
+                    framingRequired: "Yes, frames not included",
+                    style: "Modern/Minimalist",
+                    roomUse: "Dining room, kitchen, hallway"
                 }
             }
         ]
@@ -1410,7 +2340,25 @@ const productsList = [
             {
                 id: 1,
                 name: "Bathroom Rugs",
-                description: "Bathroom Rugs, Ultra Soft Chenille Plush Bath Mat, Super Absorbent, Non-Slip Machine Washable Bath Rug for Shower, Bathroom, Kitchen, Floors",
+                shortDescription: "Ultra Soft Chenille Plush Bath Mat, Super Absorbent and Non-Slip",
+                description: [
+                    {
+                        title: "Ultra Soft Material:",
+                        description: "Made of chenille plush for a luxurious feel underfoot."
+                    },
+                    {
+                        title: "High Absorbency:",
+                        description: "Quickly absorbs water to keep your bathroom floors dry."
+                    },
+                    {
+                        title: "Non-Slip Backing:",
+                        description: "Features a non-slip bottom to ensure safety on wet surfaces."
+                    },
+                    {
+                        title: "Machine Washable:",
+                        description: "Easy to clean and maintain, simply toss in the washing machine."
+                    }
+                ],
                 price: 209.99,
                 discount: 15,
                 image: "https://m.media-amazon.com/images/I/91RzUPx1mkL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
@@ -1419,13 +2367,35 @@ const productsList = [
                     brand: "Generic",
                     color: "Gray",
                     type: "Rugs",
-                    dimensions: "20 x 32 inches"
+                    dimensions: "20 x 32 inches",
+                    material: "Chenille",
+                    absorbency: "High",
+                    washable: "Yes",
+                    thickness: "1 inch"
                 }
             },
             {
                 id: 2,
                 name: "Bathroom Shower Curtain",
-                description: "Shower Curtain with 12 Hooks, Waterproof Polyester Fabric Shower Curtain for Bathroom, Hotel Quality, Machine Washable, 72 x 72 inches",
+                shortDescription: "Waterproof Polyester Fabric Shower Curtain with 12 Hooks",
+                description: [
+                    {
+                        title: "Waterproof Fabric:",
+                        description: "Crafted from high-quality polyester to resist water and mildew."
+                    },
+                    {
+                        title: "Includes Hooks:",
+                        description: "Comes with 12 hooks for easy and quick installation."
+                    },
+                    {
+                        title: "Machine Washable:",
+                        description: "Conveniently machine washable for easy care."
+                    },
+                    {
+                        title: "Standard Size:",
+                        description: "Measures 72 x 72 inches to fit most standard tubs and showers."
+                    }
+                ],
                 price: 30,
                 discount: 45,
                 image: "https://m.media-amazon.com/images/I/81nNdiTnDeL._AC_SL1500_.jpg",
@@ -1434,13 +2404,35 @@ const productsList = [
                     brand: "Easy-Going",
                     color: "Cream",
                     type: "Shower Curtain",
-                    dimensions: "72 x 72 inches"
+                    dimensions: "72 x 72 inches",
+                    material: "Polyester",
+                    hooksIncluded: "12 hooks",
+                    waterproof: "Yes",
+                    machineWashable: "Yes"
                 }
             },
             {
                 id: 3,
                 name: "NOKAMW Storage Cabinet",
-                description: "Bathroom Storage Cabinet with 3 Tier Shelves and 2 Doors, Free Standing Floor Cabinet, Kitchen Cupboard, Wooden Entryway Storage Cabinet, 23.6 x 11.8 x 31.5 inches",
+                shortDescription: "3 Tier Shelves Bathroom Storage Cabinet with 2 Doors",
+                description: [
+                    {
+                        title: "Spacious Storage:",
+                        description: "Features 3 tier shelves and 2 doors for ample storage space."
+                    },
+                    {
+                        title: "Stylish Design:",
+                        description: "White finish adds a modern touch to any bathroom or kitchen."
+                    },
+                    {
+                        title: "Versatile Use:",
+                        description: "Can be used in bathrooms, kitchens, or entryways for additional storage."
+                    },
+                    {
+                        title: "Easy Assembly:",
+                        description: "Simple assembly process with included instructions."
+                    }
+                ],
                 price: 215,
                 discount: 10,
                 image: "https://m.media-amazon.com/images/I/71ECN79BNhL._AC_SL1500_.jpg",
@@ -1449,13 +2441,35 @@ const productsList = [
                     brand: "NOKAMW",
                     color: "White",
                     type: "Storage Cabinet",
-                    dimensions: "23.6 x 11.8 x 31.5 inches"
+                    dimensions: "23.6 x 11.8 x 31.5 inches",
+                    material: "Wood",
+                    numberOfShelves: "3",
+                    assemblyRequired: "Yes",
+                    weightCapacity: "150 lbs"
                 }
             },
             {
                 id: 4,
                 name: "TEXTILOM Towel Set",
-                description: "6 Piece Towel Set, 100% Cotton, Soft, Absorbent, Quick Dry, 2 Bath Towels, 2 Hand Towels, 2 Washcloths, Machine Washable, Hotel Quality",
+                shortDescription: "6 Piece Cotton Towel Set, Soft and Quick Dry",
+                description: [
+                    {
+                        title: "Premium Quality:",
+                        description: "Made of 100% cotton for softness and durability."
+                    },
+                    {
+                        title: "Quick Dry Technology:",
+                        description: "Absorbent towels that dry quickly for convenience."
+                    },
+                    {
+                        title: "Complete Set:",
+                        description: "Includes 2 bath towels, 2 hand towels, and 2 washcloths."
+                    },
+                    {
+                        title: "Machine Washable:",
+                        description: "Easy to care for, simply machine wash and tumble dry."
+                    }
+                ],
                 price: 159.99,
                 discount: 10,
                 image: "https://m.media-amazon.com/images/I/918n1ebARfL._AC_SL1500_.jpg",
@@ -1464,13 +2478,35 @@ const productsList = [
                     brand: "TEXTILOM",
                     color: "Green",
                     type: "Towel Set",
-                    dimensions: "6 Piece Set"
+                    dimensions: "6 Piece Set",
+                    material: "100% Cotton",
+                    absorbency: "High",
+                    quickDry: "Yes",
+                    machineWashable: "Yes"
                 }
             },
             {
                 id: 5,
                 name: "Clara Clark Accessories Set",
-                description: "Bathroom Accessories Set, Includes Soap Dispenser, Tooth Brush Holder, Tumbler, Soap Dish, Durable Bath Accessory Set, Bathroom Decor, Gift Packaged",
+                shortDescription: "Durable Bathroom Accessories Set, Includes Soap Dispenser and More",
+                description: [
+                    {
+                        title: "Complete Accessories Set:",
+                        description: "Includes a soap dispenser, toothbrush holder, tumbler, and soap dish."
+                    },
+                    {
+                        title: "Elegant Design:",
+                        description: "Stylish white finish complements any bathroom decor."
+                    },
+                    {
+                        title: "Durable Material:",
+                        description: "Made from high-quality materials for long-lasting use."
+                    },
+                    {
+                        title: "Gift Packaged:",
+                        description: "Perfectly packaged for gifting or personal use."
+                    }
+                ],
                 price: 89,
                 discount: 25,
                 image: "https://m.media-amazon.com/images/I/71Hs44dzO3L._AC_SL1500_.jpg",
@@ -1479,7 +2515,11 @@ const productsList = [
                     brand: "Clara Clark",
                     color: "White",
                     type: "Accessories Set",
-                    dimensions: "8 Piece Set"
+                    dimensions: "8 Piece Set",
+                    material: "Durable Plastic",
+                    soapDispenserIncluded: "Yes",
+                    giftPackaged: "Yes",
+                    usage: "Bathroom decor"
                 }
             }
         ]
@@ -1491,7 +2531,25 @@ const productsList = [
             {
                 id: 1,
                 name: "RAXCO Utensil Set",
-                description: "Silicone Cooking Utensils Set, Heat Resistant and Non-Stick Kitchen Utensil Set with Stainless Steel Handle, Kitchen Gadgets Tools Set for Cookware",
+                shortDescription: "Silicone Cooking Utensils Set, Heat Resistant and Non-Stick",
+                description: [
+                    {
+                        title: "Heat Resistant:",
+                        description: "Designed to withstand high temperatures without melting."
+                    },
+                    {
+                        title: "Non-Stick Surface:",
+                        description: "Perfect for all cookware, preventing scratches and damage."
+                    },
+                    {
+                        title: "Durable Construction:",
+                        description: "Stainless steel handles ensure longevity and stability."
+                    },
+                    {
+                        title: "Complete Set:",
+                        description: "Includes a variety of tools to meet all your cooking needs."
+                    }
+                ],
                 price: 209.99,
                 discount: 15,
                 image: "https://m.media-amazon.com/images/I/71YuEe-fqFL._AC_SL1500_.jpg",
@@ -1500,13 +2558,35 @@ const productsList = [
                     brand: "RAXCO",
                     color: "Black",
                     type: "Utensil Set",
-                    dimensions: "10 Piece Set"
+                    dimensions: "10 Piece Set",
+                    material: "Silicone and Stainless Steel",
+                    heatResistance: "Up to 500°F",
+                    nonStick: "Yes",
+                    dishwasherSafe: "Yes"
                 }
             },
             {
                 id: 2,
                 name: "RAXCO Knife Set",
-                description: "Knife Set with Block, 15 Pieces Kitchen Knife Set with Pine Block Holder, Knife Block Set with Sharpener, High Carbon Stainless Steel Knife Block Set, Boxed Knife Set",
+                shortDescription: "15 Piece Kitchen Knife Set with Block and Sharpener",
+                description: [
+                    {
+                        title: "High Carbon Steel:",
+                        description: "Knives made of high carbon stainless steel for durability."
+                    },
+                    {
+                        title: "Ergonomic Design:",
+                        description: "Comfortable grip and balanced weight for easy handling."
+                    },
+                    {
+                        title: "Includes Sharpener:",
+                        description: "Comes with a built-in sharpener for convenience."
+                    },
+                    {
+                        title: "Pine Block Holder:",
+                        description: "Elegant pine block to store and display your knives."
+                    }
+                ],
                 price: 30,
                 discount: 45,
                 image: "https://m.media-amazon.com/images/I/710VumO24rL._AC_SL1500_.jpg",
@@ -1515,13 +2595,35 @@ const productsList = [
                     brand: "RAXCO",
                     color: "Black",
                     type: "Knife Set",
-                    dimensions: "15 Piece Set"
+                    dimensions: "15 Piece Set",
+                    material: "High Carbon Stainless Steel",
+                    blockMaterial: "Pine",
+                    sharpenerIncluded: "Yes",
+                    dishwasherSafe: "No"
                 }
             },
             {
                 id: 3,
                 name: "KitchenAid Stand Mixer",
-                description: "KitchenAid KSM75SL Classic Plus 4.5-Qt. Tilt-Head Stand Mixer",
+                shortDescription: "Classic Plus 4.5-Qt. Tilt-Head Stand Mixer",
+                description: [
+                    {
+                        title: "Powerful Motor:",
+                        description: "Designed with a 300 watt motor for efficient mixing."
+                    },
+                    {
+                        title: "Tilt-Head Design:",
+                        description: "Allows easy access to the bowl and attachments."
+                    },
+                    {
+                        title: "Multiple Speeds:",
+                        description: "10 speeds to accommodate a variety of recipes."
+                    },
+                    {
+                        title: "Versatile Attachments:",
+                        description: "Compatible with a range of attachments for various tasks."
+                    }
+                ],
                 price: 215,
                 discount: 10,
                 image: "https://m.media-amazon.com/images/I/71-D8cOBrcL._AC_SL1500_.jpg",
@@ -1530,13 +2632,35 @@ const productsList = [
                     brand: "KitchenAid",
                     color: "Passion Red",
                     type: "Stand Mixer",
-                    dimensions: '14.1"D x 8.7"W x 13.9"H'
+                    dimensions: '14.1"D x 8.7"W x 13.9"H',
+                    capacity: "4.5 Qt",
+                    motorPower: "300 Watts",
+                    speedSettings: "10",
+                    attachmentsIncluded: "Yes"
                 }
             },
             {
                 id: 4,
                 name: "Cuisinart Toaster",
-                description: "Cuisinart CPT-180P1 Metal Classic 4-Slice toaster, Brushed Stainless",
+                shortDescription: "Metal Classic 4-Slice Toaster, Brushed Stainless",
+                description: [
+                    {
+                        title: "4-Slice Capacity:",
+                        description: "Toast up to four slices at once for quick breakfasts."
+                    },
+                    {
+                        title: "Dual Control Panels:",
+                        description: "Independent controls for each side, allowing different settings."
+                    },
+                    {
+                        title: "Extra Lift Feature:",
+                        description: "Easily retrieve small slices of toast with the extra lift lever."
+                    },
+                    {
+                        title: "Modern Design:",
+                        description: "Brushed stainless steel finish fits any kitchen decor."
+                    }
+            ],
                 price: 159.99,
                 discount: 10,
                 image: "https://m.media-amazon.com/images/I/619XRJY+bFL._AC_SL1173_.jpg",
@@ -1545,13 +2669,35 @@ const productsList = [
                     brand: "Cuisinart",
                     color: "Brushed Stainless",
                     type: "Toaster",
-                    dimensions: "4-Slice"
+                    dimensions: "4-Slice",
+                    slots: "4",
+                    dualControlPanels: "Yes",
+                    extraLiftFeature: "Yes",
+                    warranty: "3 Years"
                 }
             },
             {
                 id: 5,
                 name: "Instant Pot Duo",
-                description: "Instant Pot Duo 7-in-1 Electric Pressure Cooker, Slow Cooker, Rice Cooker, Steamer, Saute, Yogurt Maker, Sterilizer, and Warmer, 6 Quart, 14 One-Touch Programs",
+                shortDescription: "7-in-1 Electric Pressure Cooker with 14 One-Touch Programs",
+                description: [
+                    {
+                        title: "Multi-Functionality:",
+                        description: "Combines 7 kitchen appliances in one: pressure cooker, slow cooker, rice cooker, and more."
+                    },
+                    {
+                        title: "Easy to Use:",
+                        description: "14 one-touch smart programs for various dishes."
+                    },
+                    {
+                        title: "Large Capacity:",
+                        description: "6 Quart capacity perfect for families and meal prepping."
+                    },
+                    {
+                        title: "Safety Features:",
+                        description: "Equipped with multiple safety mechanisms for worry-free cooking."
+                    }
+                ],
                 price: 89,
                 discount: 25,
                 image: "https://m.media-amazon.com/images/I/71LmN7FsaZL._AC_SL1500_.jpg",
@@ -1560,7 +2706,11 @@ const productsList = [
                     brand: "Instant Pot",
                     color: "Stainless",
                     type: "Pressure Cooker",
-                    dimensions: '11.2"D x 11.4"W x 10"H'
+                    dimensions: '11.2"D x 11.4"W x 10"H',
+                    capacity: "6 Quart",
+                    functions: "7",
+                    smartPrograms: "14 One-Touch",
+                    safetyFeatures: "Yes"
                 }
             }
         ]
@@ -1572,8 +2722,25 @@ const productsList = [
             {
                 id: 1,
                 name: "YABER Projector",
-                description: "Projector with WiFi 6 and Bluetooth 5.2, YABER Pro V9 600 ANSI Native 1080P Outdoor Movie Projector, Auto 6D Keystone & 50% Zoom",
-                price: 499.99,
+                shortDescription: "Projector with WiFi 6 and Bluetooth 5.2, 600 ANSI Native 1080P",
+                description: [
+                    {
+                        title: "High Resolution:",
+                        description: "Offers a native 1080P resolution for crystal-clear images."
+                    },
+                    {
+                        title: "Auto Keystone Correction:",
+                        description: "Features auto 6D keystone adjustment for easy setup."
+                    },
+                    {
+                        title: "Zoom Functionality:",
+                        description: "Allows for a 50% zoom without losing image quality."
+                    },
+                    {
+                        title: "Connectivity:",
+                        description: "Supports WiFi and Bluetooth for versatile connectivity options."
+                    }
+                ],
                 discount: 10,
                 image: "https://m.media-amazon.com/images/I/71EL5jIMgGL._AC_SL1500_.jpg",
                 rating: 4.5,
@@ -1581,13 +2748,35 @@ const productsList = [
                     brand: "YABER",
                     color: "Black",
                     type: "Projector",
-                    resolution: "1920 x 1080"
+                    resolution: "1920 x 1080",
+                    brightness: "600 ANSI Lumens",
+                    connectivity: "WiFi 6 and Bluetooth 5.2",
+                    projectionSize: "Up to 170 inches",
+                    aspectRatio: "16:9"
                 }
             },
             {
                 id: 2,
                 name: "Yilebe  Video Projector",
-                description: 'Portable Projector Supported 1080P Full HD & 170" Display Compatible with Phone,TV Stick',
+                shortDescription: "Portable Projector with 1080P Full HD & 170\" Display",
+                description: [
+                    {
+                        title: "Compact Design:",
+                        description: "Lightweight and portable for easy transport."
+                    },
+                    {
+                        title: "Full HD Support:",
+                        description: "Compatible with 1080P for high-quality viewing."
+                    },
+                    {
+                        title: "Wide Display Range:",
+                        description: "Can project up to a 170-inch display."
+                    },
+                    {
+                        title: "Versatile Compatibility:",
+                        description: "Works seamlessly with phones and TV sticks."
+                    }
+                ],
                 price: 60.99,
                 discount: 15,
                 image: "https://m.media-amazon.com/images/I/610WCZ42iTL._AC_SL1500_.jpg",
@@ -1596,13 +2785,35 @@ const productsList = [
                     brand: "Yeilebe",
                     color: "White & Yellow",
                     type: "Projector",
-                    resolution: "1920 x 1080"
+                    resolution: "1920 x 1080",
+                    brightness: "Not Specified",
+                    connectivity: "HDMI, USB",
+                    projectionSize: "Up to 170 inches",
+                    aspectRatio: "16:9"
                 }
             },
             {
                 id: 3,
                 name: "Digital Camera 5K",
-                description: '5K Digital Camera WiFi Autofocus Vlogging Camera for YouTube 48MP Camera for Photography and Video, 3.5" Screen Travel Camera with UV Filter, Anti-Shake,16X Digital Zoom,32GB SD Card,2 Batteries',
+                shortDescription: "5K Digital Camera with Autofocus and Vlogging Features",
+                description: [
+                    {
+                        title: "High Resolution:",
+                        description: "Features a 48MP camera for stunning photography."
+                    },
+                    {
+                        title: "WiFi Connectivity:",
+                        description: "Easily share your content with built-in WiFi."
+                    },
+                    {
+                        title: "Stabilization:",
+                        description: "Anti-shake feature for steady shots."
+                    },
+                    {
+                        title: "Included Accessories:",
+                        description: "Comes with a 32GB SD card and 2 batteries for extended use."
+                    }
+                ],
                 price: 160.99,
                 discount: 15,
                 image: "https://m.media-amazon.com/images/I/81A9tumA8ZL._AC_SL1500_.jpg",
@@ -1611,13 +2822,35 @@ const productsList = [
                     brand: "Generic",
                     color: "Black",
                     type: "Video Camera",
-                    resolution: "1920 x 1080"
+                    resolution: "1920 x 1080",
+                    screen: "3.5 inches",
+                    zoom: "16X Digital Zoom",
+                    autofocus: "Yes",
+                    includedStorage: "32GB SD Card"
                 }
             },
             {
                 id: 4,
                 name: "Video Camera",
-                description: 'Video Camera YouTube Vlogging Camera Recorder FHD 1080P 24.0MP 3.0 Inch 270 Degree Rotation Screen 16X Digital Zoom Camcorder with Microphone,Remote Control and 2 Batteries',
+                shortDescription: "FHD 1080P Vlogging Camera with 270° Rotation Screen",
+                description: [
+                    {
+                        title: "Full HD Video:",
+                        description: "Records in full HD 1080P for high-quality video."
+                    },
+                    {
+                        title: "Rotating Screen:",
+                        description: "3.0-inch screen rotates 270 degrees for flexible shooting angles."
+                    },
+                    {
+                        title: "Microphone Included:",
+                        description: "Comes with a microphone for enhanced audio quality."
+                    },
+                    {
+                        title: "Remote Control:",
+                        description: "Includes remote control for hands-free operation."
+                    }
+                ],
                 price: 90,
                 discount: 18,
                 image: "https://m.media-amazon.com/images/I/71XjuW0u+oL._AC_SL1500_.jpg",
@@ -1626,13 +2859,35 @@ const productsList = [
                     brand: "Generic",
                     color: "Black",
                     type: "Video Camera",
-                    resolution: "1920 x 1080"
+                    resolution: "1920 x 1080",
+                    screen: "3.0 inches",
+                    zoom: "16X Digital Zoom",
+                    microphone: "Yes",
+                    includedBatteries: "2"
                 }
             },
             {
                 id: 5,
                 name: "TP-Link Tapo",
-                description: '1080P Indoor Security Camera for Baby Monitor, Dog Camera w/Motion Detection, 2-Way Audio Siren, Night Vision, Cloud & SD Card Storage, Works w/Alexa & Google Home',
+                shortDescription: "1080P Indoor Security Camera for Baby Monitor",
+                description: [
+                    {
+                        title: "High Definition:",
+                        description: "1080P resolution for clear video monitoring."
+                    },
+                    {
+                        title: "Two-Way Audio:",
+                        description: "Interact remotely with 2-way audio functionality."
+                    },
+                    {
+                        title: "Night Vision:",
+                        description: "Equipped with night vision for low-light monitoring."
+                    },
+                    {
+                        title: "Smart Integration:",
+                        description: "Works with Alexa and Google Home for smart home setups."
+                    }
+                ],
                 price: 25,
                 discount: 40,
                 image: "https://m.media-amazon.com/images/I/61gJcez9unL._AC_SL1500_.jpg",
@@ -1641,7 +2896,11 @@ const productsList = [
                     brand: "Generic",
                     color: "White",
                     type: "Spot Camera",
-                    resolution: "HD"
+                    resolution: "HD",
+                    nightVision: "Yes",
+                    audio: "2-Way",
+                    storageOptions: "Cloud & SD Card",
+                    motionDetection: "Yes"
                 }
             }
         ]
