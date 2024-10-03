@@ -212,6 +212,7 @@ const productsList = [
                         description: "Perfect for gaming and creative tasks such as video editing and 3D rendering."
                     }
                 ],
+                price: 2599.99,
                 discount: 15,
                 image: "https://www.alkosto.com/medias/4711387567043-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wzNDI5NnxpbWFnZS93ZWJwfGFHUXlMMmd4WkM4eE5EUTRORFEwTlRFMk56WTBOaTgwTnpFeE16ZzNOVFkzTURRelh6QXdNVjgzTlRCWGVEYzFNRWd8Y2Q3N2JhY2MxYzAxYTY4Mjc3NTZkODExMzhhZWFiNjEwNmNlNDM1YWI1ZDEwZjY1ZWY4NDAwMDQ0NDliYjNkMQ",
                 rating: 5,
