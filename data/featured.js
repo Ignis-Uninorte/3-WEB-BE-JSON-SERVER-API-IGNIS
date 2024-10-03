@@ -1,5 +1,5 @@
 const featured = [
-  {
+    {
     id: 1,
     category: "Tablets",
     idProduct: 2,
