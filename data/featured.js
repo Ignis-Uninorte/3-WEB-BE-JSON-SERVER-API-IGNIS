@@ -1,5 +1,5 @@
 const featured = [
-  {
+    {
     id: 1,
     category: "Tablets",
     idProduct: 2,
@@ -226,7 +226,7 @@ const featured = [
   },
   {
     id: 7,
-    category: "Television",
+    category: "Televisions",
     idProduct: 2,
     name: "VIZIO 40-inch Full HD 1080p Smart TV",
     shortDescription: "VIZIO 40-inch Full HD 1080p Smart TV with DTS Virtual: X, Alexa Compatibility, Google Cast Built-in, Bluetooth Headphone Capable, (VFD40M-08 New)",
@@ -261,7 +261,7 @@ const featured = [
   },
   {
     id: 8,
-    category: "Television",
+    category: "Televisions",
     idProduct: 5,
     name: "LG 65-Inch Class OLED",
     shortDescription: "LG 65-Inch Class OLED evo C4 Series Smart TV 4K Processor Flat Screen with Magic Remote AI-Powered with Alexa Built-in (OLED65C4PUA, 2024)",
