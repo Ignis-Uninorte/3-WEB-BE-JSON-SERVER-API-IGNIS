@@ -300,7 +300,7 @@ const filters = {
       },
 
     ],
-    "Air Conditioning": [
+    "Air-Conditioning": [
         {
           title: "Brand",
           options: [
@@ -353,7 +353,7 @@ const filters = {
           ],
         },
       ],
-      "Washers/Dryers": [
+      "Washers-Dryers": [
         {
           title: "Brand",
           options: [
