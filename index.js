@@ -41,7 +41,7 @@ const middlewares = jsonServer.defaults();
 const port = process.env.PORT || 3000;
 const db = require("./db.js")();
 const router = jsonServer.router(db);
-const { addClient, getClients } = require("./data/client");  // Import functions
+const { addClient, getClients } = require("./data/clients");  // Import functions
 
 // Middleware to parse JSON body
 server.use(jsonServer.bodyParser);
