@@ -2,7 +2,7 @@ const promotional = require("./data/promotional");
 const featured = require("./data/featured");
 const productsList = require("./data/products");
 const filters = require("./data/filters");
-const { getClients } = require("./data/client"); // Import getClients from clients.js
+const { getClients } = require("./data/clients"); // Import getClients from clients.js
 
 module.exports = () => {
   return {
