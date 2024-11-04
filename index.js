@@ -61,6 +61,19 @@ server.get("/clients", (req, res) => {
   res.json(getClients());  // Return all clients
 });
 
+server.patch("/clients/:nit", (req, res) => {
+  const { nit } = req.params;
+  const clients = getClients();
+  const client = clients.find(client => client.nit === nit);
+
+  if (client) {
+    client.active = !client.active; // Toggle the 'active' status
+    res.json(client); // Respond with the updated client data
+  } else {
+    res.status(404).json({ error: "Client not found" });
+  }
+});
+
 // Use the default router for other routes
 server.use(router);
 
