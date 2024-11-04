@@ -74,6 +74,22 @@ server.patch("/clients/activate/:nit", (req, res) => {
   }
 });
 
+// Endpoint to update client data by NIT
+server.put("/clients/:nit", (req, res) => {
+  const { nit } = req.params;
+  const updatedData = req.body;
+  const clients = getClients();
+  const client = clients.find(client => client.nit === nit);
+
+  if (client) {
+    // Actualizamos los datos del cliente con los nuevos valores
+    Object.assign(client, updatedData);
+    res.json(client);
+  } else {
+    res.status(404).json({ error: "Client not found" });
+  }
+});
+
 // Use the default router for other routes
 server.use(router);
 
