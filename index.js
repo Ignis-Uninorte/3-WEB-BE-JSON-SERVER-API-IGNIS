@@ -61,7 +61,7 @@ server.get("/clients", (req, res) => {
   res.json(getClients());  // Return all clients
 });
 
-server.patch("/clients/:nit", (req, res) => {
+server.patch("/clients/activate/:nit", (req, res) => {
   const { nit } = req.params;
   const clients = getClients();
   const client = clients.find(client => client.nit === nit);
