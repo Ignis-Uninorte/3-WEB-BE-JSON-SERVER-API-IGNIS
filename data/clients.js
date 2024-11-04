@@ -1,5 +1,6 @@
 const clients = [
   {
+    id:1,
     nit: "123456789",
     name: "Tech Solutions",
     address: "123 Innovation Drive",
@@ -14,6 +15,7 @@ const clients = [
     ]
   },
   {
+    id:2,
     nit: "234567890",
     name: "Global Industries",
     address: "456 Enterprise Ave",
@@ -27,6 +29,7 @@ const clients = [
     ]
   },
   {
+    id:3,
     nit: "345678901",
     name: "Digital World",
     address: "789 Cyber Lane",
@@ -40,6 +43,7 @@ const clients = [
     ]
   },
   {
+    id:4,
     nit: "456789012",
     name: "Eco Green",
     address: "321 Nature St",
@@ -53,6 +57,7 @@ const clients = [
     ]
   },
   {
+    id:5,
     nit: "567890123",
     name: "NextGen Innovations",
     address: "654 Future Blvd",
@@ -66,6 +71,7 @@ const clients = [
     ]
   },
   {
+    id:6,
     nit: "678901234",
     name: "Skyline Solutions",
     address: "987 Tower Way",
@@ -80,6 +86,7 @@ const clients = [
     ]
   },
   {
+    id:7,
     nit: "789012345",
     name: "Oceanic Ventures",
     address: "111 Sea Breeze Rd",
@@ -93,6 +100,7 @@ const clients = [
     ]
   },
   {
+    id:8,
     nit: "890123456",
     name: "Mountain Peaks",
     address: "222 Alpine Ave",
@@ -106,6 +114,7 @@ const clients = [
     ]
   },
   {
+    id:9,
     nit: "901234567",
     name: "Urban Hub",
     address: "333 Cityscape St",
@@ -119,6 +128,7 @@ const clients = [
     ]
   },
   {
+    id:10,
     nit: "012345678",
     name: "Venture Valley",
     address: "444 Startup St",
