@@ -42,6 +42,7 @@ const port = process.env.PORT || 3000;
 const db = require("./db.js")();
 const router = jsonServer.router(db);
 const { addClient, getClients } = require("./data/clients");  // Import functions
+const { addOpportunity, getOpportunities } = require("./data/opportunities");  // Import opportunity functions
 
 // Middleware to parse JSON body
 server.use(jsonServer.bodyParser);
@@ -61,6 +62,7 @@ server.get("/clients", (req, res) => {
   res.json(getClients());  // Return all clients
 });
 
+// Endpoint to activate/deactivate a client by NIT
 server.patch("/clients/activate/:nit", (req, res) => {
   const { nit } = req.params;
   const clients = getClients();
@@ -82,12 +84,33 @@ server.put("/clients/:nit", (req, res) => {
   const client = clients.find(client => client.nit === nit);
 
   if (client) {
-    // Actualizamos los datos del cliente con los nuevos valores
+    // Update the client with the new values
     Object.assign(client, updatedData);
     res.json(client);
   } else {
     res.status(404).json({ error: "Client not found" });
   }
+});
+
+// Endpoint to create a new opportunity
+server.post("/opportunities", (req, res) => {
+  const newOpportunity = req.body;
+
+  // Validate required fields for the opportunity
+  if (!newOpportunity.clientId || !newOpportunity.businessName || !newOpportunity.businessLine || !newOpportunity.description || !newOpportunity.estimatedValue || !newOpportunity.estimatedDate) {
+    return res.status(400).json({ error: 'Missing required fields' });
+  }
+
+  // Add the new opportunity to the data
+  addOpportunity(newOpportunity);
+
+  // Respond with the new opportunity data
+  res.status(201).json(newOpportunity);
+});
+
+// Endpoint to get all opportunities
+server.get("/opportunities", (req, res) => {
+  res.json(getOpportunities());  // Return all opportunities
 });
 
 // Use the default router for other routes
@@ -96,3 +119,4 @@ server.use(router);
 server.listen(port, () => {
   console.log(`JSON Server is running on port ${port}`);
 });
+
