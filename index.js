@@ -113,6 +113,19 @@ server.get("/opportunities", (req, res) => {
   res.json(getOpportunities());  // Return all opportunities
 });
 
+server.delete("/del-opp/:id", (req, res) => {
+  const { id } = req.params;
+  const opportunities = getOpportunities(); 
+  const opportunityIndex = opportunities.findIndex(opportunity => opportunity.Id === id); 
+
+  if (opportunityIndex !== -1) {
+    opportunities.splice(opportunityIndex, 1); 
+    res.status(204).end(); 
+  } else {
+    res.status(404).json({ error: "Opportunity not found" });
+  }
+});
+
 // Use the default router for other routes
 server.use(router);
 
