@@ -62,6 +62,21 @@ server.get("/clients", (req, res) => {
   res.json(getClients());  // Return all clients
 });
 
+// Endpoint to get a single client by NIT
+server.get("/clients/:nit", (req, res) => {
+  const { nit } = req.params; // Obtiene el NIT de los parámetros de la URL
+  const clients = getClients(); // Obtiene la lista de clientes
+  const client = clients.find(client => client.nit === nit); // Busca el cliente con el NIT especificado
+
+  if (client) {
+    res.json(client); // Responde con los datos del cliente encontrado
+  } else {
+    res.status(404).json({ error: "Client not found" }); // Envía un error si el cliente no se encuentra
+  }
+});
+
+
+
 // Endpoint to activate/deactivate a client by NIT
 server.patch("/clients/activate/:nit", (req, res) => {
   const { nit } = req.params;
