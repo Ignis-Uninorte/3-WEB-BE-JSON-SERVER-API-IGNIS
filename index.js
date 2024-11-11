@@ -128,6 +128,45 @@ server.get("/opportunities", (req, res) => {
   res.json(getOpportunities());  // Return all opportunities
 });
 
+// Endpoint para obtener una oportunidad por su ID
+server.get("/opportunities/:id", (req, res) => {
+  const { id } = req.params;
+  const opportunities = getOpportunities();
+  const opportunity = opportunities.find(opportunity => opportunity.Id === id);
+
+  if (opportunity) {
+    res.json(opportunity);
+  } else {
+    res.status(404).json({ error: "Opportunity not found" });
+  }
+});
+
+
+// Endpoint para actualizar una oportunidad por su ID
+server.put("/opportunities/:id", (req, res) => {
+  const { id } = req.params;
+  const updatedData = req.body;
+  const opportunities = getOpportunities();
+  const opportunityIndex = opportunities.findIndex(opportunity => opportunity.Id === id);
+
+  if (opportunityIndex !== -1) {
+    // Actualizar los campos permitidos de la oportunidad
+    const opportunity = opportunities[opportunityIndex];
+    opportunity.businessName = updatedData.businessName || opportunity.businessName;
+    opportunity.businessLine = updatedData.businessLine || opportunity.businessLine;
+    opportunity.description = updatedData.description || opportunity.description;
+    opportunity.estimatedValue = updatedData.estimatedValue || opportunity.estimatedValue;
+    opportunity.estimatedDate = updatedData.estimatedDate || opportunity.estimatedDate;
+    opportunity.status = updatedData.status || opportunity.status;
+
+    res.json(opportunity); // Devuelve la oportunidad actualizada
+  } else {
+    res.status(404).json({ error: "Opportunity not found" });
+  }
+});
+
+
+// para borrar
 server.delete("/del-opp/:id", (req, res) => {
   const { id } = req.params;
   const opportunities = getOpportunities(); 
