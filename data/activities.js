@@ -1,3 +1,6 @@
+// Importar las oportunidades desde Opportunity.js
+const { getOpportunities } = require('./Opportunity.js');  // Asegúrate de que la ruta sea correcta
+
 const activities = [
     {
         id: 1,
@@ -17,17 +20,30 @@ const activities = [
     }
 ];
 
-// Function to get all activities
+// Función para obtener todas las actividades
 function getActivities() {
-    return activities; // Return the current list of activities
-  }
-  
-  // Function to add a new activity
-  function addActivity(newActivity) {
+    return activities; // Devuelve la lista actual de actividades
+}
+
+// Función para agregar una nueva actividad
+function addActivity(newActivity) {
+    // Obtener la lista de oportunidades
+    const opportunities = getOpportunities();
+
+    // Verificar si opportunityId existe en las oportunidades
+    const opportunityExists = opportunities.some(opportunity => opportunity.Id === newActivity.opportunityId);
+
+    if (!opportunityExists) {
+        return { error: "Invalid opportunityId. The opportunity does not exist." };
+    }
+
+    // Generar un nuevo ID para la actividad y agregarla a la lista
     const id = activities.length ? activities[activities.length - 1].id + 1 : 1;
     const activity = { id, ...newActivity };
     activities.push(activity);
-    return activity;
-  }
-  
-  module.exports = { getActivities, addActivity };
+
+    return activity; // Retorna la actividad agregada
+}
+
+// Exportar las funciones
+module.exports = { getActivities, addActivity };

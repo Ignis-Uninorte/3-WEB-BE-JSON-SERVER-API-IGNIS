@@ -14,4 +14,5 @@ module.exports = () => ({
   clients: getClients(), // Add clients to the data structure
   opportunities: getOpportunities(), // Add opportunities to the data structure
   activities: getActivities(), // Add activities to the data structure
+  addActivity: addActivity, // Add the method to add an activity
 });

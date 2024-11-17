@@ -3,9 +3,9 @@ const cors = require("cors"); // Import the CORS package
 const server = jsonServer.create();
 const middlewares = jsonServer.defaults();
 const port = process.env.PORT || 3000;
-const db = require("./db.js")();
+const db = require("./db.js")(); // Obtener la base de datos con todas las funciones
 const router = jsonServer.router(db);
-const { addClient, getClients } = require("./data/clients");  // Import functions
+const { addClient, getClients } = require("./data/clients");  // Import functions for clients
 const { addOpportunity, getOpportunities } = require("./data/opportunities");  // Import opportunity functions
 const { 
   addActivity, 
@@ -136,7 +136,7 @@ server.post("/activities", (req, res) => {
   if (!newActivity.contactType || !newActivity.contactDate || !newActivity.clientContact || !newActivity.commercialExecutive || !newActivity.description) {
     return res.status(400).json({ error: "Missing required fields" });
   }
-  addActivity(newActivity);
+  db.addActivity(newActivity);  // Use db().addActivity to add a new activity
   res.status(201).json(newActivity);
 });
 
