@@ -1,6 +1,7 @@
 const activities = [
     {
         id: 1,
+        opportunityId: 1,
         contactType: "Call",
         contactDate: "2024-11-17",
         clientContact: "John Doe",
@@ -8,6 +9,7 @@ const activities = [
     },
     {
         id: 2,
+        opportunityId: 2,
         contactType: "Email",
         contactDate: "2024-11-16",
         clientContact: "Jane Smith",
