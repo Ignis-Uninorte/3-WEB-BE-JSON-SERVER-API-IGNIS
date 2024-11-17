@@ -1,5 +1,5 @@
 // Importar las oportunidades desde Opportunity.js
-const { getOpportunities } = require('./Opportunity.js');  // Asegúrate de que la ruta sea correcta
+const { getOpportunities } = require('./opportunities.js');  // Asegúrate de que la ruta sea correcta
 
 const activities = [
     {
