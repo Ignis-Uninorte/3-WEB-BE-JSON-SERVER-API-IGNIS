@@ -1,5 +1,5 @@
-// Importar las oportunidades desde Opportunity.js
-const { getOpportunities } = require('./opportunities.js');  // Asegúrate de que la ruta sea correcta
+// Import the opportunities from opportunities.js
+const { getOpportunities } = require('./opportunities.js');  // Ensure the path is correct
 
 const activities = [
     {
@@ -20,30 +20,54 @@ const activities = [
     }
 ];
 
-// Función para obtener todas las actividades
+// Function to get all activities
 function getActivities() {
-    return activities; // Devuelve la lista actual de actividades
+    return activities; // Returns the current list of activities
 }
 
-// Función para agregar una nueva actividad
+// Function to add a new activity
 function addActivity(newActivity) {
-    // Obtener la lista de oportunidades
+    // Get the list of opportunities
     const opportunities = getOpportunities();
 
-    // Verificar si opportunityId existe en las oportunidades
+    // Check if opportunityId exists in the opportunities
     const opportunityExists = opportunities.some(opportunity => opportunity.Id === newActivity.opportunityId);
 
     if (!opportunityExists) {
         return { error: "Invalid opportunityId. The opportunity does not exist." };
     }
 
-    // Generar un nuevo ID para la actividad y agregarla a la lista
+    // Generate a new ID for the activity and add it to the list
     const id = activities.length ? activities[activities.length - 1].id + 1 : 1;
     const activity = { id, ...newActivity };
     activities.push(activity);
 
-    return activity; // Retorna la actividad agregada
+    return activity; // Returns the added activity
 }
 
-// Exportar las funciones
-module.exports = { getActivities, addActivity };
+// Function to update an activity
+function updateActivity(id, updatedData) {
+    const activityIndex = activities.findIndex(activity => activity.id === id);
+    if (activityIndex === -1) {
+        return null;
+    }
+
+    // Update the activity data
+    const updatedActivity = { ...activities[activityIndex], ...updatedData };
+    activities[activityIndex] = updatedActivity;
+
+    return updatedActivity;  // Returns the updated activity
+}
+
+// Function to delete an activity
+function deleteActivity(id) {
+    const activityIndex = activities.findIndex(activity => activity.id === id);
+    if (activityIndex === -1) {
+        return false;
+    }
+
+    activities.splice(activityIndex, 1); // Remove the activity
+    return true;  // Indicates the activity was deleted
+}
+
+module.exports = { getActivities, addActivity, updateActivity, deleteActivity };
