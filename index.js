@@ -18,12 +18,11 @@ const {
 server.use(jsonServer.bodyParser);
 server.use(middlewares);
 server.use(cors()); // Enable CORS
-server.use(jsonServer.defaults({ static: 'public' }));
 
 // --- Client Endpoints ---
 server.post("/clients", (req, res) => {
   const newClient = req.body;
-  addClient(newClient);
+  addClient(newClient);  // Assuming addClient modifies the data and doesn't require further validation
   res.status(201).json(newClient);
 });
 
@@ -33,8 +32,7 @@ server.get("/clients", (req, res) => {
 
 server.get("/clients/:nit", (req, res) => {
   const { nit } = req.params;
-  const clients = getClients();
-  const client = clients.find(client => client.nit === nit);
+  const client = getClients().find(client => client.nit === nit);
 
   if (client) {
     res.json(client);
@@ -45,11 +43,10 @@ server.get("/clients/:nit", (req, res) => {
 
 server.patch("/clients/activate/:nit", (req, res) => {
   const { nit } = req.params;
-  const clients = getClients();
-  const client = clients.find(client => client.nit === nit);
+  const client = getClients().find(client => client.nit === nit);
 
   if (client) {
-    client.active = !client.active;
+    client.active = !client.active;  // Toggle the active status
     res.json(client);
   } else {
     res.status(404).json({ error: "Client not found" });
@@ -59,8 +56,7 @@ server.patch("/clients/activate/:nit", (req, res) => {
 server.put("/clients/:nit", (req, res) => {
   const { nit } = req.params;
   const updatedData = req.body;
-  const clients = getClients();
-  const client = clients.find(client => client.nit === nit);
+  const client = getClients().find(client => client.nit === nit);
 
   if (client) {
     Object.assign(client, updatedData);
@@ -76,7 +72,7 @@ server.post("/opportunities", (req, res) => {
   if (!newOpportunity.clientId || !newOpportunity.businessName || !newOpportunity.businessLine || !newOpportunity.description || !newOpportunity.estimatedValue || !newOpportunity.estimatedDate) {
     return res.status(400).json({ error: 'Missing required fields' });
   }
-  addOpportunity(newOpportunity);
+  addOpportunity(newOpportunity);  // Assuming addOpportunity modifies the data and doesn't need further validation
   res.status(201).json(newOpportunity);
 });
 
@@ -86,8 +82,7 @@ server.get("/opportunities", (req, res) => {
 
 server.get("/opportunities/:id", (req, res) => {
   const { id } = req.params;
-  const opportunities = getOpportunities();
-  const opportunity = opportunities.find(opportunity => opportunity.Id === id);
+  const opportunity = getOpportunities().find(opportunity => opportunity.Id === id);
 
   if (opportunity) {
     res.json(opportunity);
@@ -99,18 +94,11 @@ server.get("/opportunities/:id", (req, res) => {
 server.put("/opportunities/:id", (req, res) => {
   const { id } = req.params;
   const updatedData = req.body;
-  const opportunities = getOpportunities();
-  const opportunityIndex = opportunities.findIndex(opportunity => opportunity.Id === id);
+  const opportunityIndex = getOpportunities().findIndex(opportunity => opportunity.Id === id);
 
   if (opportunityIndex !== -1) {
-    const opportunity = opportunities[opportunityIndex];
-    opportunity.businessName = updatedData.businessName || opportunity.businessName;
-    opportunity.businessLine = updatedData.businessLine || opportunity.businessLine;
-    opportunity.description = updatedData.description || opportunity.description;
-    opportunity.estimatedValue = updatedData.estimatedValue || opportunity.estimatedValue;
-    opportunity.estimatedDate = updatedData.estimatedDate || opportunity.estimatedDate;
-    opportunity.status = updatedData.status || opportunity.status;
-
+    const opportunity = getOpportunities()[opportunityIndex];
+    Object.assign(opportunity, updatedData);  // Update only provided fields
     res.json(opportunity);
   } else {
     res.status(404).json({ error: "Opportunity not found" });
@@ -119,12 +107,11 @@ server.put("/opportunities/:id", (req, res) => {
 
 server.delete("/del-opp/:id", (req, res) => {
   const { id } = req.params;
-  const opportunities = getOpportunities(); 
-  const opportunityIndex = opportunities.findIndex(opportunity => opportunity.Id === id);
+  const opportunityIndex = getOpportunities().findIndex(opportunity => opportunity.Id === id);
 
   if (opportunityIndex !== -1) {
-    opportunities.splice(opportunityIndex, 1);
-    res.status(204).end();
+    getOpportunities().splice(opportunityIndex, 1);
+    res.status(204).end();  // No content, just deletion
   } else {
     res.status(404).json({ error: "Opportunity not found" });
   }
@@ -136,7 +123,7 @@ server.post("/activities", (req, res) => {
   if (!newActivity.contactType || !newActivity.contactDate || !newActivity.clientContact || !newActivity.commercialExecutive || !newActivity.description) {
     return res.status(400).json({ error: "Missing required fields" });
   }
-  db.addActivity(newActivity);  // Use db().addActivity to add a new activity
+  addActivity(newActivity);  // Assuming this function modifies the data
   res.status(201).json(newActivity);
 });
 
