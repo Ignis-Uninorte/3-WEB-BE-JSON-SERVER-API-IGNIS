@@ -91,12 +91,9 @@ const activities = [
     }
     
 ];
-
 // Function to get all activities
 function getActivities() {
-    return new Promise((resolve) => {
-        setTimeout(() => resolve(activities), 100); // Simula un retraso de 100ms
-    });
+    return activities; // Devuelve directamente el arreglo
 }
 
 // Function to add a new activity
