@@ -1,12 +1,10 @@
-// Import the opportunities from opportunities.js (esto se elimina porque ya no se utiliza opportunityId)
-const { getOpportunities } = require('./opportunities.js');  // Puedes eliminar esta importación si no la necesitas
-
 const activities = [
     {
         id: 1,
         contactType: "Call",
         contactDate: "2024-11-17",
         clientContact: "John Doe",
+        commercialExecutive: "Kelly Liz",
         description: "Discussed project requirements."
     },
     {
@@ -14,6 +12,7 @@ const activities = [
         contactType: "Email",
         contactDate: "2024-11-16",
         clientContact: "Jane Smith",
+        commercialExecutive: "Robert Kin",
         description: "Sent follow-up proposal."
     }
 ];

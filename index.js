@@ -5,8 +5,8 @@ const middlewares = jsonServer.defaults();
 const port = process.env.PORT || 3000;
 const db = require("./db.js")(); // Get the database with all functions
 const router = jsonServer.router(db);
-const { addClient, getClients } = require("./data/clients");  // Import client functions
-const { addActivity, getActivities, updateActivity, deleteActivity } = require("./data/activities");  // Import activity functions
+const { addClient, getClients } = require("./data/clients"); // Import client functions
+const { addActivity, getActivities, updateActivity, deleteActivity } = require("./data/activities"); // Import activity functions
 
 // Middleware to parse JSON body
 server.use(jsonServer.bodyParser);
@@ -34,9 +34,9 @@ server.post("/activities", (req, res) => {
     return res.status(400).json({ error: "Missing required fields" });
   }
 
-  // Add the activity using db() methods
-  db.activities.push(newActivity);  // Manually push the new activity to the activities array
-  res.status(201).json(newActivity);
+  // Add the activity using the function
+  const addedActivity = addActivity(newActivity);
+  res.status(201).json(addedActivity);
 });
 
 server.get("/activities", (req, res) => {
@@ -46,12 +46,10 @@ server.get("/activities", (req, res) => {
 server.put("/activities/:id", (req, res) => {
   const { id } = req.params;
   const updatedData = req.body;
-  const activities = getActivities();
-  const activityIndex = activities.findIndex(activity => activity.id === parseInt(id));
 
-  if (activityIndex !== -1) {
-    activities[activityIndex] = { ...activities[activityIndex], ...updatedData };
-    res.json(activities[activityIndex]);
+  const updatedActivity = updateActivity(parseInt(id), updatedData);
+  if (updatedActivity) {
+    res.json(updatedActivity);
   } else {
     res.status(404).json({ error: "Activity not found" });
   }
@@ -59,11 +57,9 @@ server.put("/activities/:id", (req, res) => {
 
 server.delete("/activities/:id", (req, res) => {
   const { id } = req.params;
-  const activities = getActivities();
-  const activityIndex = activities.findIndex(activity => activity.id === parseInt(id));
 
-  if (activityIndex !== -1) {
-    activities.splice(activityIndex, 1); // Remove the activity from the array
+  const success = deleteActivity(parseInt(id));
+  if (success) {
     res.status(204).end();
   } else {
     res.status(404).json({ error: "Activity not found" });
