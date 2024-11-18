@@ -26,7 +26,7 @@ server.get("/clients", (req, res) => {
 });
 
 // --- Follow-up Activity Endpoints ---
-server.post("/activities", (req, res) => {
+server.post("/activities", async (req, res) => {
   const newActivity = req.body;
 
   // Validate data before adding it
@@ -34,9 +34,13 @@ server.post("/activities", (req, res) => {
     return res.status(400).json({ error: "Missing required fields" });
   }
 
-  // Add the activity using the function
-  const addedActivity = addActivity(newActivity);
-  res.status(201).json(addedActivity);
+  try {
+    // Add the activity using the function
+    const addedActivity = await addActivity(newActivity);
+    res.status(201).json(addedActivity);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
 });
 
 server.get("/activities", (req, res) => {
@@ -53,26 +57,34 @@ server.get("/activities", (req, res) => {
   res.json(getActivities());
 });
 
-server.put("/activities/:id", (req, res) => {
+server.put("/activities/:id", async (req, res) => {
   const { id } = req.params;
   const updatedData = req.body;
 
-  const updatedActivity = updateActivity(parseInt(id), updatedData);
-  if (updatedActivity) {
-    res.json(updatedActivity);
-  } else {
-    res.status(404).json({ error: "Activity not found" });
+  try {
+    const updatedActivity = await updateActivity(parseInt(id), updatedData);
+    if (updatedActivity) {
+      res.json(updatedActivity);
+    } else {
+      res.status(404).json({ error: "Activity not found" });
+    }
+  } catch (error) {
+    res.status(500).json({ error: error.message });
   }
 });
 
-server.delete("/activities/:id", (req, res) => {
+server.delete("/activities/:id", async (req, res) => {
   const { id } = req.params;
 
-  const success = deleteActivity(parseInt(id));
-  if (success) {
-    res.status(204).end();
-  } else {
-    res.status(404).json({ error: "Activity not found" });
+  try {
+    const success = await deleteActivity(parseInt(id));
+    if (success) {
+      res.status(204).end();
+    } else {
+      res.status(404).json({ error: "Activity not found" });
+    }
+  } catch (error) {
+    res.status(500).json({ error: error.message });
   }
 });
 
