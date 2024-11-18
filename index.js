@@ -6,7 +6,6 @@ const port = process.env.PORT || 3000;
 const db = require("./db.js")(); // Get the database with all functions
 const router = jsonServer.router(db);
 const { addClient, getClients } = require("./data/clients");  // Import client functions
-const { addOpportunity, getOpportunities } = require("./data/opportunities");  // Import opportunity functions
 const { addActivity, getActivities, updateActivity, deleteActivity } = require("./data/activities");  // Import activity functions
 
 // Middleware to parse JSON body
@@ -25,20 +24,6 @@ server.post("/clients", (req, res) => {
 server.get("/clients", (req, res) => {
   res.json(getClients());
 });
-
-// Other client endpoints...
-
-// --- Opportunity Endpoints ---
-server.post("/opportunities", (req, res) => {
-  const newOpportunity = req.body;
-  if (!newOpportunity.clientId || !newOpportunity.businessName || !newOpportunity.businessLine || !newOpportunity.description || !newOpportunity.estimatedValue || !newOpportunity.estimatedDate) {
-    return res.status(400).json({ error: 'Missing required fields' });
-  }
-  addOpportunity(newOpportunity);
-  res.status(201).json(newOpportunity);
-});
-
-// Other opportunity endpoints...
 
 // --- Follow-up Activity Endpoints ---
 server.post("/activities", (req, res) => {

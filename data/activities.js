@@ -1,10 +1,9 @@
-// Import the opportunities from opportunities.js
-const { getOpportunities } = require('./opportunities.js');  // Ensure the path is correct
+// Import the opportunities from opportunities.js (esto se elimina porque ya no se utiliza opportunityId)
+const { getOpportunities } = require('./opportunities.js');  // Puedes eliminar esta importación si no la necesitas
 
 const activities = [
     {
         id: 1,
-        opportunityId: 1,
         contactType: "Call",
         contactDate: "2024-11-17",
         clientContact: "John Doe",
@@ -12,7 +11,6 @@ const activities = [
     },
     {
         id: 2,
-        opportunityId: 2,
         contactType: "Email",
         contactDate: "2024-11-16",
         clientContact: "Jane Smith",
@@ -27,16 +25,6 @@ function getActivities() {
 
 // Function to add a new activity
 function addActivity(newActivity) {
-    // Get the list of opportunities
-    const opportunities = getOpportunities();
-
-    // Check if opportunityId exists in the opportunities
-    const opportunityExists = opportunities.some(opportunity => opportunity.Id === newActivity.opportunityId);
-
-    if (!opportunityExists) {
-        return { error: "Invalid opportunityId. The opportunity does not exist." };
-    }
-
     // Generate a new ID for the activity and add it to the list
     const id = activities.length ? activities[activities.length - 1].id + 1 : 1;
     const activity = { id, ...newActivity };
