@@ -30,7 +30,7 @@ server.post("/activities", (req, res) => {
   const newActivity = req.body;
 
   // Validate data before adding it
-  if (!newActivity.contactType || !newActivity.contactDate || !newActivity.clientContact || !newActivity.commercialExecutive || !newActivity.description) {
+  if (!newActivity.contactType || !newActivity.contactDate || !newActivity.clientContact || !newActivity.commercialExecutive || !newActivity.description || !newActivity.opportunityId) {
     return res.status(400).json({ error: "Missing required fields" });
   }
 
@@ -40,6 +40,16 @@ server.post("/activities", (req, res) => {
 });
 
 server.get("/activities", (req, res) => {
+  const { opportunityId } = req.query;
+
+  // Filter activities by opportunityId if provided
+  if (opportunityId) {
+    const filteredActivities = getActivities().filter(
+      (activity) => activity.opportunityId === parseInt(opportunityId)
+    );
+    return res.json(filteredActivities);
+  }
+
   res.json(getActivities());
 });
 
