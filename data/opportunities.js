@@ -98,6 +98,26 @@ const opportunities = [
     "estimatedValue": "9800000",
     "estimatedDate": "2024-12-20",
     "status": "Apertura"
+  },
+  {
+    "Id": "11",
+    "clientId": "10",
+    "businessName": "Tech Mobilities",
+    "businessLine": "desarrollo mobile2",
+    "description": "Desarrollo de soluciones móviles para el sector salud",
+    "estimatedValue": "9300000",
+    "estimatedDate": "2024-12-20",
+    "status": "En Estudio"
+  },
+  {
+    "Id": "12",
+    "clientId": "10",
+    "businessName": "Tech Mobilities",
+    "businessLine": "desarrollo mobile3",
+    "description": "Desarrollo de soluciones móviles para el sector salud3",
+    "estimatedValue": "9900000",
+    "estimatedDate": "2024-12-20",
+    "status": "Finalizada"
   }
 
 ];
