@@ -176,6 +176,19 @@ server.delete("/activities/:id", async (req, res) => {
   }
 });
 
+// Endpoint para obtener una actividad por ID
+server.get('/activities/:id', (req, res) => {
+    const { id } = req.params; 
+    const activities = getActivities(); 
+    const activity = activities.find(activity => activity.id === parseInt(id, 10)); // Buscar por ID
+
+    if (activity) {
+        res.json(activity);
+    } else {
+        res.status(404).json({ error: `Activity with ID ${id} not found` }); // Devuelve un error si no existe
+    }
+});
+
 // Use the default router for other routes
 server.use(router);
 
