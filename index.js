@@ -189,6 +189,21 @@ server.get('/activities/:id', (req, res) => {
     }
 });
 
+// pa actualizar dado un id
+server.put('/activities/:id', (req, res) => {
+    const { id } = req.params;
+    const updatedData = req.body;
+
+    const activityIndex = activities.findIndex(activity => activity.id === parseInt(id, 10));
+    if (activityIndex !== -1) {
+        activities[activityIndex] = { ...activities[activityIndex], ...updatedData };
+        res.json(activities[activityIndex]);
+    } else {
+        res.status(404).json({ error: 'Activity not found' });
+    }
+});
+
+
 // Use the default router for other routes
 server.use(router);
 
